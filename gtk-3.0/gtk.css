@@ -1486,7 +1486,7 @@ menu,
   margin: 1px 4px;
   padding: 0;
   border-radius: 0;
-  background-color: @gray_bg;
+  background-color:  shade(@gray_bg, 1.05);   /* not so dark */
   border: 1px solid #BDBDBD; }
 
   .csd menu, .csd
@@ -4126,7 +4126,7 @@ window.background.lightdm .lightdm-combo {
   border-radius: 0;
   background-color: transparent; }
 
-@define-color nemo_bg #404040;
+@define-color nemo_bg #505050;
 @define-color gray_bg #E3E3E3;
 @define-color yellow_text #FFFF00;
 @define-color white_text #FFFFFF;
@@ -4136,4 +4136,3 @@ window.background.lightdm .lightdm-combo {
 @define-color selected_bg_color #c15b58;
 @define-color theme_fg_color #202020;
 @define-color theme_fg_hover #000000;
-
