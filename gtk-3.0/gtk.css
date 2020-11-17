@@ -1635,7 +1635,9 @@ cursor-handle {
   cursor-handle.bottom {
     -gtk-icon-source: -gtk-icontheme("selection-end-symbolic"); }
 
-
+/* =================================================================
+             Notebook
+===================================================================*/
 notebook {
   padding: 0; }
 
@@ -1671,7 +1673,7 @@ notebook {
 
   notebook > header {
     padding: 2px;
-    background-color: #F0F0F0;
+    background-color: @theme_bg_color_dark;
     /* button in headers */ }
 
     notebook > header.top {
@@ -1689,12 +1691,14 @@ notebook {
     notebook > header.top {
       padding-bottom: 0; }
 
-      notebook > header.top > tabs > tab {
+      notebook > header.top > tabs > tab {  /*inactive tab    alk*/
+        background-color: shade(@theme_bg_color_dark, 1.1);
+        color: black;
         padding: 2px 10px;
         min-width: 20px;
         min-height: 20px;
         outline-offset: -4px;
-        border: 1px solid transparent;
+        border: 2px solid transparent;
         border-bottom: none;
         border-radius: 1px 1px 0 0; }
 
@@ -1776,6 +1780,7 @@ notebook {
         color: rgba(32, 32, 32, 0.25); }
 
     notebook > header.top > tabs > tab:hover:not(:checked) {
+      background-color: rgba( 193,91,88,.3);   /*alk added */
       box-shadow: inset 0 -1px #BDBDBD; }
 
     notebook > header.bottom > tabs > tab:hover:not(:checked) {
@@ -1799,7 +1804,7 @@ notebook {
       notebook > header > tabs > tab:checked {
         color: @theme_fg_color;
         background-color: #FFFFFF;
-        border-color: #BDBDBD; }
+        border-color: @theme_selected_bg_color; }  /* alk */
 
       notebook > header > tabs > tab button.flat {
         min-height: 22px;
@@ -4125,6 +4130,7 @@ window.background.lightdm .lightdm-combo {
 @define-color gray_bg #E3E3E3;
 @define-color yellow_text #FFFF00;
 @define-color white_text #FFFFFF;
+@define-color theme_bg_color_dark #D0D0D0;
 @define-color theme_bg_color #F0F0F0;  /* this is not used but without it, gnome-mines looks wierd */
 @define-color theme_selected_bg_color #c15b58;
 @define-color selected_bg_color #c15b58;
