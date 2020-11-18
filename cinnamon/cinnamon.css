@@ -467,20 +467,16 @@ StScrollBar StButton#vhandle:active {
     color: #FFFFFF;
     font-size: 18pt; }
 
-.desklet-with-borders {
+.desklet-with-borders,
+.desklet-with-borders-and-header {
 	border-radius: 12px 12px 12px 12px;
 	color: #FFFFFF;
 	border: 0px solid #DD0000;
-     border-bottom: 4px; }
-
-.desklet-with-borders-and-header {
-	border-bottom: 4px;
-	border-radius: 12px 12px 12px 12px;
-	border:0px solid #DD0000;
-	color: #FFFFFF; }
+    border-bottom: 4px;
+    background-color: black; }
 
 .desklet-header {
-     padding: 6px;
+    padding: 6px;
 	border-bottom: 3px; }
 
 .desklet-drag-placeholder {
