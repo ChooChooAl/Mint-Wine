@@ -514,7 +514,7 @@ StScrollBar StButton#vhandle:active {
     font-weight: normal;
     text-align: center;
     color: #FFFFFF;
-    font-size: 20pt; }
+    font-size: 24pt; }
 
 .calendar-month-label {   /* Month and Year */
     color: #FFFFFF;
