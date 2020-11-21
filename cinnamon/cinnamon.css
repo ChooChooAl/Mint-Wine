@@ -473,7 +473,7 @@ StScrollBar StButton#vhandle:active {
 	color: #FFFFFF;
 	border: 0px solid #DD0000;
     border-bottom: 4px;
-    background-color: black; }
+    background-color: #172025; } /* black; } */
 
 .desklet-header {
     padding: 6px;
@@ -544,9 +544,11 @@ StScrollBar StButton#vhandle:active {
 	border-radius: 4px; }
 
 .calendar-change-month-forward:hover,
+.calendar-change-month-back:hover,
 .calendar-change-month-back:rtl:hover {
-	background-color: #480000; }
+	background-color: #444444 }
 
+.calendar-change-month-back:active,
 .calendar-change-month-forward:active {
 	background-color: #6C0000; }
 
