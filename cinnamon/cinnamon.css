@@ -125,10 +125,10 @@ StScrollBar StButton#vhandle:active {
 	border-width: 0px; }
 
 .popup-menu-content {
-	padding: .1em .5em; }
+	padding: .15em .5em; }
 
 .popup-menu-item {
-	padding: .1em .5em;
+	padding: .15em .5em;
 	spacing: 1em; }
 
 .popup-menu-item:active { /* hover color */
@@ -223,7 +223,7 @@ StScrollBar StButton#vhandle:active {
 #panelLeft .applet-box:first-child {
     background: url("start1.png");
     border-image: none;
-    background-position: center center;
+/*    background-position: center; */
     transition-duration: 300;
     width: 60px; }
 #panelLeft .applet-box:first-child:hover {
