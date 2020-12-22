@@ -64,6 +64,7 @@ StScrollBar StButton#hhandle:active,
 StScrollBar StButton#vhandle:active {
 	background-color: #C80000; }
 
+
 #Tooltip {      /* app in panel description popup when you mouse over */
 	border-radius: 10px 10px 10px 10px;
 	border: 2px solid #CC0000;
@@ -930,7 +931,7 @@ height of the table to be ICON_SIZE + IMAGE_SIZE + spacing-rows = 24 + 125 + 10 
 * ===================================================================*/
 
 .menu-applications-outer-box {
-  margin-top: 15px; }
+    margin-top: 15px; }
 
 .menu-favorites-box {  /* this defines the rectangle of favorite apps on side */
     padding: 5px;
