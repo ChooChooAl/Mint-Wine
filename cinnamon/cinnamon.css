@@ -1099,7 +1099,7 @@ height of the table to be ICON_SIZE + IMAGE_SIZE + spacing-rows = 24 + 125 + 10 
 .window-list-item-box {		/* launched apps on panel */
 	font-weight: normal;
 	font-size: 19pt;
-	color: #CCCCCC;
+	color: #FFFFFF;
     border: 0px solid #180000;
     border-bottom: 3px;     /* This compensates for the lack of underline. */
 	transition-duration: 100;
@@ -1108,7 +1108,7 @@ height of the table to be ICON_SIZE + IMAGE_SIZE + spacing-rows = 24 + 125 + 10 
 
 .window-list-item-box:first-child {  /* I think this is the menu button */
 	font-weight: normal;
-	color: #CCCCCC;
+	color: #FFFFFF;
 	font-size: 19pt;
 	transition-duration: 100;
 	padding-left: 5px;
@@ -1117,7 +1117,7 @@ height of the table to be ICON_SIZE + IMAGE_SIZE + spacing-rows = 24 + 125 + 10 
 
 .window-list-item-box:hover  {			/* app in panel highlights as you mouse over*/
 	color: #FFFFFF;
-	font-weight: normal;
+	font-weight: bold;
 	font-size: 19pt;
 	background-color: #540000; 		/* just a bit lighter */ }
 
