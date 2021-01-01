@@ -861,7 +861,7 @@ headerbar,
     padding-right: 12px; }
   headerbar .subtitle,
   .titlebar:not(headerbar) .subtitle {
-    font-size: smaller;
+    /*font-size: smaller;*/
     padding-left: 12px;
     padding-right: 12px;
     color: @white_text; }
@@ -2327,7 +2327,7 @@ scale {
 
 progressbar {
   padding: 0;
-  font-size: smaller;
+  /*font-size: smaller;*/
   color: rgba(32, 32, 32, 0.7); }
   progressbar.osd {
     min-width: 3px;
@@ -3384,7 +3384,7 @@ NautilusListView .view, NautilusListView iconview {
 
     .nemo-window .sidebar .view, .nemo-window .sidebar iconview, .nemo-window .sidebar row {
       background-color: transparent;
-      font-size: 14pt;
+      font-size: 16pt;
       color: #FFFFFF;
       -GtkTreeView-vertical-separator: -2px;  /* closes up the spacing on the sidebar in Nemo */
         }
@@ -3443,7 +3443,7 @@ NautilusListView .view, NautilusListView iconview {
 
 .open-document-selector-path-label {
   color: #909090;
-  font-size: smaller; }
+  /*font-size: smaller;*/ }
   .open-document-selector-path-label:selected {
     color: rgba(255, 255, 255, 0.9); }
 
@@ -4034,7 +4034,7 @@ filechooser placessidebar.sidebar list scrollbar, .nemo-window .sidebar scrollba
 
 #login_window #user_combobox {
   color: @theme_fg_color;
-  font-size: 13px; }
+  font-size: 17px; }
   #login_window #user_combobox menu {
     font-weight: normal; }
 

@@ -822,7 +822,7 @@ headerbar .title {
 .titlebar .subtitle,
 headerbar .subtitle {
     color: shade(@theme_bg_color, 0.5);
-    font-size: medium;
+    font-size: 16pt; /*medium;*/
     padding: 0 12px;
 }
 
