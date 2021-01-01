@@ -473,8 +473,8 @@ StScrollBar StButton#vhandle:active {
 	border-radius: 12px 12px 12px 12px;
 	color: #FFFFFF;
 	border: 0px solid #DD0000;
-    border-bottom: 4px;
-    background-color: #172025; } /* black; } */
+    border-bottom: 4px; }
+/*    background-color: #172025;*/
 
 .desklet-header {
     padding: 6px;
@@ -495,7 +495,6 @@ StScrollBar StButton#vhandle:active {
 	padding: 2px;
 	border:1px solid #FF0000;
 	border-radius: 0px 0px 0px 0px;
-	/*box-shadow: inset 0px 3px 5px 0px r g b a(0,0,0,0.6); */
 	background-gradient-end: #800000;
 	background-gradient-start: #AA0000;
 	background-gradient-direction: horizontal; }
