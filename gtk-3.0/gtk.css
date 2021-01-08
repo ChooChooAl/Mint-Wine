@@ -1437,10 +1437,9 @@ treeview.view {
     color: @theme_selected_bg_color;
     box-shadow: inset 1px 1px 0 1px @theme_selected_bg_color, inset -1px 0 0 1px @theme_selected_bg_color, inset 1px 1px #FFFFFF, inset -1px 0 #FFFFFF; }
 
-.nemo-window .view {  /* alter bg color */
+.nemo-window .view {  /* basic bg color */
     background-color: @nemo_bg;
-    color: #FFFFFF;
-}
+    color: #FFFFFF; }
 
 
 /* menu across nemo  file,edit,view,search,tools etc */
@@ -4127,7 +4126,7 @@ window.background.lightdm .lightdm-combo {
   border-radius: 0;
   background-color: transparent; }
 
-@define-color nemo_bg #303030;
+@define-color nemo_bg #502020;
 @define-color gray_bg #E3E3E3;
 @define-color yellow_text #FFFF00;
 @define-color white_text #FFFFFF;
