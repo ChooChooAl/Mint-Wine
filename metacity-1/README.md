@@ -1,8 +1,8 @@
-Sample of the border appearance maximized.  2 boxes indicate hitting it will unmaximize the windows making it smaller.
+Sample of the border appearance maximized.  2 boxes indicate hitting it will unmaximize the window making it smaller.
 
 ![](thumbnail.png)
 
-Sample of the border appearance unmaximized.  Single box indicate hitting it will maximize the windows making it one large window.
+Sample of the border appearance unmaximized.  Single box indicates hitting it will maximize the window making it one large window.
 
 ![](thumbnail2.png)
 
