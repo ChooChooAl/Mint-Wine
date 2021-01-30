@@ -1,4 +1,4 @@
-Original theme was AKwine, changed Mint-Wine.  Cinnamon is throwing errors in .xsession-errors log
+Original theme was AKwine, changed it to Mint-Wine.  Cinnamon is throwing errors in .xsession-errors log
 saying it can't determine if it's a nemo compatible theme.  Searching github I find that the
 issue is that cinnamon does a simple search for fixed theme names that contain 'wine',
 'numix' or 'arc' in the name.
