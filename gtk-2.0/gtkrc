@@ -93,7 +93,7 @@ style "default" {
     GtkWindow::resize-grip-width = 0
 
     WnckTasklist::fade-overlay-rect	= 0
-    GtkTextView::cursor_aspect_ratio = 0.9
+/*    GtkTextView::cursor_aspect_ratio = 0.9 */
 
     xthickness = 1
     ythickness = 1
