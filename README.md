@@ -18,4 +18,8 @@ This has been tested on Mint 20. It will work on 19 but the margin in cinnamon.c
 
 ![](Sample.jpg)
 
-November 2020
+<b>Install</b><br>Put the Mint-Wine folder in ~/.themes or /usr/share/themes.   Use the Settings->Themes to change borders, controls, or desktop.
+
+The desktop theme puts the word "Menu" on the left of the panel.  You will have to edit the menu on the panel and change the icon to a blank icon.  There is a blank icon in the Cinnamon folder.
+
+Feb 2021
