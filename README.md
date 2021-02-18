@@ -1,6 +1,6 @@
-<b>Mint-Wine</b><br>Linux Mint Desktop Theme in Wine/Red colors<br>Includes Borders, Controls, as well as the Desktop (menu & panel etc).
+<b>Mint-Wine</b><br>Linux Mint Desktop Theme in Wine/Red colors<br>Includes Borders, Controls, as well as the Desktop (menu & panel etc).  All colors are opaque (or as many as I could tweak.  The theme is a fork of Mint-Y-Darker-Red and one other theme.   It's been tweaked for over a year, so origin is a bit vague.  The borders (metacity) was taken from another simple border theme and adjusted to match.  It has windows like close/min/max icons rather than little round icons.
 
-This theme has larger fonts and spacing.  I adapted it for my new laptop that jumped my resolution from 1366x768 to 1920x1080.   It was a shock and I needed a bit more help.
+This theme has larger fonts and spacing.  I adapted it for my new laptop that jumped my resolution from 1366x768 to 1920x1080.   It was a shock and I needed a bit more size in the fonts to help.
 
 This has been tested on Mint 20. It will work on 19 but the margin in cinnamon.css needs to be adjusted if it crowds the panel.
 
