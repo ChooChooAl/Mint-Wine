@@ -22,7 +22,7 @@
 
 /* Buttons  smaller # is darker */
 
-@define-color button_border #008080;
+@define-color button_border #C2332F;
 @define-color button_color #F0F0F0;
 
 @define-color button_bg_a shade(@button_color, 1.2);
