@@ -2356,7 +2356,7 @@ progressbar {
 
 .osd .trough {
   background-color: white; }
-
+/*
 levelbar block {
   min-width: 32px;
   min-height: 1px; }
@@ -2369,7 +2369,56 @@ levelbar trough {
   border: none;
   padding: 3px;
   border-radius: 3px;
-  background-color: #BDBDBD; }
+  background-color: @levelbar; }
+
+levelbar.horizontal.discrete block {
+  margin: 1px 1px; }
+
+levelbar.vertical.discrete block {
+  margin: 1px 1px; }
+
+levelbar block:not(.empty) {
+  border: 1px solid black;
+  background-color: @levelbar;
+  border-radius: 2px; }
+
+levelbar block.low {
+  border-color: black;
+  background-color: #800000; }
+
+levelbar block.high {
+  border-color: black;
+  background-color: @levelbar; }
+
+levelbar block.full {
+  border-color: black;
+  background-color: @levelbar; }
+
+levelbar block.empty {
+  background-color: rgba(32, 32, 32, 0.2);
+  border-color: black; } */
+/*************
+ * Level Bar *
+ *************/
+levelbar block {
+  min-width: 32px;
+  min-height: 6px; }
+
+levelbar.vertical block {
+  min-width: 6px;
+  min-height: 32px; }
+
+levelbar:backdrop {
+  transition: 200ms ease-out; }
+
+levelbar trough {
+  padding: 2px;
+  border-radius: 2px;
+  background-color: rgba(255, 255, 255, 0.8);
+/*  box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.1);*/ }
+  levelbar trough:backdrop {
+    background-color: rgba(255, 255, 255, 0.6);
+/*    box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.1);*/ }
 
 levelbar.horizontal.discrete block {
   margin: 0 1px; }
@@ -2377,26 +2426,27 @@ levelbar.horizontal.discrete block {
 levelbar.vertical.discrete block {
   margin: 1px 0; }
 
-levelbar block:not(.empty) {
-  border: 1px solid @theme_selected_bg_color;
-  background-color: @theme_selected_bg_color;
+levelbar block {
   border-radius: 2px; }
+  levelbar block:backdrop {
+    box-shadow: none; }
+  levelbar block.low {
+    background-color: @levelbar_low; }
+    levelbar block.low:backdrop {
+      border-color: black; }
+  levelbar block.high, levelbar block:not(.empty) {
+    background-color: @levelbar_high; }
+    levelbar block.high:backdrop, levelbar block:not(.empty):backdrop {
+      border-color: black; }
+  levelbar block.full {
+    background-color: @levelbar_high; }
+    levelbar block.full:backdrop {
+      border-color: black; }
+  levelbar block.empty {
+    background-color: rgba(0, 0, 0, 0.24);
+    box-shadow: none; }
 
-levelbar block.low {
-  border-color: #f27835;
-  background-color: #f27835; }
 
-levelbar block.high {
-  border-color: @theme_selected_bg_color;
-  background-color: @theme_selected_bg_color; }
-
-levelbar block.full {
-  border-color: #73d216;
-  background-color: #73d216; }
-
-levelbar block.empty {
-  background-color: rgba(32, 32, 32, 0.2);
-  border-color: rgba(32, 32, 32, 0.2); }
 
 frame > border,
 .frame {
@@ -4131,8 +4181,11 @@ window.background.lightdm .lightdm-combo {
 @define-color yellow_text #FFFF00;
 @define-color white_text #FFFFFF;
 @define-color theme_bg_color_dark #D0D0D0;
-@define-color theme_bg_color #AAAAAA;  /* this is not used here, but without it, gnome-mines looks wierd */
+@define-color theme_bg_color #B9B9B9;  /* this is not used here, but without it, gnome-mines looks wierd */
 @define-color theme_selected_bg_color #c15b58;
 @define-color selected_bg_color #c15b58;
 @define-color theme_fg_color #202020;
 @define-color theme_fg_hover #000000;
+@define-color levelbar_low #FF0101;
+@define-color levelbar_high #01FF01;
+@define-color button_border_blk #000000;
