@@ -83,11 +83,11 @@ popover.background label.separator {
 
 assistant .sidebar {
   background-color: @gray_bg;
-  border-top: 1px solid #BDBDBD; }
+  border-top: 1px solid @button_border_blk; }
   assistant .sidebar:dir(ltr) {
-    border-right: 1px solid #BDBDBD; }
+    border-right: 1px solid @button_border_blk; }
   assistant .sidebar:dir(rtl) {
-    border-left: 1px solid #BDBDBD; }
+    border-left: 1px solid @button_border_blk; }
 
 assistant.csd .sidebar {
   border-top-style: none; }
@@ -251,7 +251,7 @@ button {
   padding: 5px 8px;
   color: @theme_fg_color;
   outline-color: rgba(32, 32, 32, 0.3);
-  border-color: #BDBDBD;
+  border-color: @button_border_blk;
   background-color: whitesmoke; }
   button separator {
     margin: 4px 1px; }
@@ -502,17 +502,17 @@ button {
 .inline-toolbar toolbutton > button {
   color: @theme_fg_color;
   outline-color: rgba(32, 32, 32, 0.3);
-  border-color: #BDBDBD;
+  border-color: @button_border_blk;
   background-color: whitesmoke; }
   .inline-toolbar toolbutton > button:hover {
     color: @theme_fg_hover;
     outline-color: rgba(32, 32, 32, 0.3);
-    border-color: #BDBDBD;
+    border-color: @button_border_blk;
     background-color: white; }
   .inline-toolbar toolbutton > button:active, .inline-toolbar toolbutton > button:checked {
     color: #FFFFFF;
     outline-color: rgba(255, 255, 255, 0.3);
-    border-color: #BDBDBD;
+    border-color: @button_border_blk;
     background-color: @theme_selected_bg_color; }
   .inline-toolbar toolbutton > button:disabled {
     color: rgba(32, 32, 32, 0.55);
@@ -818,7 +818,7 @@ toolbar, .inline-toolbar {
 .inline-toolbar {
   background-color: @gray_bg;   /* this changes the bottom of theme settings, + - reload etc icons bar */
   border-style: solid;
-  border-color: #BDBDBD;
+  border-color: @button_border_blk;
   border-width: 0 1px 1px;
   font-size: 16pt;
   padding: 3px;
@@ -827,13 +827,13 @@ toolbar, .inline-toolbar {
 searchbar {
   background-color: #F0F0F0;
   border-style: solid;
-  border-color: #BDBDBD;
+  border-color: @button_border_blk;
   border-width: 0 0 1px;
   padding: 3px; }
 
 actionbar {
   padding: 6px;
-  border-top: 1px solid #BDBDBD;
+  border-top: 1px solid @button_border_blk;
   background-color: #e8e8e8; }
 
 headerbar,
@@ -1404,7 +1404,7 @@ treeview.view {
     color: @theme_fg_color;
     background-color: #BDBDBD;
     border-radius: 3px;
-    border: 1px solid #BDBDBD; }
+    border: 1px solid @button_border_blk; }
     treeview.view.trough:selected, treeview.view.trough:selected:focus {
       color: #FFFFFF;
       background-color: rgba(0, 0, 0, 0.2);
@@ -1418,7 +1418,7 @@ treeview.view {
     background-image: none;
     border-style: none solid solid none;
     border-radius: 0;
-    border-color: #BDBDBD; }
+    border-color: @button_border_blk; }
     treeview.view header button:active, treeview.view header button:hover {
       background-color: whitesmoke; }
     treeview.view header button:active:hover {
@@ -1486,7 +1486,7 @@ menu,
   padding: 0;
   border-radius: 0;
   background-color:  shade(@gray_bg, 1.05);   /* not so dark */
-  border: 1px solid #BDBDBD; }
+  border: 1px solid @button_border_blk; }
 
   .csd menu, .csd
   .menu {
@@ -1641,7 +1641,7 @@ notebook {
   padding: 0; }
 
   notebook.frame {
-    border: 1px solid #BDBDBD; }
+    border: 1px solid @button_border_blk; }
 
     notebook.frame > header {
       margin: -1px; }
@@ -1798,7 +1798,7 @@ notebook {
       notebook > header > tabs > tab:hover:not(:checked) {
         color: rgba(32, 32, 32, 0.775);
         background-color: rgba(255, 255, 255, 0.5);
-        border-color: #BDBDBD; }
+        border-color: @button_border_blk; }
 
       notebook > header > tabs > tab:checked {
         color: @theme_fg_color;
@@ -1829,13 +1829,13 @@ scrollbar {
     -GtkScrollbar-has-backward-stepper: false;
     -GtkScrollbar-has-forward-stepper: false; }
   scrollbar.top {
-    border-bottom: 1px solid #BDBDBD; }
+    border-bottom: 1px solid @button_border_blk; }
   scrollbar.bottom {
-    border-top: 1px solid #BDBDBD; }
+    border-top: 1px solid @button_border_blk; }
   scrollbar.left {
-    border-right: 1px solid #BDBDBD; }
+    border-right: 1px solid @button_border_blk; }
   scrollbar.right {
-    border-left: 1px solid #BDBDBD; }
+    border-left: 1px solid @button_border_blk; }
   scrollbar button {
     border: none; }
   scrollbar slider {
@@ -2250,7 +2250,7 @@ scale {
     outline-offset: 2px;
     -gtk-outline-radius: 4.5px;
     border-radius: 2.5px;
-    background-color: #BDBDBD; }
+    background-color: @button_border_blk; }
     scale trough:disabled {
       background-color: rgba(189, 189, 189, 0.55); }
     .osd scale trough {
@@ -2344,7 +2344,7 @@ progressbar {
     infobar progressbar progress {
       background-color: #FFFFFF; }
   progressbar trough {
-    border: 1px solid #BDBDBD;
+    border: 1px solid @button_border_blk;
     border-radius: 3px;
     background-color: #FFFFFF; }
     row:selected progressbar trough,
@@ -2453,7 +2453,7 @@ frame > border,
   margin: 0;
   padding: 0;
   border-radius: 0;
-  border: 1px solid #BDBDBD; }
+  border: 1px solid @button_border_blk; }
 
 frame.flat > border,
 frame > border.flat,
@@ -2549,7 +2549,7 @@ separator {
 
 list {
   background-color: @gray_bg;   /* this changes at least the menu list in themes, saved colors list in Gcolor3 */
-  border-color: #BDBDBD; }
+  border-color: @button_border_blk; }
   list row {
     padding: 2px; }
 
@@ -2620,7 +2620,7 @@ expander arrow {
 
 calendar {
   color: @theme_fg_color;
-  border: 1px solid #BDBDBD;
+  border: 1px solid @button_border_blk;
   border-radius: 3px;
   padding: 2px; }
   calendar:selected {
@@ -2676,7 +2676,7 @@ calendar {
 
 filechooser #pathbarbox {
   background-color: #d9d9d9;
-  border-bottom: 1px solid #BDBDBD; }
+  border-bottom: 1px solid @button_border_blk; }
 
 filechooser .search-bar {
   background-color: #d9d9d9; }
@@ -2694,11 +2694,11 @@ filechooserbutton:drop(active) {
   stacksidebar.sidebar:dir(ltr) list,
   stacksidebar.sidebar.left list,
   stacksidebar.sidebar.left:dir(rtl) list, .sidebar:dir(ltr), .sidebar.left, .sidebar.left:dir(rtl) {
-    border-right: 1px solid #BDBDBD;
+    border-right: 1px solid @button_border_blk;
     border-left-style: none; }
   stacksidebar.sidebar:dir(rtl) list,
   stacksidebar.sidebar.right list, .sidebar:dir(rtl), .sidebar.right {
-    border-left: 1px solid #BDBDBD;
+    border-left: 1px solid @button_border_blk;
     border-right-style: none; }
   .sidebar list {
     background-color: @gray_bg; }
@@ -2947,12 +2947,12 @@ colorswatch#add-color-button {
   border-width: 1px;
   color: @theme_fg_color;
   outline-color: rgba(32, 32, 32, 0.3);
-  border-color: #BDBDBD;
+  border-color: @button_border_blk;
   background-color: whitesmoke; }
   colorswatch#add-color-button:hover {
     color: @theme_fg_hover;
     outline-color: rgba(32, 32, 32, 0.3);
-    border-color: #BDBDBD;
+    border-color: @button_border_blk;
     background-color: white; }
   colorswatch#add-color-button overlay {
     border-color: transparent;
@@ -2977,7 +2977,7 @@ colorchooser .popover.osd {
 .scale-popup button:hover {
   color: @theme_fg_hover;
   outline-color: rgba(32, 32, 32, 0.3);
-  border-color: #BDBDBD;
+  border-color: @button_border_blk;
   background-color: white; }
 
 .touch-selection,
@@ -3010,7 +3010,7 @@ button.circular-button,
   padding: 3px 6px 4px 6px;
   color: @theme_fg_color;
   background-color: #FFFFFF;
-  border: 1px solid #BDBDBD;
+  border: 1px solid @button_border_blk;
   border-radius: 2.5px;
   box-shadow: inset 0px -2px 0px rgba(0, 0, 0, 0.05); }
 
@@ -3239,7 +3239,7 @@ TerminalWindow .notebook tab .button {
   color: dimgray; }
   TerminalWindow .notebook tab .button:hover {
     color: @theme_fg_hover;
-    border-color: #BDBDBD;
+    border-color: @button_border_blk;
     background-color: whitesmoke; }
 
 TerminalWindow .notebook .active-page .button:hover, TerminalWindow .notebook .prelight-page .button:hover {
@@ -3330,7 +3330,7 @@ filechooser placessidebar.sidebar list {
       filechooser placessidebar.sidebar list row.sidebar-row:not(:selected) button.sidebar-button:active {
         color: #FFFFFF;
         outline-color: rgba(255, 255, 255, 0.3);
-        border-color: #BDBDBD;
+        border-color: @button_border_blk;
         background-color: @theme_selected_bg_color; }
 
       .nautilus-window placessidebar.sidebar list row.sidebar-row:not(:selected) button.sidebar-button:not(:hover):not(:active) > image,
@@ -3394,7 +3394,7 @@ NautilusQueryEditor .search-bar.toolbar {
     border-color: #cfcfcf; }
 
 NautilusListView .view, NautilusListView iconview {
-  border-bottom: 1px solid #BDBDBD; }
+  border-bottom: 1px solid @button_border_blk; }
 
 .nemo-window {
   /* This is to keep the separator next to the sidebar dark so we don't see a gap
@@ -3538,12 +3538,12 @@ NautilusListView .view, NautilusListView iconview {
       color: #FFFFFF; }
 
 .gedit-document-panel-dragged-row {
-  border: 1px solid #BDBDBD;
+  border: 1px solid @button_border_blk;
   background-color: #d7d7d7;
   color: @theme_fg_color; }
 
 .gedit-side-panel-paned statusbar {
-  border-top: 1px solid #BDBDBD;
+  border-top: 1px solid @button_border_blk;
   background-color: #F0F0F0; }
 
 .gedit-search-entry-occurrences-tag {
@@ -3563,7 +3563,7 @@ NautilusListView .view, NautilusListView iconview {
 .gedit-search-slider, .xed-window .xed-goto-line-box {
   background-color: whitesmoke;
   padding: 6px;
-  border-color: #BDBDBD;
+  border-color: @button_border_blk;
   border-radius: 0 0 2px 2px;
   border-width: 0 1px 1px 1px;
   border-style: solid; }
@@ -3599,11 +3599,11 @@ layouttab {
   background-color: #FFFFFF; }
 
 layout {
-  border: 1px solid #BDBDBD;
+  border: 1px solid @button_border_blk;
   -PnlDockBin-handle-size: 1; }
 
 eggsearchbar box.search-bar {
-  border-bottom: 1px solid #BDBDBD; }
+  border-bottom: 1px solid @button_border_blk; }
 
 pillbox {
   color: #FFFFFF;
@@ -3615,7 +3615,7 @@ pillbox {
 docktabstrip {
   padding: 0 6px;
   background-color: #F0F0F0;
-  border-bottom: 1px solid #BDBDBD; }
+  border-bottom: 1px solid @button_border_blk; }
   docktabstrip docktab {
     min-height: 28px;
     border: solid transparent;
@@ -3625,15 +3625,15 @@ docktabstrip {
     docktabstrip docktab:checked label, docktabstrip docktab:hover label {
       opacity: 1; }
     docktabstrip docktab:checked {
-      border-color: #BDBDBD;
+      border-color: @button_border_blk;
       background-color: #FFFFFF; }
 
 dockbin {
-  border: 1px solid #BDBDBD;
+  border: 1px solid @button_border_blk;
   -PnlDockBin-handle-size: 1; }
 
 dockpaned {
-  border: 1px solid #BDBDBD; }
+  border: 1px solid @button_border_blk; }
 
 dockoverlayedge {
   background-color: #F0F0F0; }
@@ -3665,8 +3665,8 @@ popover.popover-selector {
 
 entry.search.preferences-search {
   border: none;
-  border-right: 1px solid #BDBDBD;
-  border-bottom: 1px solid #BDBDBD;
+  border-right: 1px solid @button_border_blk;
+  border-bottom: 1px solid @button_border_blk;
   border-radius: 0; }
 
 preferences stacksidebar.sidebar list {
@@ -3677,7 +3677,7 @@ preferences stacksidebar.sidebar list separator {
 
 devhelppanel entry:focus,
 symboltreepanel entry:focus {
-  border-color: #BDBDBD; }
+  border-color: @button_border_blk; }
 
 button.run-arrow-button {
   min-width: 12px; }
@@ -3942,7 +3942,7 @@ SwitchboardCategoryView iconview:selected:focus {
 .cs-header {
   padding: 6px;
   background-color: #ebebeb;
-  border-bottom: 1px solid #BDBDBD; }
+  border-bottom: 1px solid @button_border_blk; }
 
 .xed-window .xed-panel.side notebook tab.top {
   padding: 8px 12px; }
@@ -3954,7 +3954,7 @@ SwitchboardCategoryView iconview:selected:focus {
   padding: 2px 4px; }
 
 .xed-window .xed-searchbar {
-  border: 0px solid #BDBDBD;
+  border: 0px solid @button_border_blk;
   border-top-width: 1px; }
 
 .xed-window statusbar widget border {
@@ -4031,17 +4031,17 @@ filechooser placessidebar.sidebar list scrollbar, .nemo-window .sidebar scrollba
 #content_frame button {
   color: @theme_fg_color;
   outline-color: rgba(32, 32, 32, 0.3);
-  border-color: #BDBDBD;
+  border-color: @button_border_blk;
   background-color: whitesmoke; }
   #content_frame button:hover {
     color: @theme_fg_hover;
     outline-color: rgba(32, 32, 32, 0.3);
-    border-color: #BDBDBD;
+    border-color: @button_border_blk;
     background-color: white; }
   #content_frame button:active, #content_frame button:checked {
     color: #FFFFFF;
     outline-color: rgba(255, 255, 255, 0.3);
-    border-color: #BDBDBD;
+    border-color: @button_border_blk;
     background-color: @theme_selected_bg_color; }
   #content_frame button:disabled {
     color: rgba(32, 32, 32, 0.55);
@@ -4147,7 +4147,7 @@ window.background.lightdm button.flat.option-button {
     border-color: rgba(189, 189, 189, 0.2);
     background-color: rgba(0, 0, 0, 0.5); }
   window.background.lightdm button.flat.option-button:active {
-    border-color: #BDBDBD;
+    border-color: @button_border_blk;
     background-color: @theme_selected_bg_color;
     color: #FFFFFF; }
 
