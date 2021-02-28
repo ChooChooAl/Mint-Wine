@@ -2396,7 +2396,7 @@ levelbar block:not(.empty):backdrop {
       border-color: black; }
 
 levelbar block.low {
-    background-color: @levelbar_low; }
+    background-color: @warning_color; }
 levelbar block.low:backdrop {
       border-color: black; }
 
@@ -2406,7 +2406,7 @@ levelbar block.high:backdrop {
       border-color: black; }
 
 levelbar block.full {
-    background-color: @levelbar_high; }
+    background-color: @success_color; }
 levelbar block.full:backdrop {
       border-color: black; }
 
@@ -4155,6 +4155,6 @@ window.background.lightdm .lightdm-combo {
 @define-color selected_bg_color #c15b58;
 @define-color theme_fg_color #202020;
 @define-color theme_fg_hover #000000;
-@define-color levelbar_low #FF0101;
-@define-color levelbar_high #01FF01;
 @define-color button_border_blk #000000;
+@define-color warning_color #FF0101;
+@define-color success_color #01FF01;
