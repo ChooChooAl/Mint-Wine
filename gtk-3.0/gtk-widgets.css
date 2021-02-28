@@ -966,61 +966,6 @@ infobor.error button:disabled label {
 /*************
  * level bar *
  *************/
-/*
-levelbar block {
-    min-width: 34px;
-    min-height: 3px;
-}
-
-levelbar.vertical block {
-    min-width: 3px;
-    min-height: 34px
-}
-
-levelbar trough {
-    border: 1px solid @border;
-    border-radius: 3px;
-    padding: 3px;
-    background-color: @theme_base_color;
-}
-
-levelbar.horizontal.discrete block {
-    margin: 0 1px;
-}
-
-levelbar.vertical.discrete block {
-    margin: 1px 0;
-}
-
-levelbar block {
-    border: 1px solid alpha(@theme_fg_color, 0.2);
-    border-radius: 2px;
-}
-
-levelbar block:not(.empty) {
-    border-color: @theme_selected_bg_color;
-    background-color: @theme_selected_bg_color;
-}
-
-levelbar block.low {
-    border-color: @warning_color;
-    background-color: @warning_color;
-}
-
-levelbar block.high {
-    border-color: @theme_selected_bg_color;
-    background-color: @theme_selected_bg_color;
-}
-
-levelbar block.full {
-    border-color: @success_color;
-    background-color: @success_color;
-}
-
-levelbar block.empty {
-    border-color: alpha(@theme_fg_color, 0.2);
-    background-color: transparent;
-}*/
 levelbar block {
   min-width: 32px;
   min-height: 6px; }

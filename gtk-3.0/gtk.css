@@ -2356,47 +2356,6 @@ progressbar {
 
 .osd .trough {
   background-color: white; }
-/*
-levelbar block {
-  min-width: 32px;
-  min-height: 1px; }
-
-levelbar.vertical block {
-  min-width: 1px;
-  min-height: 32px; }
-
-levelbar trough {
-  border: none;
-  padding: 3px;
-  border-radius: 3px;
-  background-color: @levelbar; }
-
-levelbar.horizontal.discrete block {
-  margin: 1px 1px; }
-
-levelbar.vertical.discrete block {
-  margin: 1px 1px; }
-
-levelbar block:not(.empty) {
-  border: 1px solid black;
-  background-color: @levelbar;
-  border-radius: 2px; }
-
-levelbar block.low {
-  border-color: black;
-  background-color: #800000; }
-
-levelbar block.high {
-  border-color: black;
-  background-color: @levelbar; }
-
-levelbar block.full {
-  border-color: black;
-  background-color: @levelbar; }
-
-levelbar block.empty {
-  background-color: rgba(32, 32, 32, 0.2);
-  border-color: black; } */
 /*************
  * Level Bar *
  *************/
