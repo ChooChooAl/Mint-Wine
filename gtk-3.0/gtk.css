@@ -2393,25 +2393,25 @@ levelbar block:backdrop {
 levelbar block:not(.empty) {
     background-color: @theme_bg_color_dark }
 levelbar block:not(.empty):backdrop {
-      border-color: black; }
+      border-color: @theme_bg_color_dark; }
 
 levelbar block.low {
     background-color: @warning_color; }
 levelbar block.low:backdrop {
-      border-color: black; }
+      border-color: @warning_color; }
 
 levelbar block.high {
     background-color: @theme_bg_color_dark; }
 levelbar block.high:backdrop {
-      border-color: black; }
+      border-color: @theme_bg_color_dark; }
 
 levelbar block.full {
     background-color: @success_color; }
 levelbar block.full:backdrop {
-      border-color: black; }
+      border-color: @success_color; }
 
 levelbar block.empty {
-    background-color: rgba(0, 0, 0, 0.24);
+    background-color: rgba(0, 0, 0, 0.3);
     box-shadow: none; }
 
 /*********
