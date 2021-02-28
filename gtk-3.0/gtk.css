@@ -2356,8 +2356,9 @@ progressbar {
 
 .osd .trough {
   background-color: white; }
+
 /*************
- * Level Bar *
+ * level bar *
  *************/
 levelbar block {
   min-width: 32px;
@@ -2373,11 +2374,10 @@ levelbar:backdrop {
 levelbar trough {
   padding: 2px;
   border-radius: 2px;
-  background-color: rgba(255, 255, 255, 0.8);
-/*  box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.1);*/ }
-  levelbar trough:backdrop {
-    background-color: rgba(255, 255, 255, 0.6);
-/*    box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.1);*/ }
+  background-color: rgba(255, 255, 255, 0.8); }
+
+levelbar trough:backdrop {
+    background-color: rgba(255, 255, 255, 0.6); }
 
 levelbar.horizontal.discrete block {
   margin: 0 1px; }
@@ -2387,26 +2387,36 @@ levelbar.vertical.discrete block {
 
 levelbar block {
   border-radius: 2px; }
-  levelbar block:backdrop {
+levelbar block:backdrop {
     box-shadow: none; }
-  levelbar block.low {
+
+levelbar block:not(.empty) {
+    background-color: @theme_bg_color_dark }
+levelbar block:not(.empty):backdrop {
+      border-color: black; }
+
+levelbar block.low {
     background-color: @levelbar_low; }
-    levelbar block.low:backdrop {
+levelbar block.low:backdrop {
       border-color: black; }
-  levelbar block.high, levelbar block:not(.empty) {
+
+levelbar block.high {
+    background-color: @theme_bg_color_dark; }
+levelbar block.high:backdrop {
+      border-color: black; }
+
+levelbar block.full {
     background-color: @levelbar_high; }
-    levelbar block.high:backdrop, levelbar block:not(.empty):backdrop {
+levelbar block.full:backdrop {
       border-color: black; }
-  levelbar block.full {
-    background-color: @levelbar_high; }
-    levelbar block.full:backdrop {
-      border-color: black; }
-  levelbar block.empty {
+
+levelbar block.empty {
     background-color: rgba(0, 0, 0, 0.24);
     box-shadow: none; }
 
-
-
+/*********
+ * frame *
+ *********/
 frame > border,
 .frame {
   margin: 0;
