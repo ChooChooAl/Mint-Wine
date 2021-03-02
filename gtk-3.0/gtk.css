@@ -4145,12 +4145,16 @@ window.background.lightdm .lightdm-combo {
   border-radius: 0;
   background-color: transparent; }
 
-@define-color nemo_bg #505050; /*#994D4D; #502020;*/
-@define-color gray_bg #E3E3E3;
+@define-color nemo_bg #606060; /*#994D4D; #502020;*/
+@define-color gray_bg #F8F8F8;  /* background for list buttons like settings->themes */
 @define-color yellow_text #FFFF00;
 @define-color white_text #FFFFFF;
 @define-color theme_bg_color_dark #D0D0D0;
-@define-color theme_bg_color #B9B9B9;  /* this is not used here, but without it, gnome-mines looks wierd */
+@define-color theme_bg_color #EDEDED;  /* not used here, it effects gnome-mines & other backgrounds
+ even right-clk context menus in Nemo.   So watch out using this color.
+ All if not most themes make gnome-mines buttons #babdb6 so this color has to contrast or else.
+ I tried a lot of mint-x/y, sweet-ambar, ultimate green & Adwaita.  Still same button color */
+
 @define-color theme_selected_bg_color #c15b58;
 @define-color selected_bg_color #c15b58;
 @define-color theme_fg_color #202020;
