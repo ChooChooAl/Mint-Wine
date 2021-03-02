@@ -4150,7 +4150,7 @@ window.background.lightdm .lightdm-combo {
 @define-color yellow_text #FFFF00;
 @define-color white_text #FFFFFF;
 @define-color theme_bg_color_dark #D0D0D0;
-@define-color theme_bg_color #EDEDED;  /* not used here, it effects gnome-mines & other backgrounds
+@define-color theme_bg_color #E0E0E0;  /* not used here, it effects gnome-mines & other backgrounds
  even right-clk context menus in Nemo.   So watch out using this color.
  All if not most themes make gnome-mines buttons #babdb6 so this color has to contrast or else.
  I tried a lot of mint-x/y, sweet-ambar, ultimate green & Adwaita.  Still same button color */
