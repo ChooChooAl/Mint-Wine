@@ -195,17 +195,17 @@ StScrollBar StButton#vhandle:active {
 	height: 22px; }
 
 .toggle-switch-us {
-	background-image: url("toggle-off-us.svg");
+	background-image: url("images/toggle-off-us.svg");
 	background-size: contain; }
 .toggle-switch-us:checked {
-	background-image: url("toggle-on-us.svg");
+	background-image: url("images/toggle-on-us.svg");
 	background-size: contain; }
 
 .toggle-switch-intl {
-	background-image: url("toggle-off-intl.svg");
+	background-image: url("images/toggle-off-intl.svg");
 	background-size: contain; }
 .toggle-switch-intl:checked {
-	background-image: url("toggle-on-intl.svg");
+	background-image: url("images/toggle-on-intl.svg");
 	background-size: contain; }
 
 .nm-menu-item-icons {
@@ -223,17 +223,17 @@ StScrollBar StButton#vhandle:active {
 	font-size: 20pt; }
 
 #panelLeft .applet-box:first-child {
-    background: url("start1.png");
+    background: url("images/start1.png");
     border-image: none;
 /*    background-position: center; */
     transition-duration: 300;
     width: 60px; }
 #panelLeft .applet-box:first-child:hover {
     transition-duration: 200;
-    background: url("start2.png");
+    background: url("images/start2.png");
     border-image: none; }
 #panelLeft .applet-box:first-child:active {
-    background: url("start3.png");
+    background: url("images/start3.png");
     border-image: none; }
 
 #panelLeft, #panelCenter, #panelRight {
@@ -287,8 +287,8 @@ StScrollBar StButton#vhandle:active {
 .panel-button:active,
 .panel-button:overview,
 .panel-button:focus {
-	border-image: url("panel-button-border.svg") 6 10 0 2;
-	background-image: url("panel-button-highlight-wide.png"); /* was svg */
+	border-image: url("images/panel-button-border.svg") 6 10 0 2;
+	background-image: url("images/panel-button-highlight-wide.png"); /* was svg */
 	color: #FFFFFF; }
 
 .panel-button:active > .system-status-icon,
@@ -331,7 +331,7 @@ StScrollBar StButton#vhandle:active {
 	border: 2px solid #868686; }
 
 .window-close {
-	background-image: url("close-window.svg");
+	background-image: url("images/close-window.svg");
 	background-size: 32px;
 	height: 32px;
 	width: 32px;
@@ -341,7 +341,7 @@ StScrollBar StButton#vhandle:active {
 	spacing: 7px; }
 
 .workspace-add-button {
-	background-image: url("add-workspace-button.svg");
+	background-image: url("images/add-workspace-button.svg");
 	background-color: rgba(0,0,0,0.5);
 	border-radius: 8px 0px 0px 8px;
 	border-right: 0px;
@@ -349,14 +349,14 @@ StScrollBar StButton#vhandle:active {
 	width: 50px; }
 
 .workspace-close-button {
-	background-image: url("close-window.svg");
+	background-image: url("images/close-window.svg");
 	background-size: 32px;
 	height: 32px;
 	width: 32px;
 	-cinnamon-close-overlap: 24px; }
 
 .window-close-area {
-	background-image: url("trash.svg");
+	background-image: url("images/trash.svg");
 	background-color: rgba(0,0,0,0.5);
 	border-bottom-width: 0px;
 	border-radius: 8px 8px 0px 0px;
@@ -396,8 +396,8 @@ StScrollBar StButton#vhandle:active {
 	/*text-shadow: black 0px 2px 2px; */ }
 
 #LookingGlassDialog .notebook-tab:selected {
-	border-image: url("panel-button-border.svg") 10 10 0 2;
-	background-image: url("panel-button-highlight-wide.svg");
+	border-image: url("images/panel-button-border.svg") 10 10 0 2;
+	background-image: url("images/panel-button-highlight-wide.svg");
 	color: #FFFFFF; }
 
 #LookingGlassDialog .lg-inspector-title {
@@ -529,7 +529,7 @@ StScrollBar StButton#vhandle:active {
 .calendar-change-month-forward:rtl {
 	width: 18px;
 	height: 12px;
-	background-image: url("calendar-arrow-left.svg"); }
+	background-image: url("images/calendar-arrow-left.svg"); }
 
 .calendar-change-month-back:hover,
 .calendar-change-month-forward:rtl:hover {
@@ -542,7 +542,7 @@ StScrollBar StButton#vhandle:active {
 .calendar-change-month-back:rtl {
 	width: 18px;
 	height: 12px;
-	background-image: url("calendar-arrow-right.svg");
+	background-image: url("images/calendar-arrow-right.svg");
 	border-radius: 4px; }
 
 .calendar-change-month-forward:hover,
@@ -707,7 +707,7 @@ height of the table to be ICON_SIZE + IMAGE_SIZE + spacing-rows = 24 + 125 + 10 
 .ripple-box {
 	width: 104px;
 	height: 104px;
-	background-image: url("corner-ripple.png");
+	background-image: url("images/corner-ripple.png");
 	background-size: contain; }
 
 .switcher-arrow {
@@ -1253,7 +1253,7 @@ height of the table to be ICON_SIZE + IMAGE_SIZE + spacing-rows = 24 + 125 + 10 
 	color: #FFFFFF; }
 
 .workspace-button:outlined {
-	background-image: url("calendar-today.svg");
+	background-image: url("images/calendar-today.svg");
 	color: #FFFFFF; }
 
 
@@ -1389,16 +1389,16 @@ height of the table to be ICON_SIZE + IMAGE_SIZE + spacing-rows = 24 + 125 + 10 
 .check-box StBin {
     width: 24px;
     height: 22px;
-    background-image: url("checkbox-off.svg"); }
+    background-image: url("images/checkbox-off.svg"); }
 
 .check-box:focus StBin {
-    background-image: url("checkbox-off-focused.svg"); }
+    background-image: url("images/checkbox-off-focused.svg"); }
 
 .check-box:checked StBin {
-    background-image: url("checkbox.svg"); }
+    background-image: url("images/checkbox.svg"); }
 
 .check-box:focus:checked StBin {
-    background-image: url("checkbox-focused.svg"); }
+    background-image: url("images/checkbox-focused.svg"); }
 
 .check-box StLabel { }
 
@@ -1409,11 +1409,11 @@ height of the table to be ICON_SIZE + IMAGE_SIZE + spacing-rows = 24 + 125 + 10 
 .radiobutton:focus StBin {
     width: 24px;
     height: 24px;
-    background-image: url("radiobutton-off.svg"); }
+    background-image: url("images/radiobutton-off.svg"); }
 
 .radiobutton:checked StBin,
 .radiobutton:focus:checked StBin {
-    background-image: url("radiobutton.svg"); }
+    background-image: url("images/radiobutton.svg"); }
 
 .radiobutton StLabel {
 	padding-top: 1px; }
