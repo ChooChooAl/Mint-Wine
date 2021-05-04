@@ -92,7 +92,7 @@ StScrollBar StButton#vhandle:active {
 .popup-menu {
 	background-color: #180000;
 	font-weight: normal;
-	font-size: 22pt; }
+	font-size: 20pt; }
 
 .menu {       /* this effects both main menu and panel right-click box */
     border: 3px solid #D40000;
@@ -101,7 +101,7 @@ StScrollBar StButton#vhandle:active {
     color: #FFFFFF;
     font-weight: normal;
     min-width: 250px;
-    font-size: 22pt; }
+    font-size: 20pt; }
 
 .popup-submenu-menu-item:open {   /* title line "troubleshooting"  once opened */
 	background-color: #FF0000;
