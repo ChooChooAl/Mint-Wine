@@ -812,7 +812,7 @@ toolbar, .inline-toolbar {
   box-shadow: none;
   border-width: 0 0 1px 0;
   border-style: solid;
-  font-size: 16pt;
+  font-size: 20pt;
   border-image: linear-gradient(to bottom, #2f2f2f, #101010) 1 0 1 0; }
 
 .inline-toolbar {
@@ -861,7 +861,6 @@ headerbar,
     padding-right: 12px; }
   headerbar .subtitle,
   .titlebar:not(headerbar) .subtitle {
-    /*font-size: smaller;*/
     padding-left: 12px;
     padding-right: 12px;
     color: @white_text; }
@@ -1110,7 +1109,7 @@ headerbar .linked:not(.vertical).path-bar > button {
   color: @white_text;
   outline-color: rgba(222, 214, 214, 0.3);
   border-color: rgba(16, 16, 16, 0.4);
-  font-size: 16pt;
+  font-size: 20pt;
   background-color: rgba(103, 103, 103, 0.4); }
   .primary-toolbar toolbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:hover, .primary-toolbar .inline-toolbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:hover, .primary-toolbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:hover, headerbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:hover,
   .primary-toolbar toolbar .linked:not(.vertical).path-bar > button:hover,
@@ -1448,7 +1447,7 @@ menubar,
   -GtkWidget-window-dragging: true;
   padding: 4px 0px;
   background-color: #800000;
-  font-size: 16pt;
+  font-size: 20pt;
   color: @yellow_text; }
 
  -GtkTreeView.view.dnd {
@@ -2326,7 +2325,6 @@ scale {
 
 progressbar {
   padding: 0;
-  /*font-size: smaller;*/
   color: rgba(32, 32, 32, 0.7); }
   progressbar.osd {
     min-width: 3px;
