@@ -503,32 +503,32 @@ StScrollBar StButton#vhandle:active {
 
 
 /* ===================================================================
-* Date applet
+* Date applet    calendar
 * ===================================================================*/
 
-.calendar {
-	padding: .4em 1.25em .8em 1.25em;
+.calendar {     /* spacing around the calendar proper to the border */
+	padding: .4em 1em .8em 1em;
 	spacing-rows: 1px;
 	spacing-columns: 1px; }
 
-.datemenu-date-label {
+.datemenu-date-label {  /* date at the top */
     padding: .4em 1.7em;
     font-weight: normal;
     text-align: center;
     color: #FFFFFF;
-    font-size: 24pt; }
+    font-size: 28pt; }
 
 .calendar-month-label {   /* Month and Year */
     color: #FFFFFF;
-    font-size: 16pt;
-    font-weight: bold;
-    padding-bottom: 4px;
+    font-size: 22pt;
+    font-weight: normal;
+    padding-bottom: 8px;
     padding-top: 2px; }
 
 .calendar-change-month-back,
 .calendar-change-month-forward:rtl {
-	width: 18px;
-	height: 12px;
+	width: 24px;
+	height: 24px;
 	background-image: url("images/calendar-arrow-left.svg"); }
 
 .calendar-change-month-back:hover,
@@ -540,10 +540,9 @@ StScrollBar StButton#vhandle:active {
 
 .calendar-change-month-forward,
 .calendar-change-month-back:rtl {
-	width: 18px;
-	height: 12px;
-	background-image: url("images/calendar-arrow-right.svg");
-	border-radius: 4px; }
+	width: 24px;
+	height: 24px;
+	background-image: url("images/calendar-arrow-right.svg");  }
 
 .calendar-change-month-forward:hover,
 .calendar-change-month-back:hover,
@@ -554,11 +553,11 @@ StScrollBar StButton#vhandle:active {
 .calendar-change-month-forward:active {
 	background-color: #6C0000; }
 
-.calendar-day-base {
-    font-size: 18pt;
+.calendar-day-base {  /* specs for a typical day square */
+    font-size: 22pt;
     text-align: center;
-    width: 2.5em;
-    height: 2em; }
+    width: 3em;
+    height: 1.8em; }
 
 .calendar-day-base:hover { }
 
@@ -568,16 +567,16 @@ StScrollBar StButton#vhandle:active {
     border: 1px solid #FFFFFF;
     color: #FFFF00; }
 
-.calendar-day-heading {
+.calendar-day-heading {   /* sun mon tue ...etc */
     color: #FFFF00;
-    padding-top: .4em;
+    padding-top: .8em;
     height: 1.7em;
-    font-size: 14pt; }
+    font-size: 20pt; }
 
 .calendar-week-number {
-    color: #AA0000;
-    padding-top: 18px;
-    font-weight: bold; }
+    color: rgba(255, 255, 0, 0.5);
+    padding-top: 0px;
+    font-style: italic; }
 
 /* Hack used in lieu of border-collapse - see calendar.js */
 .calendar-day {
@@ -595,7 +594,7 @@ StScrollBar StButton#vhandle:active {
 .calendar-work-day { }
 
 .calendar-nonwork-day {
-	color: #BBBBBB; }
+	color: #AAAAAA; }
 
 .calendar-today { }
 
