@@ -473,9 +473,10 @@ StScrollBar StButton#vhandle:active {
 .desklet-with-borders-and-header {
 	border-radius: 20px;
 	color: #FFFFFF;
-	border: 0px solid #DD0000;
-    background-color: #000; /*#172025;*/
-    border-bottom: 4px; }
+	border: 1px solid #DD0000;
+    background-color: #000;
+    border-right: 10px;
+    border-bottom: 10px; }
 
 
 .desklet-header {
