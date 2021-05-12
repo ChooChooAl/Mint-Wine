@@ -557,7 +557,7 @@ StScrollBar StButton#vhandle:active {
 .calendar-day-base {  /* specs for a typical day square */
     font-size: 22pt;
     text-align: center;
-    width: 3em;
+    width: 2.6em;
     height: 1.8em; }
 
 .calendar-day-base:hover { }
