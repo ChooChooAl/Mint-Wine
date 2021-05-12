@@ -609,7 +609,7 @@ StScrollBar StButton#vhandle:active {
 
 #notification {
 	font-size: 18pt;
-	border: 2px solid #FFFFFF;
+	border: 2px solid #D40000;
 	border-radius: 11px;
 	background: #220000;
 	padding: 12px 20px 12px 12px;
