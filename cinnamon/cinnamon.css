@@ -89,7 +89,7 @@ StScrollBar StButton#vhandle:active {
 	-arrow-base: 24px;
 	-arrow-rise: 18px; }
 
-.popup-menu {
+.popup-menu {                   /* like notifications */
 	background-color: #180000;
 	font-weight: normal;
 	font-size: 20pt; }
