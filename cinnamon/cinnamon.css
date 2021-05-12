@@ -143,7 +143,7 @@ StScrollBar StButton#vhandle:active {
 .popup-separator-menu-item {
 	/* This is the stripe, like on the sound applet, and other menus */
 	/* first exterior and then center */
-	-gradient-height: 2px;
+	-gradient-height: 3px;
 	-gradient-start: rgba(255,0,0,0.4);
 	-gradient-end: rgba(255,255,255,0.9);
 	-margin-horizontal: 0em;
