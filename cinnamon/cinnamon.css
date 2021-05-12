@@ -127,10 +127,10 @@ StScrollBar StButton#vhandle:active {
 	border-width: 0px; }
 
 .popup-menu-content {
-	padding: .15em .5em; }
+	padding: 0em .5em; }
 
 .popup-menu-item {
-	padding: .15em .5em;
+	padding: .1em .5em;
 	spacing: 1em; }
 
 .popup-menu-item:active { /* hover color */
