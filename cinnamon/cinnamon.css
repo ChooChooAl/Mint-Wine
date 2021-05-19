@@ -573,7 +573,7 @@ StScrollBar StButton#vhandle:active {
     color: #FFFF00;
     padding-top: .8em;
     height: 1.7em;
-    font-size: 20pt; }
+    font-size: 18pt; }
 
 .calendar-week-number {
     color: rgba(255, 255, 0, 0.5);
