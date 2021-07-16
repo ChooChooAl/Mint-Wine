@@ -1487,8 +1487,7 @@ menu,
   background-color:  shade(@gray_bg, 1.05);   /* not so dark */
   border: 1px solid @button_border_blk; }
 
-  .csd menu, .csd
-  .menu {
+  .csd menu, .csd .menu {
     padding: 4px 0px;
     border-radius: 2px;
     border: none; }
@@ -1496,16 +1495,14 @@ menu,
   menu separator,
   .csd menu separator,
   .menu separator,
-  .csd
-  .menu separator {
+  .csd .menu separator {
     margin: 2px 0;
     background-color: #AAAAAA; }    /* menu item that is not a selection, but is a header in a menu, see 'drawing' pgm, options */
 
   menu .separator:not(label),
   .csd menu .separator:not(label),
   .menu .separator:not(label),
-  .csd
-  .menu .separator:not(label) {
+  .csd .menu .separator:not(label) {
     color: #FFFFFF; }
 
   menu menuitem,
