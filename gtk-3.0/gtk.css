@@ -1484,7 +1484,7 @@ menu,
   margin: 1px 4px;
   padding: 0;
   border-radius: 0;
-  background-color:  shade(@gray_bg, 1.05);   /* not so dark */
+  background-color: @gray_bg;   /* not so dark */
   border: 1px solid @button_border_blk; }
 
   .csd menu, .csd .menu {
@@ -1497,7 +1497,7 @@ menu,
   .menu separator,
   .csd .menu separator {
     margin: 2px 0;
-    background-color: #AAAAAA; }    /* menu item that is not a selection, but is a header in a menu, see 'drawing' pgm, options */
+    background-color: #BBBBBB; } /* menu item that is not a selection, but a hdr in menu, see 'drawing' pgm, colors */
 
   menu .separator:not(label),
   .csd menu .separator:not(label),
