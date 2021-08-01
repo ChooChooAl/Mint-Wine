@@ -92,8 +92,8 @@ StScrollBar StButton#vhandle:active {
 .popup-menu {                   /* like notifications */
 	background-color: #180000;
 	font-weight: normal;
-    min-width: 150px;
-	font-size: 20pt; }
+    min-width: 250px;
+	font-size: 18pt; }
 
 .menu {       /* this effects both main menu and panel right-click box */
     border: 3px solid #D40000;
@@ -102,7 +102,7 @@ StScrollBar StButton#vhandle:active {
     color: #FFFFFF;
     font-weight: normal;
     min-width: 250px;
-    font-size: 20pt; }
+    font-size: 18pt; }
 
 .popup-submenu-menu-item:open {   /* title line "troubleshooting"  once opened */
 	background-color: #FF0000;
@@ -221,7 +221,7 @@ StScrollBar StButton#vhandle:active {
 	background-color: #180000;
 	font-weight: normal;
 	height: 40px; 		/* height of overall panel (if not overridden) */
-	font-size: 20pt; }
+	font-size: 18pt; }
 
 #panelLeft .applet-box:first-child {
     background: url("images/start1.png");
@@ -274,7 +274,7 @@ StScrollBar StButton#vhandle:active {
 	-natural-hpadding: 5px;
 	-minimum-hpadding: 5px;
 	font-weight: bold;
-	font-size: 21pt;
+	font-size: 18pt;
 	color: #FFFFFF;
 	transition-duration: 100; }
 
@@ -518,11 +518,11 @@ StScrollBar StButton#vhandle:active {
     font-weight: normal;
     text-align: center;
     color: #FFFFFF;
-    font-size: 28pt; }
+    font-size: 20pt; }
 
 .calendar-month-label {   /* Month and Year */
     color: #FFFFFF;
-    font-size: 22pt;
+    font-size: 18pt;
     font-weight: normal;
     padding-bottom: 8px;
     padding-top: 2px; }
@@ -556,7 +556,7 @@ StScrollBar StButton#vhandle:active {
 	background-color: #6C0000; }
 
 .calendar-day-base {  /* specs for a typical day square */
-    font-size: 22pt;
+    font-size: 18pt;
     text-align: center;
     width: 2.6em;
     height: 1.8em; }
@@ -1329,7 +1329,7 @@ height of the table to be ICON_SIZE + IMAGE_SIZE + spacing-rows = 24 + 125 + 10 
 
 .applet-label {		/* size of clock and menu buttons in the panel */
 	text-align: center;
-	font-size: 21pt; }
+	font-size: 18pt; }
 
 .applet-icon { 		/* things like camera, batter, sound, sticky notes */
 	color: #FFFFFF;
