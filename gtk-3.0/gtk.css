@@ -3374,10 +3374,10 @@ NautilusListView .view, NautilusListView iconview {
   .nemo-window .nemo-inactive-pane .view, .nemo-window .nemo-inactive-pane iconview {
     background-color: #101010; }  /* 2nd split screen (F3), slightly darker */
 
-  .nemo-window .places-treeview {
-    -NemoPlacesTreeView-disk-full-bg-color: #C3C3C3;
-    -NemoPlacesTreeView-disk-full-fg-color: yellow;
-    -NemoPlacesTreeView-disk-full-bar-width: 3px;
+  .nemo-window .places-treeview {  /* shows amount of disk space used in nemo sidebar */
+    -NemoPlacesTreeView-disk-full-bg-color: #FFFFFF;
+    -NemoPlacesTreeView-disk-full-fg-color: @selected_bg_color;
+    -NemoPlacesTreeView-disk-full-bar-width: 5px;
     -GtkTreeView-vertical-separator: 0; }
 
     .nemo-window .places-treeview .view.cell:hover, .nemo-window .places-treeview iconview.cell:hover {
