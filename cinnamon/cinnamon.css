@@ -102,7 +102,8 @@ StScrollBar StButton#vhandle:active {
     color: #FFFFFF;
     font-weight: normal;
     min-width: 250px;
-    font-size: 18pt; }
+    font-size: 18pt;
+    padding: 10px 0px; }
 
 .popup-submenu-menu-item:open {   /* title line "troubleshooting"  once opened */
 	background-color: #FF0000;
