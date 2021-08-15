@@ -812,7 +812,7 @@ toolbar, .inline-toolbar {
   box-shadow: none;
   border-width: 0 0 1px 0;
   border-style: solid;
-  font-size: 20pt;
+  font-size: 18pt;
   border-image: linear-gradient(to bottom, #2f2f2f, #101010) 1 0 1 0; }
 
 .inline-toolbar {
@@ -1105,11 +1105,11 @@ headerbar .linked:not(.vertical):not(.path-bar) > button:not(:checked):not(:acti
 .primary-toolbar toolbar .linked:not(.vertical).path-bar > button,
 .primary-toolbar .inline-toolbar .linked:not(.vertical).path-bar > button,
 .primary-toolbar .linked:not(.vertical).path-bar > button,
-headerbar .linked:not(.vertical).path-bar > button {
+headerbar .linked:not(.vertical).path-bar > button {    /* buttons in things like settings-> themes */
   color: @white_text;
   outline-color: rgba(222, 214, 214, 0.3);
   border-color: rgba(16, 16, 16, 0.4);
-  font-size: 20pt;
+  font-size: 16pt;
   background-color: rgba(103, 103, 103, 0.4); }
   .primary-toolbar toolbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:hover, .primary-toolbar .inline-toolbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:hover, .primary-toolbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:hover, headerbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:hover,
   .primary-toolbar toolbar .linked:not(.vertical).path-bar > button:hover,
@@ -1447,7 +1447,7 @@ menubar,
   -GtkWidget-window-dragging: true;
   padding: 4px 0px;
   background-color: #800000;
-  font-size: 20pt;
+  font-size: 18pt;
   color: @yellow_text; }
 
  -GtkTreeView.view.dnd {
