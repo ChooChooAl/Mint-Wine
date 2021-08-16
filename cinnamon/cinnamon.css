@@ -519,13 +519,13 @@ StScrollBar StButton#vhandle:active {
     font-weight: normal;
     text-align: center;
     color: #FFFFFF;
-    font-size: 20pt; }
+    font-size: 22pt; }
 
 .calendar-month-label {   /* Month and Year */
     color: #FFFFFF;
     font-size: 18pt;
     font-weight: normal;
-    padding-bottom: 8px;
+    padding-bottom: 0px;
     padding-top: 2px; }
 
 .calendar-change-month-back,
@@ -533,13 +533,6 @@ StScrollBar StButton#vhandle:active {
 	width: 24px;
 	height: 24px;
 	background-image: url("images/calendar-arrow-left.svg"); }
-
-.calendar-change-month-back:hover,
-.calendar-change-month-forward:rtl:hover {
-	background-color: #6C0000; }
-
-.calendar-change-month-back:active {
-	background-color: #800000; }
 
 .calendar-change-month-forward,
 .calendar-change-month-back:rtl {
@@ -549,12 +542,13 @@ StScrollBar StButton#vhandle:active {
 
 .calendar-change-month-forward:hover,
 .calendar-change-month-back:hover,
-.calendar-change-month-back:rtl:hover {
+.calendar-change-month-back:rtl:hover,
+.calendar-change-month-forward:rtl:hover {
 	background-color: #444444 }
 
-.calendar-change-month-back:active,
-.calendar-change-month-forward:active {
-	background-color: #6C0000; }
+.calendar-change-month-forward:active,
+.calendar-change-month-back:active {
+	background-color: #800000; }
 
 .calendar-day-base {  /* specs for a typical day square */
     font-size: 18pt;
