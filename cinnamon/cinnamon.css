@@ -103,7 +103,7 @@ StScrollBar StButton#vhandle:active {
     font-weight: normal;
     min-width: 250px;
     font-size: 18pt;
-    padding: 10px 0px; }
+    padding: 5px 5px; }
 
 .popup-submenu-menu-item:open {   /* title line "troubleshooting"  once opened */
 	background-color: #FF0000;
@@ -149,8 +149,8 @@ StScrollBar StButton#vhandle:active {
 	-gradient-start: rgba(255,0,0,0.4);
 	-gradient-end: rgba(255,255,255,0.9);
 	-margin-horizontal: 0em;
-    margin-top: 8px;
-    margin-bottom: 8px;
+    margin-top: 5px;
+    margin-bottom: 5px;
 	height: 3px; }
 
 .popup-combo-menu {             /* research shows that this is not used. */
