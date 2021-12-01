@@ -1262,12 +1262,12 @@ height of the table to be ICON_SIZE + IMAGE_SIZE + spacing-rows = 24 + 125 + 10 
 
 /* margin between pinned apps and show desktop */
 .panel-launchers {
-    padding-left: 5px;
+    padding-left: 15px;
     spacing: 2px; }
 
 /* margin between each pinned app in the pinned apps group. */
 .panel-launchers .launcher {
-    padding-right: 6px;
+    padding-right: 10px;
     transition-duration: 200; }
 
 /* spacing betwen apps pinned to panel */
