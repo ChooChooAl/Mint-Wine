@@ -947,8 +947,7 @@ height of the table to be ICON_SIZE + IMAGE_SIZE + spacing-rows = 24 + 125 + 10 
 * ===================================================================*/
 
 .menu-applications-outer-box {
-    margin-top: 15px;
-    min-height: 745px;}   /* I just prefer not to scroll 11 items on a menu so I enlarge it artificially here */
+    margin-top: 15px; }
 
 .menu-favorites-box {  /* this defines the rectangle of favorite apps on side */
     padding: 5px;
