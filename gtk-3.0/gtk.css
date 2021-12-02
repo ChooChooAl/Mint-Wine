@@ -1410,7 +1410,7 @@ treeview.view {
       border-radius: 3px;
       border-width: 0; }
   treeview.view header button { /* name size date - labels in nemo list view */
-    padding: 3px 6px;
+    padding: 3px 16px;
     font-weight: normal;
     color: #000000;
     background-color: #EDEDED;
