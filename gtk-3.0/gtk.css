@@ -1482,7 +1482,7 @@ menubar,
 menu,
 .menu {
   margin: 1px 4px;
-  padding: 0;
+  padding: 0px;
   border-radius: 0;
   background-color: @gray_bg;   /* not so dark */
   border: 1px solid @button_border_blk; }
