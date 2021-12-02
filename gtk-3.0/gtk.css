@@ -816,7 +816,7 @@ toolbar, .inline-toolbar {
   border-image: linear-gradient(to bottom, #2F2F2F, #101010) 1 0 1 0; }
 
 .inline-toolbar {
-  background-color: @gray_bg;   /* this changes the bottom of theme settings, + - reload etc icons bar */
+  background-color: @gray_bg;   
   border-style: solid;
   border-color: @button_border_blk;
   border-width: 0 1px 1px;
