@@ -1509,7 +1509,8 @@ menu,
   .menu menuitem {
     min-height: 16px;
     min-width: 40px;
-    padding: 2px; }        /* scrunch up menus, needs to be 2 for Libreoffice menu to fit page height */
+    padding: 2px 18px; }        /* scrunch up menus, needs to be 2 for Libreoffice menu to fit page height */
+                                /* 18px so items are not against the edge */
 
     menu menuitem:hover,
     .menu menuitem:hover {
