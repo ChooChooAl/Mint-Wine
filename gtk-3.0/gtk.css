@@ -848,7 +848,7 @@ headerbar,
   background-color: #2F2F2F;
   box-shadow: inset 0 1px #373737; }
   .csd headerbar, .csd .titlebar:not(headerbar) {
-    background-color: #2F2F2F;
+    background-color: #800000;   /* tetris */
     border-color: #252525; }
   headerbar:backdrop,
   .titlebar:backdrop:not(headerbar) {
@@ -856,11 +856,12 @@ headerbar,
     box-shadow: none; }
   headerbar .title,
   .titlebar:not(headerbar) .title {
-    font-weight: bold;
+    font-weight: bold;  /* title for windows like mines, tetravex, and font display */
     padding-left: 12px;
     padding-right: 12px; }
   headerbar .subtitle,
   .titlebar:not(headerbar) .subtitle {
+    font-style: italic;     /* subtitle in window - font display.  Arial is in bold, and 'regular' on 2nd line is in italics */
     padding-left: 12px;
     padding-right: 12px;
     color: @white_text; }
@@ -3127,8 +3128,7 @@ filechooser placessidebar.sidebar list row.sidebar-row:active:hover,
 /*  Separated here so the color can be changed without other items like tabs. */
 treeview.view:selected, treeview.view:selected:focus,
 .nemo-window .view:selected, .nemo-window .view:selected:focus { 
-    background-color: #E8A4A2; }  /* this shades the icons  (folders/files) in nemo */
-                /* E88E8B is a bit lighter wine color, goes with black text below */
+    background-color: #E88E8B; }  /* this shades the icons  (folders/files) in nemo */
 treeview.view:selected,  treeview.view:selected:focus,
 .nemo-window .view:selected, .nemo-window .view:selected:focus { 
         color: black; }   /* this is the text for icon-view */
