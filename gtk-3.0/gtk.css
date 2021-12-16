@@ -816,7 +816,7 @@ toolbar, .inline-toolbar {
   border-image: linear-gradient(to bottom, #2F2F2F, #101010) 1 0 1 0; }
 
 .inline-toolbar {
-  background-color: @gray_bg;   
+  background-color: @gray_bg;
   border-style: solid;
   border-color: @button_border_blk;
   border-width: 0 1px 1px;
@@ -3104,7 +3104,7 @@ textview text selection, flowbox flowboxchild:selected, entry selection:focus,
 entry selection, menuitem.button.flat:active, menuitem.button.flat:active arrow,
 menuitem.button.flat:selected, menuitem.button.flat:selected arrow,
 modelbutton.flat:active, modelbutton.flat:active arrow, modelbutton.flat:selected,
-modelbutton.flat:selected arrow, 
+modelbutton.flat:selected arrow,
 row:selected, .nautilus-window placessidebar.sidebar list row.sidebar-row.has-open-popup:selected,
 .nautilus-window placessidebar.sidebar list row.sidebar-row:selected,
 .nautilus-window placessidebar.sidebar list row.sidebar-row:selected:hover,
@@ -3123,23 +3123,23 @@ filechooser placessidebar.sidebar list row.sidebar-row:active:hover,
 .caja-navigation-window iconview .cell:selected,
 .caja-navigation-window .view .cell:selected:focus,
 .caja-navigation-window iconview .cell:selected:focus {
-  background-color: #C15B58; } 
+  background-color: #C15B58; }
 
 /*  Separated here so the color can be changed without other items like tabs. */
 treeview.view:selected, treeview.view:selected:focus,
-.nemo-window .view:selected, .nemo-window .view:selected:focus { 
+.nemo-window .view:selected, .nemo-window .view:selected:focus {
     background-color: #E88E8B; }  /* this shades the icons  (folders/files) in nemo */
 treeview.view:selected,  treeview.view:selected:focus,
-.nemo-window .view:selected, .nemo-window .view:selected:focus { 
+.nemo-window .view:selected, .nemo-window .view:selected:focus {
         color: black; }   /* this is the text for icon-view */
 
   .view:selected, .view:selected:focus,
-  .view text:selected, .view text selection:focus, .view text selection, 
+  .view text:selected, .view text selection:focus, .view text selection,
   textview text:selected, iconview text selection:focus, iconview text selection,
   textview text selection:focus, textview text selection, flowbox flowboxchild:selected,
   entry selection:focus, entry selection, menuitem.button.flat:active, menuitem.button.flat:active arrow,
   menuitem.button.flat:selected, menuitem.button.flat:selected arrow,
-  modelbutton.flat:active, modelbutton.flat:active arrow, 
+  modelbutton.flat:active, modelbutton.flat:active arrow,
   modelbutton.flat:selected, modelbutton.flat:selected arrow,
   row:selected, .nautilus-window placessidebar.sidebar list row.sidebar-row.has-open-popup:selected,
   .nautilus-window placessidebar.sidebar list row.sidebar-row:selected,
@@ -4203,8 +4203,8 @@ window.background.lightdm .lightdm-combo {
  All if not most themes make gnome-mines buttons #BABDB6 so this color has to contrast or else.
  I tried a lot of mint-x/y, sweet-ambar, ultimate green & Adwaita.  Still same button color in mines. */
 
-@define-color theme_selected_bg_color #C15B58;  
-@define-color selected_bg_color @theme_selected_bg_color; 
+@define-color theme_selected_bg_color #C15B58;
+@define-color selected_bg_color @theme_selected_bg_color;
 @define-color theme_fg_color #202020;
 @define-color theme_fg_hover #000000;
 @define-color button_border_blk #000000;
