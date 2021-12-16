@@ -3129,7 +3129,7 @@ filechooser placessidebar.sidebar list row.sidebar-row:active:hover,
 treeview.view:selected, treeview.view:selected:focus,
 .nemo-window .view:selected, .nemo-window .view:selected:focus {
     background-color: #E88E8B; }  /* this shades the icons  (folders/files) in nemo */
-treeview.view:selected,  treeview.view:selected:focus,
+treeview.view:selected,  treeview.view:selected:focus, treeview.view:disabled:selected,
 .nemo-window .view:selected, .nemo-window .view:selected:focus {
         color: black; }   /* this is the text for icon-view */
 
