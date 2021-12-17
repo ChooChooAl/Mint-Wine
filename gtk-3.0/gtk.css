@@ -3149,10 +3149,10 @@ filechooser placessidebar.sidebar list row.sidebar-row:active:hover,
 /*  Separated here so the color can be changed without other items like tabs. */
 treeview.view:selected, treeview.view:selected:focus,
 .nemo-window .view:selected, .nemo-window .view:selected:focus {
-    background-color: #E88E8B; }  /* this shades the icons  (folders/files) in nemo */
+    background-color: #C15B58; }  /* this shades the icons  (folders/files) in nemo */
 treeview.view:selected,  treeview.view:selected:focus, treeview.view:disabled:selected,
 .nemo-window .view:selected, .nemo-window .view:selected:focus {
-        color: black; }   /* this is the text for icon-view */
+        color: white; }   /* this is the text for icon-view */
 
   .view:selected, .view:selected:focus,
   .view text:selected, .view text selection:focus, .view text selection,
