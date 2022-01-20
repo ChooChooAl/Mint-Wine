@@ -1448,7 +1448,7 @@ menubar,
   -GtkWidget-window-dragging: true;
   padding: 4px 0px;
   background-color: #800000;
-  font-size: 18pt;
+  font-size: 20pt;
   color: @yellow_text; }
 
  -GtkTreeView.view.dnd {
@@ -3470,9 +3470,9 @@ NautilusListView .view, NautilusListView iconview {
 
     .nemo-window .sidebar .view, .nemo-window .sidebar iconview, .nemo-window .sidebar row {
       background-color: transparent;
-      font-size: 16pt;
+      font-size: 18pt;
       color: #FFFFFF;
-      -GtkTreeView-vertical-separator: -2px;  /* closes up the spacing on the sidebar in Nemo */
+      -GtkTreeView-vertical-separator: -3px;  /* closes up the spacing on the sidebar in Nemo */
         }
 
       .nemo-window .sidebar .view.cell:selected, .nemo-window .sidebar iconview.cell:selected, .nemo-window .sidebar row.cell:selected {
