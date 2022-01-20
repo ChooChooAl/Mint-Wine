@@ -4120,7 +4120,7 @@ filechooser placessidebar.sidebar list scrollbar, .nemo-window .sidebar scrollba
 
 #login_window #user_combobox {
   color: @theme_fg_color;
-  font-size: 17px; }
+  font-size: 17pt; }
   #login_window #user_combobox menu {
     font-weight: normal; }
 
