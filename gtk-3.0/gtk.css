@@ -993,25 +993,36 @@ window.csd > .titlebar:not(headerbar):backdrop {
   .primary-toolbar:not(.libreoffice-toolbar) separator:backdrop {
     opacity: 0.6; }
 
-.primary-toolbar toolbar entry, .primary-toolbar .inline-toolbar entry, .primary-toolbar entry, headerbar entry {
+.primary-toolbar toolbar entry, .primary-toolbar .inline-toolbar entry,
+.primary-toolbar entry, headerbar entry {
   color: @white_text;
   border-color: rgba(16, 16, 16, 0.4);
   background-color: rgba(103, 103, 103, 0.4); }
-  .primary-toolbar toolbar entry image, .primary-toolbar .inline-toolbar entry image, .primary-toolbar entry image, headerbar entry image, .primary-toolbar toolbar entry image:hover, .primary-toolbar .inline-toolbar entry image:hover, .primary-toolbar entry image:hover, headerbar entry image:hover {
+
+  .primary-toolbar toolbar entry image, .primary-toolbar .inline-toolbar entry image,
+  .primary-toolbar entry image, headerbar entry image, .primary-toolbar toolbar entry image:hover,
+  .primary-toolbar .inline-toolbar entry image:hover, .primary-toolbar entry image:hover,
+  headerbar entry image:hover {
     color: inherit; }
-  .primary-toolbar toolbar entry:backdrop, .primary-toolbar .inline-toolbar entry:backdrop, .primary-toolbar entry:backdrop, headerbar entry:backdrop {
+
+  .primary-toolbar toolbar entry:backdrop, .primary-toolbar .inline-toolbar entry:backdrop,
+  .primary-toolbar entry:backdrop, headerbar entry:backdrop {
     opacity: 0.85; }
-  .primary-toolbar toolbar entry:focus, .primary-toolbar .inline-toolbar entry:focus, .primary-toolbar entry:focus, headerbar entry:focus {
+  .primary-toolbar toolbar entry:focus, .primary-toolbar .inline-toolbar entry:focus,
+  .primary-toolbar entry:focus, headerbar entry:focus {
     color: @white_text;
     border-color: #FFFF00; /*@theme_selected_bg_color;    This is nemo directory display as text not buttons */
     background-color: rgba(103, 103, 103, 0.4);
     background-clip: padding-box; }
-    .primary-toolbar toolbar entry:focus image, .primary-toolbar .inline-toolbar entry:focus image, .primary-toolbar entry:focus image, headerbar entry:focus image {
+    .primary-toolbar toolbar entry:focus image, .primary-toolbar .inline-toolbar entry:focus image,
+    .primary-toolbar entry:focus image, headerbar entry:focus image {
       color: rgba(222, 214, 214, 0.85); }
-  .primary-toolbar toolbar entry:disabled, .primary-toolbar .inline-toolbar entry:disabled, .primary-toolbar entry:disabled, headerbar entry:disabled {
+  .primary-toolbar toolbar entry:disabled, .primary-toolbar .inline-toolbar entry:disabled,
+  .primary-toolbar entry:disabled, headerbar entry:disabled {
     color: rgba(222, 214, 214, 0.55);
     background-color: rgba(103, 103, 103, 0.25); }
-  .primary-toolbar toolbar entry selection:focus, .primary-toolbar .inline-toolbar entry selection:focus, .primary-toolbar entry selection:focus, headerbar entry selection:focus {
+  .primary-toolbar toolbar entry selection:focus, .primary-toolbar .inline-toolbar entry selection:focus,
+  .primary-toolbar entry selection:focus, headerbar entry selection:focus {
     background-color: @theme_selected_bg_color;
     color: @white_text; }
   .primary-toolbar toolbar entry progress, .primary-toolbar .inline-toolbar entry progress, .primary-toolbar entry progress, headerbar entry progress {
