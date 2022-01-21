@@ -1504,12 +1504,14 @@ menu,
     border-radius: 2px;
     border: none; }
 
-  menu separator,
-  .csd menu separator,
-  .menu separator,
-  .csd .menu separator {
+/* menu item that is not a selection, but a hdr in menu, see 'drawing' pgm, colors */
+/* right click menus, dividers.   Bad programming in that same thing does 2 functions.
+    Watch color: selection may need adjustment for some themes. */
+  menu separator, .csd menu separator,
+  .menu separator, .csd .menu separator {
     margin: 2px 0;
-    background-color: #BBBBBB; } /* menu item that is not a selection, but a hdr in menu, see 'drawing' pgm, colors */
+    background-color: #C40000;
+    color: #FFFFFF; }
 
   menu .separator:not(label),
   .csd menu .separator:not(label),
@@ -4229,7 +4231,7 @@ window.background.lightdm .lightdm-combo {
 @define-color yellow_text #FFFF00;
 @define-color white_text #FFFFFF;
 @define-color theme_bg_color_dark #D0D0D0;
-@define-color theme_bg_color #afaaaa; /*#AFAAAA;  #EEEEEE;
+@define-color theme_bg_color #CCC5C5; /*#AFAAAA;  #EEEEEE;
     #FFCDCC is an interesting light red/wine that kinda works.
     This is not used in this file but it effects gnome-mines & other backgrounds
     even right-clk context menus in Nemo.   So watch out changing this color.
