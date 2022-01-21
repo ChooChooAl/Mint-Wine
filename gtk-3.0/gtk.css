@@ -1062,7 +1062,7 @@ window.csd > .titlebar:not(headerbar):backdrop {
     color: @yellow_text;
     outline-color: rgba(222, 214, 214, 0.3);
     border-color: white;
-    background-color: rgba(103, 103, 103, 0.4); }  /* pluma toolbar hight hover */
+    background-color: rgba(103, 103, 103, 0.4); }  /* pluma toolbar hover */
   .primary-toolbar toolbar button:active, .primary-toolbar .inline-toolbar button:active, .primary-toolbar button:active, headerbar button:active, .primary-toolbar toolbar button:checked, .primary-toolbar .inline-toolbar button:checked, .primary-toolbar button:checked, headerbar button:checked {
     color: #FFFFFF;
     outline-color: rgba(255, 255, 255, 0.3);
@@ -1788,7 +1788,7 @@ notebook {
         color: rgba(32, 32, 32, 0.25); }
 
     notebook > header.top > tabs > tab:hover:not(:checked) {
-      background-color: rgba( 193,91,88,.3);   /*alk added */
+      background-color: rgba(193, 91, 88, 0.3);   /*alk added */
       box-shadow: inset 0 -1px #BDBDBD; }
 
     notebook > header.bottom > tabs > tab:hover:not(:checked) {
