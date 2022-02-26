@@ -516,11 +516,18 @@ StScrollBar StButton#vhandle:active {
 	spacing-rows: 1px;
 	spacing-columns: 1px; }
 
-.datemenu-date-label {  /* date at the top */
+.calendar-today-day-label { /* new for 20.3, day at the top */
+  font-size: 1.75em;
+  color: pink;
+  font-weight: bold;
+  text-align: center;
+  padding-bottom: .1em; }
+
+.calendar-today-date-label {  /* new for 20.3, date at the top */
     padding: .4em 1.7em;
     font-weight: normal;
     text-align: center;
-    color: #FFFFFF;
+    color: #FFFF00;
     font-size: 22pt; }
 
 .calendar-month-label {   /* Month and Year */
@@ -560,11 +567,10 @@ StScrollBar StButton#vhandle:active {
 
 .calendar-day-base:hover { }
 
-.calendar-day-base:active {
-    font-weight: bold;
-    background-color: #480000;
-    border: 1px solid #FFFFFF;
-    color: #FFFF00; }
+.calendar-today {
+    font-weight: normal;
+    background-color: #740000;
+    color: #FFFFFF; }
 
 .calendar-day-heading {   /* sun mon tue ...etc */
     color: #FFFF00;
