@@ -98,8 +98,8 @@ StScrollBar StButton#vhandle:active {
 .menu {       /* this effects both main menu and panel right-click box */
     border: 3px solid #D40000;
     border-radius: 14px;
-    background-color: #1e0000;
-    background: url("images/red-felt-texture.jpg");
+    background-color: #200000;
+    background: url("images/bg-felt-texture.jpg");
     background-repeat: repeat;
     color: #FFFFFF;
     font-weight: normal;
