@@ -3470,7 +3470,7 @@ NautilusListView .view, NautilusListView iconview {
       color: #FFFFFF;
       background-color: @theme_selected_bg_color; }
 
- /* alk hover on sidebar folders */
+ /* hover on sidebar folders */
   .nemo-window .nemo-places-sidebar.frame {
     border-width: 0; }
 
@@ -4232,11 +4232,9 @@ window.background.lightdm .lightdm-combo {
 @define-color white_text #FFFFFF;
 @define-color theme_bg_color_dark #D0D0D0;
 @define-color theme_bg_color #E5D5C5; 
-/*  #FFCDCC is an interesting light red/wine that kinda works.
-    This is not used in this file but it effects gnome-mines & other backgrounds
-    even right-clk context menus in Nemo.   So watch out changing this color.
-    All if not most themes make gnome-mines buttons #BABDB6 so this color has to contrast or else.
-    I tried a lot of mint-x/y, sweet-ambar, ultimate green & Adwaita.  Still same button color in mines. */
+/*  This is not used in this file but it effects gnome-mines & other backgrounds.
+    So watch out changing this color.
+    All, if not all, themes make gnome-mines buttons #BABDB6 so this color has to contrast or else. */
 
 @define-color theme_selected_bg_color #C15B58;
 @define-color menubar_bg_color #800000;
@@ -4246,3 +4244,5 @@ window.background.lightdm .lightdm-combo {
 @define-color button_border_blk #000000;
 @define-color warning_color #FF0101;
 @define-color success_color #01FF01;
+
+/* END */

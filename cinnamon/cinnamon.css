@@ -75,7 +75,6 @@ StScrollBar StButton#vhandle:active {
 	color: #FFFFFF;
 	text-align: center; }
 
-
 /* ===================================================================
 * PopupMenu (popupMenu.js)
 * ===================================================================*/
@@ -215,7 +214,6 @@ StScrollBar StButton#vhandle:active {
 .nm-menu-item-icons {
 	spacing: .5em; }
 
-
 /* ===================================================================
   Panel (panel.js)
   ===================================================================*/
@@ -232,10 +230,12 @@ StScrollBar StButton#vhandle:active {
 /*    background-position: center; */
     transition-duration: 300;
     width: 60px; }
+
 #panelLeft .applet-box:first-child:hover {
     transition-duration: 200;
     background: url("images/start2.png");
     border-image: none; }
+
 #panelLeft .applet-box:first-child:active {
     background: url("images/start3.png");
     border-image: none; }
@@ -313,7 +313,6 @@ StScrollBar StButton#vhandle:active {
 #panelRight:dnd {
 	background-color: rgba(0,108,0,0.5); }
 
-
 /* ===================================================================
 * Overview
 * ===================================================================*/
@@ -366,7 +365,6 @@ StScrollBar StButton#vhandle:active {
 	border-radius: 8px 8px 0px 0px;
 	height: 120px;
 	width: 220px; }
-
 
 /* ===================================================================
 * Looking Glass    Alt-F2 and type lg <enter>
@@ -606,7 +604,6 @@ StScrollBar StButton#vhandle:active {
 .calendar-other-month-day {
 	color: #F73333; }
 
-
 /* ===================================================================
 * Notifications     Global settings for popup, later line 1500+ defines applet
 * ===================================================================*/
@@ -721,7 +718,6 @@ height of the table to be ICON_SIZE + IMAGE_SIZE + spacing-rows = 24 + 125 + 10 
 .switcher-arrow:highlighted {
 	border-color: #000000;
 	color: #FF0000; }
-
 
 /* ===================================================================
 * Modal dialogs
@@ -884,7 +880,6 @@ height of the table to be ICON_SIZE + IMAGE_SIZE + spacing-rows = 24 + 125 + 10 
 .network-dialog-secret-table {
 	spacing-rows: 15px; }
 
-
 /* ===================================================================
 * Magnifier
 * ===================================================================*/
@@ -894,7 +889,6 @@ height of the table to be ICON_SIZE + IMAGE_SIZE + spacing-rows = 24 + 125 + 10 
 
 .magnifier-zoom-region.full-screen {
 	border-width: 0px; }
-
 
 /* ===================================================================
 * On screen keyboard
@@ -1239,7 +1233,6 @@ height of the table to be ICON_SIZE + IMAGE_SIZE + spacing-rows = 24 + 125 + 10 
 	padding-left: 10px;
 	padding-right: 10px; }
 
-
 /* ===================================================================
 * Workspace Switcher applet (workspaceSwitcher.js)
 * ===================================================================*/
@@ -1261,8 +1254,7 @@ height of the table to be ICON_SIZE + IMAGE_SIZE + spacing-rows = 24 + 125 + 10 
 	background-image: url("images/calendar-today.svg");
 	color: #FFFFFF; }
 
-
-/* ======================== ===========================================
+/* ===================================================================
 * Panel Launchers Applet (panelLaunchers.js)
 * ===================================================================*/
 
@@ -1440,3 +1432,6 @@ height of the table to be ICON_SIZE + IMAGE_SIZE + spacing-rows = 24 + 125 + 10 
 	background-gradient-start: #180000;
 	background-gradient-direction: horizontal;
 	text-shadow: 1px 1px 2px #000; }
+
+
+/* END */
