@@ -466,7 +466,6 @@ StScrollBar StButton#vhandle:active {
 /* ===================================================================
  * Desklets (desklet.js)
  * ===================================================================*/
-
 .desklet {
     color: #FFFFFF;
     font-size: 18pt; }
@@ -509,17 +508,115 @@ StScrollBar StButton#vhandle:active {
 * Date applet    calendar
 * ===================================================================*/
 
-.calendar {     /* spacing around the calendar proper to the border */
-	padding: .4em 1em .8em 1em;
-	spacing-rows: 1px;
-	spacing-columns: 1px; }
+.calendar-main-box {}
+
+.calendar {
+    spacing-rows: 0px;
+    spacing-columns: 0px; }
+
+.calendar-events-main-box {
+  height: 300px;
+  margin-right: .5em;
+  padding: .5em;
+  min-width: 350px;
+  border: 1px solid #AA0000;
+  background-color: #180000; }
+
+.calendar-events-no-events-box {
+    background-color: #480000;}
+
+.calendar-events-no-events-button {
+    margin: 6px 0 6px 0;
+    padding: 6px; }
+
+/*.calendar-events-no-events-button:hover:active {
+    border-image: url("images/button-pressed.png") 4; } */
+
+.calendar-events-no-events-button:hover {
+    background-color: #994433; }
+
+.calendar-events-no-events-icon,
+.calendar-events-no-events-label {
+  color: rgba(255, 255, 255, 0.87);
+  text-align: center; }
+
+.calendar-events-date-label {
+  padding: .1em .1em .5em .1em;
+  color: rgba(255, 255, 255, 0.87);
+  text-align: center; }
+
+.calendar-events-event-container {
+  padding: 0; }
+
+.calendar-event-button {
+    margin: 7px; }
+
+.calendar-event-row-content {
+    margin: 2px 7px 2px 7px; }
+
+.calendar-event-time-past {
+    color: #CC9988;
+    text-align: left;
+    margin-bottom: .2em; }
+
+.calendar-event-time-present {
+    text-align: left;
+    margin-bottom: .2em; }
+
+.calendar-event-time-present:all-day {
+    color: #85A0FC;
+    margin-bottom: .2em; }
+
+.calendar-event-time-future {
+    color: #FFFF00;
+    text-align: left;
+    margin-bottom: .2em; }
+
+.calendar-event-summary {
+    color: rgba(240, 240, 240, 0.9);
+    text-align: left;
+    width: 200px;
+    padding-bottom: 2px; }
+
+.calendar-event-countdown {
+    text-align: right;
+    margin-bottom: .6em; }
+
+.calendar-event-countdown:soon {
+    font-weight: bold; }
+
+.calendar-event-countdown:imminent {
+    font-weight: bold;
+    color: #98FA52; }
+
+.calendar-event-button:hover {
+    background-color: #6B0000;
+    border: 1px solid #212222; }
+
+.calendar-event-countdown:current {
+    color: #CE3C20; }
+
+.calendar-event-button:hover .calendar-event-time-past,
+.calendar-event-button:hover .calendar-event-time-present,
+.calendar-event-button:hover .calendar-event-time-future,
+.calendar-event-button:hover .calendar-event-summary,
+.calendar-event-button:hover .calendar-event-countdown,
+.calendar-event-button:hover .calendar-event-countdown:soon,
+.calendar-event-button:hover .calendar-event-countdown:imminent,
+.calendar-event-button:hover .calendar-event-countdown:current {
+    color: #FFFFFF; }
+
+.calendar-event-color-strip {
+    width: 4px;
+    border-width: 1px;
+    border-radius: 2px 0 0 2px; }
 
 .calendar-today-day-label { /* new for 20.3, day at the top */
-  font-size: 1.75em;
-  color: pink;
-  font-weight: bold;
-  text-align: center;
-  padding-bottom: .1em; }
+    font-size: 1.75em;
+    color: pink;
+    font-family: University, Arial;
+    text-align: center;
+    padding-bottom: .2em; }
 
 .calendar-today-date-label {  /* new for 20.3, date at the top */
     padding: .4em 1.7em;
@@ -527,6 +624,17 @@ StScrollBar StButton#vhandle:active {
     text-align: center;
     color: #FFFF00;
     font-size: 22pt; }
+
+.calendar-today-home-button-enabled { margin: 12px; }
+
+.calendar-today-home-button-enabled:hover {
+    background-color: #6B0000; }
+
+.calendar-today-home-button-enabled:hover .calendar-today-day-label {
+    color: #FFFFFF; }
+
+.calendar-today-home-button-enabled:hover .calendar-today-date-label {
+    color: #FFFFFF; }
 
 .calendar-month-label {   /* Month and Year */
     color: #FFFFFF;
@@ -537,15 +645,22 @@ StScrollBar StButton#vhandle:active {
 
 .calendar-change-month-back,
 .calendar-change-month-forward:rtl {
-	width: 24px;
+	width: 40px;
 	height: 24px;
 	background-image: url("images/calendar-arrow-left.svg"); }
 
+.calendar-change-month-back:hover,
+.calendar-change-month-forward:rtl:hover {
+	background-color: #006C00; }
+
+.calendar-change-month-back:active {
+	background-color: #008000; }
+
 .calendar-change-month-forward,
 .calendar-change-month-back:rtl {
-	width: 24px;
+	width: 40px;
 	height: 24px;
-	background-image: url("images/calendar-arrow-right.svg");  }
+	background-image: url("images/calendar-arrow-right.svg"); }
 
 .calendar-change-month-forward:hover,
 .calendar-change-month-back:hover,
@@ -557,52 +672,91 @@ StScrollBar StButton#vhandle:active {
 .calendar-change-month-back:active {
 	background-color: #800000; }
 
-.calendar-day-base {  /* specs for a typical day square */
+.calendar-change-month-forward:focus,
+.calendar-change-month-forward:hover {
+    background-image: url("images/calendar-arrow-right-hover.svg"); }
+
+.calendar-change-month-forward:active {
+    background-image: url("images/calendar-arrow-right.svg"); }
+
+.calendar-change-month-forward:rtl {
+    background-image: url("images/calendar-arrow-left.svg"); }
+
+.calendar-change-month-forward:rtl:focus, .calendar-change-month-forward:rtl:hover {
+      background-image: url("images/calendar-arrow-left-hover.svg"); }
+
+.calendar-change-month-forward:rtl:active {
+      background-image: url("images/calendar-arrow-left.svg"); }
+
+.calendar-day-event-dot-box {
+    margin-top: 1.7em;
+    max-rows: 1; }
+
+.calendar-day-event-dot {
+    margin: 1px;
+    border-radius: 2px;
+    width: 4px;
+    height: 4px; }
+
+.calendar-day-base {
     font-size: 18pt;
     text-align: center;
-    width: 2.6em;
-    height: 1.8em; }
+    width: 2.2em;
+    height: 2.2em; }
 
-.calendar-day-base:hover { }
+.calendar-day-base:hover {
+    color: yellow;
+    background: rgba(255, 64, 64, 0.3);
+    border: 1px solid white; }
 
-.calendar-today {
-    font-weight: normal;
-    background-color: #740000;
-    color: #FFFFFF; }
+.calendar-day-base:active { }
 
 .calendar-day-heading {   /* sun mon tue ...etc */
     color: #FFFF00;
-    padding-top: .8em;
-    height: 1.7em;
-    font-size: 18pt; }
+    padding-top: 1em;
+    height: 1.7em; }
 
-.calendar-week-number {
-    color: rgba(255, 255, 0, 0.5);
-    padding-top: 0px;
-    font-style: italic; }
-
-/* Hack used in lieu of border-collapse - see calendar.js */
 .calendar-day {
     border: 1px solid #800000;
-    color: #FFFFFF;
-    border-top-width: 0;
-    border-left-width: 0; }
+    color: #FFFFFF; }
+
+.calendar-today {
+    color: white;
+    background: rgba(255, 64, 64, 0.3);
+    border: 1px solid white; }
+
+.calendar-today:selected { /* font-weight: bold; */}
+
+.calendar-not-today { color: #FFFFFF; }
+
+.calendar-not-today:selected {
+/*    font-weight: bold; */
+    background-color: #994433; }
+
+.calendar-not-today:selected:hover {
+    color: #FFFF00; }
+
+.calendar-other-month-day {
+	color: #F73333; }
+
+.calendar-other-month-day:hover {
+    color: #FFFF00; }
 
 .calendar-day-top {
-	border-top-width: 1px; }
+    border-top-width: 1px; }
 
 .calendar-day-left {
-	border-left-width: 1px; }
+    border-left-width: 1px; }
 
 .calendar-work-day { }
 
 .calendar-nonwork-day {
 	color: #888888; }
 
-.calendar-today { }
-
-.calendar-other-month-day {
-	color: #F73333; }
+.calendar-week-number {
+    color: rgba(255, 255, 0, 0.5);
+    padding-top: 0px;
+    font-style: italic; }
 
 /* ===================================================================
 * Notifications     Global settings for popup, later line 1500+ defines applet
