@@ -1070,7 +1070,7 @@ window.csd > .titlebar:not(headerbar):backdrop {
     background-color: @theme_selected_bg_color;
     background-clip: padding-box; }
   .primary-toolbar toolbar button:disabled, .primary-toolbar .inline-toolbar button:disabled, .primary-toolbar button:disabled, headerbar button:disabled {
-    color: #C3BCBC; /*rgba(222, 214, 214, 0.55);  lighten disabled button text */
+    color: #C3BCBC; /* lighten disabled button text */
     background-color: rgba(47, 47, 47, 0);
     border-color: rgba(47, 47, 47, 0); }
     .primary-toolbar toolbar button:disabled label, .primary-toolbar .inline-toolbar button:disabled label, .primary-toolbar button:disabled label, headerbar button:disabled label {
@@ -1701,7 +1701,7 @@ notebook {
     notebook > header.top {
       padding-bottom: 0; }
 
-      notebook > header.top > tabs > tab {  /* default tabs    alk*/
+      notebook > header.top > tabs > tab {  /* default tabs  */
         background-color: shade(@theme_bg_color_dark, 1.1);
         color: black;
         padding: 2px 10px;
@@ -1815,7 +1815,7 @@ notebook {
         color: @theme_fg_color;
         background-color: #FFFFFF;
         font-weight: bold;
-        border-color: @theme_selected_bg_color; }  /* alk */
+        border-color: @theme_selected_bg_color; }
 
       notebook > header > tabs > tab button.flat {
         min-height: 22px;
@@ -4231,7 +4231,7 @@ window.background.lightdm .lightdm-combo {
 @define-color yellow_text #FFFF00;
 @define-color white_text #FFFFFF;
 @define-color theme_bg_color_dark #D0D0D0;
-@define-color theme_bg_color #E5D5C5; 
+@define-color theme_bg_color #E5D5C5;
 /*  This is not used in this file but it effects gnome-mines & other backgrounds.
     So watch out changing this color.
     All, if not all, themes make gnome-mines buttons #BABDB6 so this color has to contrast or else. */
