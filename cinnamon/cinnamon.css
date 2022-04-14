@@ -759,7 +759,7 @@ StScrollBar StButton#vhandle:active {
 	border: 2px solid #D40000;
 	border-radius: 11px;
 	background: #220000;
-	padding: 12px 20px 12px 12px;
+	padding: 12px 15px 12px 15px;
 	spacing-rows: 18px;	  /* this seems to space the body of the notification from the title. */
 	spacing-columns: 8px;
 	margin-from-right-edge-of-screen: 100px;
