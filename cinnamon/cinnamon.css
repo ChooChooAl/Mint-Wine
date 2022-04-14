@@ -1,18 +1,11 @@
-/*MINT-WINE THEME - Setup for Mint 20.x
+/*WINE THEME - Setup for Mint 20.3
 
     PopupMenu (popupMenu.js): modifies all popup menus, right-click panel menu and the main menu;
     Panel (panel.js): self-explanatory;
     Desklets (desklet.js) for desktop widgets and Applets (applet.js) for widgets on the panel;
     Looking Glass: modifies the graphical debugging interface (cinnamon-looking-glass);
     Menu (menu.js): affects only the main menu (MintMenu);
-    Window list (windowList.js): applies to the list of opened windows in the panel.
-
-08/14/17   Changed all commented colors from #FFFFFF to # FFFFFF so they don't show in a grep for colors.
-			also changed commented rgba(  to r g b a(  for same reason
-			also removed all comments from colors and put below the color to simplify grep and edit.
-			changed #fff to #FFFFFF etc to make things grep easier etc.
-			change white to #FFFFFF
-*/
+    Window list (windowList.js): applies to the list of opened windows in the panel. */
 
 
 /* #########################################################################################
@@ -63,7 +56,6 @@ StScrollBar StButton#vhandle:hover {
 StScrollBar StButton#hhandle:active,
 StScrollBar StButton#vhandle:active {
 	background-color: #C80000; }
-
 
 #Tooltip {      /* app in panel description popup when you mouse over */
 	border-radius: 10px 10px 10px 10px;
@@ -899,7 +891,7 @@ height of the table to be ICON_SIZE + IMAGE_SIZE + spacing-rows = 24 + 125 + 10 
 	padding: 4px 12px 5px;
 	font-weight: bold;
 	background-color: #300000;
-     border: 1px solid white; }
+    border: 1px solid white; }
 
 .modal-dialog-button:hover {		/* like the close button when you rightclick applets-> about */
 	background-color: #900000; }
@@ -954,15 +946,13 @@ height of the table to be ICON_SIZE + IMAGE_SIZE + spacing-rows = 24 + 125 + 10 
 .run-dialog > .modal-dialog-button-box {
 	padding-top: 15px; }
 
-.lightbox {
-	background: rgba(0,0,0,0.4); }
-
+.lightbox { background: rgba(0,0,0,0.4); }
 
 /* ===================================================================
 * Policykit authentication dialog
 * ===================================================================*/
 
-.polkit-dialog {	/* this is the width of the entire modal popup */
+.polkit-dialog {     /* this is the width of the entire modal popup */
 	width: 500px; }
 
 .polkit-dialog-main-layout {
