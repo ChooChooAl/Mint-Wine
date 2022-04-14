@@ -500,19 +500,20 @@ StScrollBar StButton#vhandle:active {
 * Date applet    calendar
 * ===================================================================*/
 
-.calendar-main-box {}
+.calendar-main-box { margin-bottom: .7em; }
 
 .calendar {
     spacing-rows: 0px;
     spacing-columns: 0px; }
 
 .calendar-events-main-box {
-  height: 300px;
-  margin-right: .5em;
-  padding: .5em;
-  min-width: 350px;
-  border: 1px solid #AA0000;
-  background-color: #180000; }
+    height: 300px;
+    margin-right: .5em;
+    margin-left: .5em;
+    padding: .5em;
+    min-width: 350px;
+    border: 1px solid #E80000;
+    background-color: #180000; }
 
 .calendar-events-no-events-box {
     background-color: #480000;}
@@ -529,27 +530,28 @@ StScrollBar StButton#vhandle:active {
 
 .calendar-events-no-events-icon,
 .calendar-events-no-events-label {
-  color: rgba(255, 255, 255, 0.87);
-  text-align: center; }
+    color: rgba(255, 255, 255, 0.87);
+    text-align: center; }
 
 .calendar-events-date-label {
-  padding: .1em .1em .5em .1em;
-  color: rgba(255, 255, 255, 0.87);
-  text-align: center; }
+    padding: .1em .1em .5em .1em;
+    color: rgba(255, 255, 255, 0.87);
+    text-align: center; }
 
 .calendar-events-event-container {
-  padding: 0; }
+    padding: 0; }
 
 .calendar-event-button {
     margin: 7px; }
 
 .calendar-event-row-content {
+    font-size: 18pt;
     margin: 2px 7px 2px 7px; }
 
 .calendar-event-time-past {
     color: #CC9988;
-    text-align: left;
-    margin-bottom: .2em; }
+    font-style: italic;
+    text-align: left; }
 
 .calendar-event-time-present {
     text-align: left;
@@ -582,8 +584,7 @@ StScrollBar StButton#vhandle:active {
     color: #98FA52; }
 
 .calendar-event-button:hover {
-    background-color: #6B0000;
-    border: 1px solid #212222; }
+    background-color: #6B0000; }
 
 .calendar-event-countdown:current {
     color: #CE3C20; }
@@ -615,7 +616,7 @@ StScrollBar StButton#vhandle:active {
     font-weight: normal;
     text-align: center;
     color: #FFFF00;
-    font-size: 22pt; }
+    font-size: 1.1em; }
 
 .calendar-today-home-button-enabled { margin: 12px; }
 
@@ -681,7 +682,7 @@ StScrollBar StButton#vhandle:active {
       background-image: url("images/calendar-arrow-left.svg"); }
 
 .calendar-day-event-dot-box {
-    margin-top: 1.7em;
+    margin-top: 2.1em;
     max-rows: 1; }
 
 .calendar-day-event-dot {
@@ -691,25 +692,24 @@ StScrollBar StButton#vhandle:active {
     height: 4px; }
 
 .calendar-day-base {
-    font-size: 18pt;
+    font-size: 23pt;
     text-align: center;
-    width: 2.2em;
-    height: 2.2em; }
+    width: 2.1em;
+    height: 2.1em; }
 
 .calendar-day-base:hover {
     color: yellow;
-    background: rgba(255, 64, 64, 0.3);
-    border: 1px solid white; }
+    background: rgba(255, 64, 64, 0.3); }
 
 .calendar-day-base:active { }
 
 .calendar-day-heading {   /* sun mon tue ...etc */
     color: #FFFF00;
+    font-size: 1em;
     padding-top: 1em;
     height: 1.7em; }
 
 .calendar-day {
-    border: 1px solid #800000;
     color: #FFFFFF; }
 
 .calendar-today {
@@ -717,12 +717,11 @@ StScrollBar StButton#vhandle:active {
     background: rgba(255, 64, 64, 0.3);
     border: 1px solid white; }
 
-.calendar-today:selected { /* font-weight: bold; */}
+.calendar-today:selected { }
 
 .calendar-not-today { color: #FFFFFF; }
 
 .calendar-not-today:selected {
-/*    font-weight: bold; */
     background-color: #994433; }
 
 .calendar-not-today:selected:hover {
@@ -741,6 +740,9 @@ StScrollBar StButton#vhandle:active {
     border-left-width: 1px; }
 
 .calendar-work-day { }
+
+.calendar-nonwork-day:selected {
+	color: #ddFFdd; }
 
 .calendar-nonwork-day {
 	color: #888888; }
