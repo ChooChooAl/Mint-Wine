@@ -13,12 +13,12 @@
 <constant name="C_title_focused" value="#FFFFFF" />
 <constant name="C_title_unfocused" value="#000000" />
 
-<constant name="C_wm_bg_focused" value="#aa0000" />
+<constant name="C_wm_bg_focused" value="#AA0000" />
 <constant name="C_wm_bg_unfocused" value="#D9D9D9" />
 
-<constant name="C_wm_border" value="#aa0000" />
+<constant name="C_wm_border" value="#AA0000" />
 
-<constant name="C_wm_highlight" value="#aa0000" />
+<constant name="C_wm_highlight" value="#AA0000" />
 
 <!-- window button colors -->
 
@@ -38,7 +38,7 @@
 <constant name="C_icon_bg_focused" value="#909090" />
 <constant name="C_icon_bg_unfocused" value="#000000" />
 <constant name="C_icon_bg_hover" value="#7A7A7A" />
-<constant name="C_icon_bg_active" value="#ffffff" />
+<constant name="C_icon_bg_active" value="#FFFFFF" />
 
 <!-- geometries -->
 
