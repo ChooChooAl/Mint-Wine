@@ -4,7 +4,7 @@ style "sidebar"
     #ythickness = 0
     
     base[NORMAL] = "#505050"
-    text[NORMAL] = "#ffffff"
+    text[NORMAL] = "#FFFFFF"
 }
 
 style "thunar-location-buttons"
