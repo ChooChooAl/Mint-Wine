@@ -9,7 +9,7 @@
   -GtkDialog-button-spacing: 4;
   -GtkDialog-action-area-border: 6;
   outline-color: rgba(32, 32, 32, 0.3);
-  outline-style: dashed;
+  outline-style: none;
   outline-offset: -3px;
   outline-width: 1px;
   -gtk-outline-radius: 2px; }
@@ -46,7 +46,7 @@
 iconview text,
 textview text {
   color: #000000;                       /* the text color in Tetravex high scores.   Need more contrast */
-  background-color: #F2F2F2; }           /* this is the list of saved colors in gcolor3   also url in firefox */
+  background-color: #E1E0E0; }      /* this is the list of saved colors in gcolor3?  also BG in settings and context menu*/
 
   .view:selected, iconview:selected, .view:selected:focus, iconview:selected:focus,
   .view text:selected,
@@ -288,7 +288,7 @@ button {
   color: @theme_fg_color;
   outline-color: rgba(32, 32, 32, 0.3);
   border-color: @button_border_blk;
-  background-color: whitesmoke; }
+  background-color: #F0F0F0; } /* default bg of buttons, if active they are set to white */
 
   button separator {
     margin: 4px 1px; }
@@ -309,7 +309,7 @@ button {
   button:hover {
     color: white;
     outline-color: rgba(32, 32, 32, 0.3);
-    border-color: @theme_selected_bg_color; /* alk */
+    border-color: @theme_selected_bg_color;
     background-color: @theme_selected_bg_color;
     -gtk-icon-effect: highlight; }
 
@@ -353,11 +353,11 @@ button {
       button:disabled:active label, button:disabled:checked label {
         color: inherit; }
 
-  button.image-button, headerbar button.titlebutton,
-  .titlebar button.titlebutton {
+  button.image-button, headerbar button.titlebutton {
     min-width: 24px;
     padding-left: 5px;
     padding-right: 5px; }
+
 
   button.text-button {
     padding-left: 12px;
@@ -2987,11 +2987,11 @@ calendar {
     border-bottom-left-radius: 3px; }
 
 filechooser #pathbarbox {
-  background-color: #D9D9D9;
+  background-color: @gray_bg;
   border-bottom: 1px solid @button_border_blk; }
 
 filechooser .search-bar {
-  background-color: #D9D9D9; }
+  background-color: @gray_bg; }
 
 filechooser actionbar {
   background-color: #F0F0F0; }
@@ -3465,53 +3465,63 @@ headerbar button.titlebutton,
     .titlebar button.titlebutton.minimize:backdrop {
       opacity: 1; }
 
+/***********************************************
+    TITLEBAR CLOSE MIN MAX BUTTONS
+************************************************/
+  .titlebar button.titlebutton {
+    min-width: 32px;
+    min-height: 32px;
+    padding-left: 5px;
+    padding-right: 5px; }
+
   headerbar button.titlebutton.close,
   .titlebar button.titlebutton.close {
-    background-image: -gtk-scaled(url("assets/titlebutton-close-dark.png"), url("assets/titlebutton-close-dark@2.png")); }
+    background-image: -gtk-scaled(url("titlebar/close.png"), url("titlebar/close@2.png")); }
 
   headerbar button.titlebutton.close:backdrop,
   .titlebar button.titlebutton.close:backdrop {
-    background-image: -gtk-scaled(url("assets/titlebutton-close-backdrop-dark.png"), url("assets/titlebutton-close-backdrop-dark@2.png")); }
+    background-image: -gtk-scaled(url("titlebar/close-backdrop.png"), url("titlebar/close-backdrop@2.png")); }
 
   headerbar button.titlebutton.close:hover,
   .titlebar button.titlebutton.close:hover {
-    background-image: -gtk-scaled(url("assets/titlebutton-close-hover-dark.png"), url("assets/titlebutton-close-hover-dark@2.png")); }
+    background-image: -gtk-scaled(url("titlebar/close-hover.png"), url("titlebar/close-hover@2.png")); }
 
   headerbar button.titlebutton.close:active,
   .titlebar button.titlebutton.close:active {
-    background-image: -gtk-scaled(url("assets/titlebutton-close-active-dark.png"), url("assets/titlebutton-close-active-dark@2.png")); }
+    background-image: -gtk-scaled(url("titlebar/close-active.png"), url("titlebar/close-active@2.png")); }
 
   headerbar button.titlebutton.maximize,
   .titlebar button.titlebutton.maximize {
-    background-image: -gtk-scaled(url("assets/titlebutton-max-dark.png"), url("assets/titlebutton-max-dark@2.png")); }
+    background-image: -gtk-scaled(url("titlebar/max.png"), url("titlebar/max@2.png")); }
 
   headerbar button.titlebutton.maximize:backdrop,
   .titlebar button.titlebutton.maximize:backdrop {
-    background-image: -gtk-scaled(url("assets/titlebutton-max-backdrop-dark.png"), url("assets/titlebutton-max-backdrop-dark@2.png")); }
+    background-image: -gtk-scaled(url("titlebar/max-backdrop.png"), url("titlebar/max-backdrop@2.png")); }
 
   headerbar button.titlebutton.maximize:hover,
   .titlebar button.titlebutton.maximize:hover {
-    background-image: -gtk-scaled(url("assets/titlebutton-max-hover-dark.png"), url("assets/titlebutton-max-hover-dark@2.png")); }
+    background-image: -gtk-scaled(url("titlebar/max-hover.png"), url("titlebar/max-hover@2.png")); }
 
   headerbar button.titlebutton.maximize:active,
   .titlebar button.titlebutton.maximize:active {
-    background-image: -gtk-scaled(url("assets/titlebutton-max-active-dark.png"), url("assets/titlebutton-max-active-dark@2.png")); }
+    background-image: -gtk-scaled(url("titlebar/max-active.png"), url("titlebar/max-active@2.png")); }
 
   headerbar button.titlebutton.minimize,
   .titlebar button.titlebutton.minimize {
-    background-image: -gtk-scaled(url("assets/titlebutton-min-dark.png"), url("assets/titlebutton-min-dark@2.png")); }
+    background-image: -gtk-scaled(url("titlebar/min.png"), url("titlebar/min@2.png")); }
 
   headerbar button.titlebutton.minimize:backdrop,
   .titlebar button.titlebutton.minimize:backdrop {
-    background-image: -gtk-scaled(url("assets/titlebutton-min-backdrop-dark.png"), url("assets/titlebutton-min-backdrop-dark@2.png")); }
+    background-image: -gtk-scaled(url("titlebar/min-backdrop.png"), url("titlebar/min-backdrop@2.png")); }
 
   headerbar button.titlebutton.minimize:hover,
   .titlebar button.titlebutton.minimize:hover {
-    background-image: -gtk-scaled(url("assets/titlebutton-min-hover-dark.png"), url("assets/titlebutton-min-hover-dark@2.png")); }
+    background-image: -gtk-scaled(url("titlebar/min-hover.png"), url("titlebar/min-hover@2.png")); }
 
   headerbar button.titlebutton.minimize:active,
   .titlebar button.titlebutton.minimize:active {
-    background-image: -gtk-scaled(url("assets/titlebutton-min-active-dark.png"), url("assets/titlebutton-min-active-dark@2.png")); }
+    background-image: -gtk-scaled(url("titlebar/min-active.png"), url("titlebar/min-active@2.png")); }
+
 
 .view:selected, .view:selected:focus,
 .view text:selected, .view text selection:focus, .view text selection,
@@ -3857,8 +3867,7 @@ NautilusListView .view, NautilusListView iconview {
   .nemo-window .places-treeview {  /* shows amount of disk space used in nemo sidebar */
     -NemoPlacesTreeView-disk-full-bg-color: #FFFFFF;
     -NemoPlacesTreeView-disk-full-fg-color: @selected_bg_color;
-    -NemoPlacesTreeView-disk-full-bar-width: 5px;
-    -GtkTreeView-vertical-separator: 0; }
+    -NemoPlacesTreeView-disk-full-bar-width: 5px; }
 
     .nemo-window .places-treeview .view.cell:hover, .nemo-window .places-treeview iconview.cell:hover {
       color: #FFFFFF;
@@ -3879,7 +3888,7 @@ NautilusListView .view, NautilusListView iconview {
       background-color: transparent;
       font-size: 18pt;
       color: #FFFFFF;
-      -GtkTreeView-vertical-separator: -2px;  /* closes up the spacing on the sidebar in Nemo */  }
+      -GtkTreeView-vertical-separator: -4px;  /* closes up the spacing on the sidebar in Nemo */  }
 
       .nemo-window .sidebar .view.cell:selected, .nemo-window .sidebar iconview.cell:selected, .nemo-window .sidebar row.cell:selected {
         background-color: #901616; /*@theme_selected_bg_color; */
@@ -4687,7 +4696,9 @@ window.background.lightdm button, window.background.lightdm button.toggle-button
     border-color: rgba(189, 189, 189, 0.2);
     background-color: rgba(0, 0, 0, 0.5); }
 
-  window.background.lightdm button:active, window.background.lightdm button.selected, window.background.lightdm button.toggle-button:active, window.background.lightdm button.toggle-button.selected {
+  window.background.lightdm button:active, window.background.lightdm button.selected,
+  window.background.lightdm button.toggle-button:active,
+  window.background.lightdm button.toggle-button.selected {
     border-color: rgba(189, 189, 189, 0.2);
     background-color: @theme_selected_bg_color;
     color: #FFFFFF; }
@@ -4706,11 +4717,11 @@ window.background.lightdm .lightdm-combo {
   background-color: transparent; }
 
 @define-color nemo_bg #282828;
-@define-color gray_bg #D9D9D9;  /* background for list buttons like settings->themes */
+@define-color gray_bg #DFDFDF;  /* background for list buttons like settings->themes */
 @define-color yellow_text #FFFF00;
 @define-color white_text #FFFFFF;
 @define-color theme_bg_color_dark #D0D0D0;
-@define-color theme_bg_color #E4C0B0;
+@define-color theme_bg_color #D1C7C7;
 /*  This is not used in this file but it effects gnome-mines & other backgrounds.
     So watch out changing this color.
     All, if not all, themes make gnome-mines buttons #BABDB6 so this color has to contrast or else. */
