@@ -62,7 +62,7 @@ textview border {
 
 rubberband, flowbox rubberband, treeview.view rubberband, .content-view rubberband,
 .rubberband {
-  border: 1px solid #A8418E;
+  border: 1px solid #FFFFFF;    /* outline when ranging with mouse, see .nemo-window .view for BG color */
   background-color: rgba(168, 65, 62, 0.2); }
 
 flowbox flowboxchild {
@@ -1663,8 +1663,8 @@ treeview.view {
     color: @theme_selected_bg_color;
     box-shadow: inset 1px 1px 0 1px @theme_selected_bg_color, inset -1px 0 0 1px @theme_selected_bg_color, inset 1px 1px #FFFFFF, inset -1px 0 #FFFFFF; }
 
-.nemo-window .view {  /* basic bg color */
-    background-color: @nemo_bg;
+.nemo-window .view {  /* default bg color */
+    background-color: rgba(0, 0, 0, .6);  /* Make it a bit transparent so rubber band works better */
     color: #FFFFFF; }
 
 
