@@ -4716,7 +4716,6 @@ window.background.lightdm .lightdm-combo {
   border-radius: 0;
   background-color: transparent; }
 
-@define-color nemo_bg #282828;
 @define-color gray_bg #DFDFDF;  /* background for list buttons like settings->themes */
 @define-color yellow_text #FFFF00;
 @define-color white_text #FFFFFF;
