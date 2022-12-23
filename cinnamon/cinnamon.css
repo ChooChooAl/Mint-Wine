@@ -35,7 +35,7 @@ StScrollView StScrollBar {
 	min-height: 14px; }
 
 StScrollBar StBin#trough {
-	border: 1px solid rgba(0,255,0,0.2);    /* this is the border of the slider trough */
+	border: 1px solid rgba(0, 255, 0, 0.2);    /* this is the border of the slider trough */
 	background-color: #380000;           /* added this to get some color to the trough */
 	border-radius: 8px; }
 
@@ -139,8 +139,8 @@ StScrollBar StButton#vhandle:active {
 	/* This is the stripe, like on the sound applet, and other menus */
 	/* first exterior and then center */
 	-gradient-height: 3px;
-	-gradient-start: rgba(255,0,0,0.4);
-	-gradient-end: rgba(255,255,255,0.9);
+	-gradient-start: rgba(255, 0, 0, 0.4);
+	-gradient-end: rgba(255, 255, 255, 0.9);
 	-margin-horizontal: 0em;
     margin-top:10px;
     margin-bottom: 10px;
@@ -262,7 +262,7 @@ StScrollBar StButton#vhandle:active {
 .panel-corner:active,
 .panel-corner:overview,
 .panel-corner:focus {
-    -panel-corner-border-color: rgba(255,255,255,0.8); }
+    -panel-corner-border-color: rgba(255, 255, 255, 0.8); }
 
 .panel-status-button,
 .panel-button {
@@ -299,11 +299,11 @@ StScrollBar StButton#vhandle:active {
 	icon-size: 1.0em; }
 
 #panelLeft:dnd {
-	background-color: rgba(0,56,0,0.5); }
+	background-color: rgba(0, 56, 0, 0.5); }
 #panelCenter:dnd {
-	background-color: rgba(0,170,0,0.5); }
+	background-color: rgba(0, 170, 0, 0.5); }
 #panelRight:dnd {
-	background-color: rgba(0,108,0,0.5); }
+	background-color: rgba(0, 108, 0, 0.5); }
 
 /* ===================================================================
 * Overview
@@ -337,7 +337,7 @@ StScrollBar StButton#vhandle:active {
 
 .workspace-add-button {
 	background-image: url("images/add-workspace-button.svg");
-	background-color: rgba(0,0,0,0.5);
+	background-color: rgba(0, 0, 0, 0.5);
 	border-radius: 8px 0px 0px 8px;
 	border-right: 0px;
 	height: 50px;
@@ -352,7 +352,7 @@ StScrollBar StButton#vhandle:active {
 
 .window-close-area {
 	background-image: url("images/trash.svg");
-	background-color: rgba(0,0,0,0.5);
+	background-color: rgba(0, 0, 0, 0.5);
 	border-bottom-width: 0px;
 	border-radius: 8px 8px 0px 0px;
 	height: 120px;
@@ -363,7 +363,7 @@ StScrollBar StButton#vhandle:active {
 * ===================================================================*/
 
 #LookingGlassDialog {
-	background-color: rgba(0,0,0,0.8);
+	background-color: rgba(0, 0, 0, 0.8);
 	spacing: 4px;
 	padding: 4px;
 	border: 2px solid grey;
@@ -449,7 +449,7 @@ StScrollBar StButton#vhandle:active {
 	spacing: 6px; }
 
 #LookingGlassPropertyInspector {
-	background: rgba(0,0,0,0.8);
+	background: rgba(0, 0, 0, 0.8);
 	border: 2px solid grey;
 	border-radius: 4px;
 	padding: 6px; }
@@ -845,7 +845,7 @@ height of the table to be ICON_SIZE + IMAGE_SIZE + spacing-rows = 24 + 125 + 10 
 	border: 2px solid #FF0000; }
 
 .switcher-list .item-box:selected {
-	background: rgba(255,255,255,0.23); }
+	background: rgba(255, 255, 255, 0.23); }
 
 .switcher-list .thumbnail-box {
 	padding: 2px;
@@ -951,7 +951,7 @@ height of the table to be ICON_SIZE + IMAGE_SIZE + spacing-rows = 24 + 125 + 10 
 .run-dialog > .modal-dialog-button-box {
 	padding-top: 15px; }
 
-.lightbox { background: rgba(0,0,0,0.4); }
+.lightbox { background: rgba(0, 0, 0, 0.4); }
 
 /* ===================================================================
 * Policykit authentication dialog
@@ -998,7 +998,7 @@ height of the table to be ICON_SIZE + IMAGE_SIZE + spacing-rows = 24 + 125 + 10 
 	background-gradient-start: #888A85;
 	background-gradient-end: white;
 	background-gradient-direction: vertical;
-	box-shadow: inset 0px 2px 4px rgba(0,0,0,0.6);
+	box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.6);
 	padding: 4px 4px;
 	color: #404040;
 	border-radius: 5px; }
@@ -1044,7 +1044,7 @@ height of the table to be ICON_SIZE + IMAGE_SIZE + spacing-rows = 24 + 125 + 10 
 * ===================================================================*/
 
 #keyboard {
-	background: rgba(0,0,0,0.8); }
+	background: rgba(0, 0, 0, 0.8); }
 
 .keyboard-layout {
 	spacing: 10px;
@@ -1056,8 +1056,8 @@ height of the table to be ICON_SIZE + IMAGE_SIZE + spacing-rows = 24 + 125 + 10 
 .keyboard-key {
 	min-height: 30px;
 	min-width: 30px;
-	background-gradient-start: rgba(255,245,245,0.4);
-	background-gradient-end: rgba(105,105,105,0.1);
+	background-gradient-start: rgba(255, 245, 245, 0.4);
+	background-gradient-end: rgba(105, 105, 105, 0.1);
 	background-gradient-direction: vertical;
 	font-size: 18pt;
 	font-weight: bold;
@@ -1331,17 +1331,17 @@ height of the table to be ICON_SIZE + IMAGE_SIZE + spacing-rows = 24 + 125 + 10 
 	border: 1px solid #8B8B8B;
 	border-radius: 4px;
 	background-gradient-direction: vertical;
-	background-gradient-start: rgba(255,255,255,0.2);
+	background-gradient-start: rgba(255, 255, 255, 0.2);
 	background-gradient-end: #FFFFFF; }
 
 .sound-button:hover {
-	background-gradient-start: rgba(255,255,255,0.3);
-	background-gradient-end: rgba(255,255,255,0.1); }
+	background-gradient-start: rgba(255, 255, 255, 0.3);
+	background-gradient-end: rgba(255, 255, 255, 0.1); }
 
 .sound-button:active,
 .sound-button:pressed {
     background-gradient-start: #FFFFFF;
-    background-gradient-end: rgba(255,255,255,0.2); }
+    background-gradient-end: rgba(255, 255, 255, 0.2); }
 
 .sound-button StIcon {
 	icon-size: 1.09em; }
@@ -1487,7 +1487,7 @@ height of the table to be ICON_SIZE + IMAGE_SIZE + spacing-rows = 24 + 125 + 10 
 .workspace-osd {
 	font-size: 2em;
 	font-weight: bold;
-	background: rgba(0,0,0,0.9);
+	background: rgba(0, 0, 0, 0.9);
 	border-radius: 10px;
 	color: #FFFFFF;
 	text-align: center;
@@ -1495,7 +1495,7 @@ height of the table to be ICON_SIZE + IMAGE_SIZE + spacing-rows = 24 + 125 + 10 
 
 .expo-workspaces-name-entry {
 	color: #FFFFFF;
-	background-color: rgba(0,0,0,0.5);
+	background-color: rgba(0, 0, 0, 0.5);
 	border-radius: 8px;
 	font-size: 9pt;
 	font-weight: bold;
@@ -1576,7 +1576,7 @@ height of the table to be ICON_SIZE + IMAGE_SIZE + spacing-rows = 24 + 125 + 10 
     color: #FFFFFF;
 	border:3px solid #FF0000;
 	border-radius: 0px 15px 0px 15px;
-	box-shadow: inset 0px 3px 5px 0px rgba(0,0,0,0.6);
+	box-shadow: inset 0px 3px 5px 0px rgba(0, 0, 0, 0.6);
 	background-gradient-end: #800000;
 	background-gradient-start: #180000;
 	background-gradient-direction: horizontal;
