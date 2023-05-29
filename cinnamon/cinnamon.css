@@ -486,12 +486,12 @@ StScrollBar StButton#vhandle:active {
 /* ===================================================================
 * Date applet    calendar
 * ===================================================================*/
-
-.calendar-main-box { margin-bottom: .7em; }
-
 .calendar {
     spacing-rows: 0px;
     spacing-columns: 0px; }
+
+.calendar-main-box { 
+    margin-bottom: .7em; }
 
 .calendar-events-main-box {
     height: 300px;
@@ -532,49 +532,53 @@ StScrollBar StButton#vhandle:active {
     margin: 7px; }
 
 .calendar-event-row-content {
-    font-size: 18pt;
+    font-size: 16pt;
     margin: 2px 7px 2px 7px; }
 
 .calendar-event-time-past {
     color: #CC9988;
-    font-style: italic;
-    text-align: left; }
-
-.calendar-event-time-present {
+    text-decoration: line-through;
     text-align: left;
-    margin-bottom: .2em; }
+    margin: 0 20px 0 0; }
 
-.calendar-event-time-present:all-day {
-    color: #85A0FC;
-    margin-bottom: .2em; }
+.calendar-event-button .calendar-event-time-present {
+    color: #69CE20;   /* can't be black */
+    text-align: left;
+    margin: 0 20px 0 0; }
 
-.calendar-event-time-future {
+.calendar-event-button .calendar-event-time-present:all-day {
+    color: #85A0FC; }
+
+.calendar-event-button .calendar-event-time-future {
     color: #FFFF00;
     text-align: left;
-    margin-bottom: .2em; }
+    margin: 0 20px 0 0; }
 
-.calendar-event-summary {
-    color: rgba(240, 240, 240, 0.9);
+.calendar-event-button .calendar-event-summary {
+    color: #FFFFFF;
     text-align: left;
     width: 200px;
     padding-bottom: 2px; }
 
-.calendar-event-countdown {
+.calendar-event-button .calendar-event-countdown {
     text-align: right;
-    margin-bottom: .6em; }
+    margin-bottom: .6em;
+    color: rgba(255, 255, 255, 0.87); }
 
-.calendar-event-countdown:soon {
-    font-weight: bold; }
-
-.calendar-event-countdown:imminent {
+.calendar-event-button .calendar-event-countdown:soon {
     font-weight: bold;
-    color: #98FA52; }
+    color: #45A600;}  /* dark green */
+
+.calendar-event-button .calendar-event-countdown:imminent {
+    font-weight: bold;
+    color: #98FA52; }  /* bright green */
+
+.calendar-event-button .calendar-event-countdown:current {
+    font-weight: bold;
+    color: #CE3C20; }  /* red */
 
 .calendar-event-button:hover {
     background-color: #6B0000; }
-
-.calendar-event-countdown:current {
-    color: #CE3C20; }
 
 .calendar-event-button:hover .calendar-event-time-past,
 .calendar-event-button:hover .calendar-event-time-present,
