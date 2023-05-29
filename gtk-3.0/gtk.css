@@ -1209,19 +1209,30 @@ window.csd > .titlebar:not(headerbar):backdrop {
   background-color: rgba(47, 47, 47, 0);
   border-color: rgba(47, 47, 47, 0); }
 
-  .primary-toolbar toolbar button:backdrop, .primary-toolbar .inline-toolbar button:backdrop, .primary-toolbar button:backdrop, headerbar button:backdrop {
+.primary-toolbar toolbar button:backdrop, .primary-toolbar .inline-toolbar button:backdrop, .primary-toolbar button:backdrop, headerbar button:backdrop {
     opacity: 0.7; }
 
-  .primary-toolbar toolbar button:hover, .primary-toolbar .inline-toolbar button:hover, .primary-toolbar button:hover, headerbar button:hover {
+.primary-toolbar toolbar button:hover, /* nemo and xed smaller toolbar icons */
+.primary-toolbar .inline-toolbar button:hover,
+.primary-toolbar button:hover,
+headerbar button:hover {
     color: @yellow_text;
     outline-color: rgba(222, 214, 214, 0.3);
     border-color: white;
     background-color: rgba(103, 103, 103, 0.4); }  /* pluma toolbar hover */
-  .primary-toolbar toolbar button:active, .primary-toolbar .inline-toolbar button:active, .primary-toolbar button:active, headerbar button:active, .primary-toolbar toolbar button:checked, .primary-toolbar .inline-toolbar button:checked, .primary-toolbar button:checked, headerbar button:checked {
+
+.primary-toolbar toolbar button:active,
+.primary-toolbar .inline-toolbar button:active,
+.primary-toolbar button:active, 
+headerbar button:active,
+.primary-toolbar toolbar button:checked,
+.primary-toolbar .inline-toolbar button:checked,
+.primary-toolbar button:checked,
+headerbar button:checked {
     color: #FFFFFF;
     outline-color: rgba(255, 255, 255, 0.3);
     border-color: transparent;
-    background-color: @theme_selected_bg_color;
+    background-color: @theme_selected_bg_color;      /* buttons for nemo changing display from icon to detail */
     background-clip: padding-box; }
 
   .primary-toolbar toolbar button:disabled, .primary-toolbar .inline-toolbar button:disabled, .primary-toolbar button:disabled, headerbar button:disabled {
@@ -1275,7 +1286,7 @@ headerbar .linked:not(.vertical):not(.path-bar) > button:not(:checked):not(:acti
 .primary-toolbar .inline-toolbar .linked:not(.vertical).path-bar > button,
 .primary-toolbar .linked:not(.vertical).path-bar > button,
 headerbar .linked:not(.vertical).path-bar > button {    /* buttons in things like settings-> themes */
-  color: @white_text;
+  color: @white_text;   /* default folder path in nemo at least   pale color on black bg */
   outline-color: rgba(222, 214, 214, 0.3);
   border-color: rgba(16, 16, 16, 0.4);
   font-size: 16pt;
@@ -1302,7 +1313,7 @@ headerbar .linked:not(.vertical).path-bar > button {    /* buttons in things lik
     color: #FFFFFF;
     outline-color: rgba(255, 255, 255, 0.3);
     border-color: transparent;
-    background-color: @theme_selected_bg_color; }
+    background-color: @theme_selected_bg_color; }       /* selected folder in nemo (at least) */
 
   .primary-toolbar toolbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:disabled, .primary-toolbar .inline-toolbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:disabled, .primary-toolbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:disabled, headerbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:disabled,
   .primary-toolbar toolbar .linked:not(.vertical).path-bar > button:disabled,
@@ -2486,7 +2497,7 @@ scale {
       background-color: @gray_bg;
       border-color: rgba(125, 125, 125, 0.3); }
 
-    scale slider:active {
+scale slider:active {
       background-color: @theme_selected_bg_color;
       border-color: @theme_selected_bg_color; }
 
@@ -2559,7 +2570,7 @@ scale {
 
   scale highlight {
     border-radius: 2.5px;
-    background-color: @theme_selected_bg_color; }
+    background-color: @theme_selected_bg_color; }  /* ie. small slider 'scale' in nemo */
 
     scale highlight:disabled {
       background-color: rgba(193, 91, 88, 0.55); }
@@ -3012,7 +3023,7 @@ filechooserbutton:drop(active) {
     border-left: 1px solid @button_border_blk;
     border-right-style: none; }
 
-  .sidebar list {
+.sidebar list {  /* this is sidebar in things like nemo preferences */
     background-color: @gray_bg; }
 
   paned .sidebar.left, paned .sidebar.right, paned .sidebar.left:dir(rtl), paned .sidebar:dir(rtl), paned .sidebar:dir(ltr), paned .sidebar {
@@ -3431,16 +3442,16 @@ headerbar button.titlebutton,
   background-image: none;
   background-color: rgba(47, 47, 47, 0); }
 
-  headerbar button.titlebutton:hover,
-  .titlebar button.titlebutton:hover {
+headerbar button.titlebutton:hover,
+.titlebar button.titlebutton:hover {
     color: @yellow_text;
     outline-color: rgba(222, 214, 214, 0.3);
     border-color: rgba(16, 16, 16, 0.4);
     background-color: rgba(103, 103, 103, 0.4); }
 
-  headerbar button.titlebutton:active, headerbar button.titlebutton:checked,
-  .titlebar button.titlebutton:active,
-  .titlebar button.titlebutton:checked {
+headerbar button.titlebutton:active, headerbar button.titlebutton:checked,
+.titlebar button.titlebutton:active,
+.titlebar button.titlebutton:checked {
     color: #FFFFFF;
     outline-color: rgba(255, 255, 255, 0.3);
     border-color: transparent;
@@ -3858,17 +3869,19 @@ NautilusListView .view, NautilusListView iconview {
     border-color: @theme_selected_bg_color;
     background-color: #FFFFFF; }
 
-  .nemo-window .nemo-inactive-pane .view, .nemo-window .nemo-inactive-pane iconview {
-    background-color: #101010; }  /* 2nd split screen (F3), slightly darker */
+.nemo-window .nemo-inactive-pane .view,
+.nemo-window .nemo-inactive-pane iconview {
+    background-color: #101010; }   /* F3 split */
 
   .nemo-window .places-treeview {  /* shows amount of disk space used in nemo sidebar */
     -NemoPlacesTreeView-disk-full-bg-color: #FFFFFF;
     -NemoPlacesTreeView-disk-full-fg-color: @selected_bg_color;
     -NemoPlacesTreeView-disk-full-bar-width: 5px; }
 
-    .nemo-window .places-treeview .view.cell:hover, .nemo-window .places-treeview iconview.cell:hover {
-      color: #FFFFFF;
-      background-color: @theme_selected_bg_color; }
+.nemo-window .places-treeview .view.cell:hover,
+.nemo-window .places-treeview iconview.cell:hover {
+    color: #FFFFFF;
+    background-color: @theme_selected_bg_color; }    /* hover over sidebar items */
 
  /* hover on sidebar folders */
   .nemo-window .nemo-places-sidebar.frame {
