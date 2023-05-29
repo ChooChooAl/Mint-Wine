@@ -3428,107 +3428,100 @@ decoration {
 
 headerbar.default-decoration button.titlebutton,
 .titlebar.default-decoration button.titlebutton {
-  padding-top: 0px;
-  padding-bottom: 0px;
+  padding: 0px;
   min-width: 22px;
-  min-height: 0;
+  min-height: 22px;
   margin: 0; }
 
 headerbar button.titlebutton,
 .titlebar button.titlebutton {
-  padding: 6px 1px;
+  min-width: 18px;
+  min-height: 18px;
+  padding: 10px 3px;
+  margin: 0;
+  border-radius: 0px;
+  transition: none;
   border-color: transparent;
   background-color: transparent;
   background-image: none;
-  background-color: rgba(47, 47, 47, 0); }
+  background-color: rgba(35, 35, 35, 0); }
 
 headerbar button.titlebutton:hover,
 .titlebar button.titlebutton:hover {
-    color: @yellow_text;
-    outline-color: rgba(222, 214, 214, 0.3);
-    border-color: rgba(16, 16, 16, 0.4);
-    background-color: rgba(103, 103, 103, 0.4); }
+    color: #FFFFFF;
+    border-color: #141414;
+    background-color: #000000; }
 
-headerbar button.titlebutton:active, headerbar button.titlebutton:checked,
+headerbar button.titlebutton:active,
+headerbar button.titlebutton:checked,
 .titlebar button.titlebutton:active,
 .titlebar button.titlebutton:checked {
-    color: #FFFFFF;
-    outline-color: rgba(255, 255, 255, 0.3);
-    border-color: transparent;
-    background-color: @theme_selected_bg_color; }
+    color: white;
+    outline-color: rgba(255, 255, 255, 0.17);
+    border-color: rgba(13, 13, 13, 0.4);
+    background-color: #000000; }
 
-  headerbar button.titlebutton.close, headerbar button.titlebutton.maximize, headerbar button.titlebutton.minimize,
-  .titlebar button.titlebutton.close,
-  .titlebar button.titlebutton.maximize,
-  .titlebar button.titlebutton.minimize {
-    color: transparent;
+headerbar button.titlebutton.close,
+headerbar button.titlebutton.maximize,
+headerbar button.titlebutton.minimize,
+.titlebar button.titlebutton.close,
+.titlebar button.titlebutton.maximize,
+.titlebar button.titlebutton.minimize {
+    -gtk-icon-theme: "Mint-Y";
     background-color: transparent;
+    background-size: 32px 32px;
     background-position: center;
     background-repeat: no-repeat;
     border-width: 0; }
 
-    headerbar button.titlebutton.close:backdrop, headerbar button.titlebutton.maximize:backdrop, headerbar button.titlebutton.minimize:backdrop,
-    .titlebar button.titlebutton.close:backdrop,
-    .titlebar button.titlebutton.maximize:backdrop,
-    .titlebar button.titlebutton.minimize:backdrop {
-      opacity: 1; }
+headerbar button.titlebutton.close:backdrop, headerbar button.titlebutton.maximize:backdrop, headerbar button.titlebutton.minimize:backdrop,
+.titlebar button.titlebutton.close:backdrop,
+.titlebar button.titlebutton.maximize:backdrop,
+.titlebar button.titlebutton.minimize:backdrop {
+    opacity: 1; }
 
-/***********************************************
-    TITLEBAR CLOSE MIN MAX BUTTONS
-************************************************/
-  .titlebar button.titlebutton {
-    min-width: 32px;
-    min-height: 32px;
-    padding-left: 5px;
-    padding-right: 5px; }
+headerbar button.titlebutton.close,
+.titlebar button.titlebutton.close {
+    color: #FFFFFF;
+    background-color: #EE0000; }
 
-  headerbar button.titlebutton.close,
-  .titlebar button.titlebutton.close {
-    background-image: -gtk-scaled(url("titlebar/close.png"), url("titlebar/close@2.png")); }
+headerbar button.titlebutton.close:hover,
+.titlebar button.titlebutton.close:hover {
+    background-color: #FF0000; }
 
-  headerbar button.titlebutton.close:backdrop,
-  .titlebar button.titlebutton.close:backdrop {
-    background-image: -gtk-scaled(url("titlebar/close-backdrop.png"), url("titlebar/close-backdrop@2.png")); }
+headerbar button.titlebutton.close:active,
+.titlebar button.titlebutton.close:active {
+    background-color: #8A8A8A; }
 
-  headerbar button.titlebutton.close:hover,
-  .titlebar button.titlebutton.close:hover {
-    background-image: -gtk-scaled(url("titlebar/close-hover.png"), url("titlebar/close-hover@2.png")); }
+headerbar button.titlebutton.close:backdrop,
+.titlebar button.titlebutton.close:backdrop {
+    background-color: #4C4C4C; }
 
-  headerbar button.titlebutton.close:active,
-  .titlebar button.titlebutton.close:active {
-    background-image: -gtk-scaled(url("titlebar/close-active.png"), url("titlebar/close-active@2.png")); }
+headerbar button.titlebutton.maximize:hover,
+headerbar button.titlebutton.maximize:hover:backdrop,
+headerbar button.titlebutton.minimize:hover,
+headerbar button.titlebutton.minimize:hover:backdrop,
+.titlebar button.titlebutton.maximize:hover,
+.titlebar button.titlebutton.maximize:hover:backdrop,
+.titlebar button.titlebutton.minimize:hover,
+.titlebar button.titlebutton.minimize:hover:backdrop {
+    background-color: #000000; }
 
-  headerbar button.titlebutton.maximize,
-  .titlebar button.titlebutton.maximize {
-    background-image: -gtk-scaled(url("titlebar/max.png"), url("titlebar/max@2.png")); }
+headerbar button.titlebutton.maximize:active,
+headerbar button.titlebutton.maximize:active:backdrop,
+headerbar button.titlebutton.minimize:active,
+headerbar button.titlebutton.minimize:active:backdrop,
+.titlebar button.titlebutton.maximize:active,
+.titlebar button.titlebutton.maximize:active:backdrop,
+.titlebar button.titlebutton.minimize:active,
+.titlebar button.titlebutton.minimize:active:backdrop {
+    background-color: #000000; }
 
-  headerbar button.titlebutton.maximize:backdrop,
-  .titlebar button.titlebutton.maximize:backdrop {
-    background-image: -gtk-scaled(url("titlebar/max-backdrop.png"), url("titlebar/max-backdrop@2.png")); }
-
-  headerbar button.titlebutton.maximize:hover,
-  .titlebar button.titlebutton.maximize:hover {
-    background-image: -gtk-scaled(url("titlebar/max-hover.png"), url("titlebar/max-hover@2.png")); }
-
-  headerbar button.titlebutton.maximize:active,
-  .titlebar button.titlebutton.maximize:active {
-    background-image: -gtk-scaled(url("titlebar/max-active.png"), url("titlebar/max-active@2.png")); }
-
-  headerbar button.titlebutton.minimize,
-  .titlebar button.titlebutton.minimize {
-    background-image: -gtk-scaled(url("titlebar/min.png"), url("titlebar/min@2.png")); }
-
-  headerbar button.titlebutton.minimize:backdrop,
-  .titlebar button.titlebutton.minimize:backdrop {
-    background-image: -gtk-scaled(url("titlebar/min-backdrop.png"), url("titlebar/min-backdrop@2.png")); }
-
-  headerbar button.titlebutton.minimize:hover,
-  .titlebar button.titlebutton.minimize:hover {
-    background-image: -gtk-scaled(url("titlebar/min-hover.png"), url("titlebar/min-hover@2.png")); }
-
-  headerbar button.titlebutton.minimize:active,
-  .titlebar button.titlebutton.minimize:active {
-    background-image: -gtk-scaled(url("titlebar/min-active.png"), url("titlebar/min-active@2.png")); }
+headerbar button.titlebutton.maximize:backdrop,
+headerbar button.titlebutton.minimize:backdrop,
+.titlebar button.titlebutton.maximize:backdrop,
+.titlebar button.titlebutton.minimize:backdrop {
+    color: #000000; }
 
 
 .view:selected, .view:selected:focus,
