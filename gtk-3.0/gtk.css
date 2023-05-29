@@ -1672,7 +1672,7 @@ treeview.view {
     box-shadow: inset 1px 1px 0 1px @theme_selected_bg_color, inset -1px 0 0 1px @theme_selected_bg_color, inset 1px 1px #FFFFFF, inset -1px 0 #FFFFFF; }
 
 .nemo-window .view {  /* default bg color */
-    background-color: rgba(0, 0, 0, .85);  /* Make it a bit transparent so rubber band works better */
+    background-color: #222222;  /* Make it a bit transparent so rubber band works better */
     color: #FFFFFF; }
 
 
@@ -2498,7 +2498,7 @@ scale {
       border-color: rgba(125, 125, 125, 0.3); }
 
 scale slider:active {
-      background-color: @theme_selected_bg_color;
+      background-color: #FFFFFF;   /* white highlights better in Nemo */
       border-color: @theme_selected_bg_color; }
 
     .osd scale slider {
