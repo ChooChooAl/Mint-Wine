@@ -1,17 +1,4 @@
-/*WINE THEME - Setup for Mint 20.3
-
-    PopupMenu (popupMenu.js): modifies all popup menus, right-click panel menu and the main menu;
-    Panel (panel.js): self-explanatory;
-    Desklets (desklet.js) for desktop widgets and Applets (applet.js) for widgets on the panel;
-    Looking Glass: modifies the graphical debugging interface (cinnamon-looking-glass);
-    Menu (menu.js): affects only the main menu (MintMenu);
-    Window list (windowList.js): applies to the list of opened windows in the panel. */
-
-
-/* #########################################################################################
-   Section common with Gnome Shell contains a few cinnamon specific styles (rare occurences)
-   ######################################################################################### */
-
+/*WINE THEME - 21.1 */
 stage {
 	font-family: Freesans, Ubuntu, Arial ;
 	font-size: 18pt;  /* effects calendar titles   Weather Words  Applets in general */
