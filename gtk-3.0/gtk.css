@@ -315,21 +315,18 @@ button {
 
   button:active, button:checked {
     color: #000000;
-    outline-color: rgba(255, 255, 255, 0.3);
     border-color: @theme_selected_bg_color;
-    background-color: white;
-    background-clip: border-box;
-    transition-duration: 50ms; }
+    background-color: #F98A87;
+    background-clip: border-box; }
 
     button:active:not(:disabled) label:disabled, button:checked:not(:disabled) label:disabled {
       color: inherit;
       opacity: 0.6; }
 
-  button:active {
-    color: @theme_fg_color; }
-
-  button:active:hover, button:checked {
-    color: #000000; }
+button:active:hover,
+button:checked:hover {
+    color: #FFFFFF;
+    background-color: #F15753; }
 
   button.sidebar-button, button.flat:disabled {
     border-color: transparent;
