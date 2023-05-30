@@ -595,9 +595,7 @@ StScrollBar StButton#vhandle:active {
     color: #FFFFFF; }
 
 .calendar-event-color-strip {
-    width: 4px;
-    border-width: 1px;
-    border-radius: 2px 0 0 2px; }
+    width: 4px; }
 
 .calendar-today-day-label { /* new for 20.3, day at the top */
     font-size: 1.75em;
