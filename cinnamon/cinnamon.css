@@ -291,6 +291,9 @@ StScrollBar StButton#vhandle:active {
 #panelRight:dnd {
 	background-color: rgba(0, 108, 0, 0.5); }
 
+#panel:highlight {
+    background-color: #740000 }
+
 /* ===================================================================
 * Overview
 * ===================================================================*/
@@ -489,7 +492,7 @@ StScrollBar StButton#vhandle:active {
     spacing-rows: 0px;
     spacing-columns: 0px; }
 
-.calendar-main-box { 
+.calendar-main-box {
     margin-bottom: .7em; }
 
 .calendar-events-main-box {
@@ -1274,11 +1277,12 @@ height of the table to be ICON_SIZE + IMAGE_SIZE + spacing-rows = 24 + 125 + 10 
 	padding-right: 5px;
     margin-bottom: 3px;    /* compensate for underline */ }
 
-.window-list-item-box:hover  {			/* app in panel highlights as you mouse over*/
+.window-list-item-box:hover,
+.window-list-item-box:groupFocus  {			/* app in panel highlights as you mouse over*/
 	color: #FFFFFF;
 	font-weight: bold;
 	font-size: 19pt;
-	background-color: #540000; 		/* just a bit lighter */ }
+	background-color: #801411; 		/* just a bit lighter */ }
 
 .window-list-item-box:active,			/* active app in panel */
 .window-list-item-box:checked,
@@ -1407,6 +1411,9 @@ height of the table to be ICON_SIZE + IMAGE_SIZE + spacing-rows = 24 + 125 + 10 
     padding-right: 10px;
     transition-duration: 200; }
 
+.panel-launchers .launcher:hover {
+    background-color: #801411; }
+
 /* spacing betwen apps pinned to panel */
 /*.panel-launcher {
 	margin: 0px;
@@ -1459,7 +1466,8 @@ height of the table to be ICON_SIZE + IMAGE_SIZE + spacing-rows = 24 + 125 + 10 
 	transition-duration: 100; }
 
 .applet-box:hover {
-	color: #FF6060; }
+	color: #FF6060;
+    background-color: #801411; }
 
 .applet-label {		/* size of clock and menu buttons in the panel */
 	text-align: center;
