@@ -112,7 +112,7 @@ StScrollBar StButton#vhandle:active {
 	padding: .2em .5em; }    /* padding above and below the whole list */
 
 .popup-menu-item {
-	padding: .1em .5em;     /* between lines */
+	padding: .13em .5em;     /* between lines */
 	spacing: 1em; }         /* between icon and text */
 
 .popup-menu-item:active { /* hover color */
