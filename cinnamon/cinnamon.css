@@ -206,7 +206,6 @@ StScrollBar StButton#vhandle:active {
 #panelLeft .applet-box:first-child {
     background: url("images/start1.png");
     border-image: none;
-/*    background-position: center; */
     transition-duration: 300;
     width: 60px; }
 
