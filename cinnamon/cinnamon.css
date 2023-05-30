@@ -74,9 +74,9 @@ StScrollBar StButton#vhandle:active {
 	font-size: 18pt; }
 
 .menu {       /* this effects both main menu and panel right-click box */
-    border: 3px solid #D40000;
-    border-radius: 14px;
-    background-color: #200000;
+    border: 2px solid #D40000;
+    border-radius: 14px 14px 0 0;
+    border-bottom: 0px;
     background: url("images/bg-felt-texture.jpg");
     background-repeat: repeat;
     color: #FFFFFF;
@@ -109,10 +109,10 @@ StScrollBar StButton#vhandle:active {
 	border-width: 0px; }
 
 .popup-menu-content {
-	padding: .5em .5em; }    /* padding above and below the whole list */
+	padding: .2em .5em; }    /* padding above and below the whole list */
 
 .popup-menu-item {
-	padding: .2em .5em;     /* between lines */
+	padding: .1em .5em;     /* between lines */
 	spacing: 1em; }         /* between icon and text */
 
 .popup-menu-item:active { /* hover color */
@@ -129,8 +129,8 @@ StScrollBar StButton#vhandle:active {
 	-gradient-start: rgba(255, 0, 0, 0.4);
 	-gradient-end: rgba(255, 255, 255, 0.9);
 	-margin-horizontal: 0em;
-    margin-top:10px;
-    margin-bottom: 10px;
+    margin-top:4px;
+    margin-bottom: 4px;
 	height: 3px; }
 
 .popup-combo-menu {             /* research shows that this is not used. */
