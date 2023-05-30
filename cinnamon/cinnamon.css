@@ -502,7 +502,7 @@ StScrollBar StButton#vhandle:active {
     padding: .5em;
     min-width: 350px;
     border: 1px solid #E80000;
-    background-color: #180000; }
+    background-color: #100000; }
 
 .calendar-events-no-events-box {
     background-color: #480000;}
@@ -537,47 +537,49 @@ StScrollBar StButton#vhandle:active {
     font-size: 16pt;
     margin: 2px 7px 2px 7px; }
 
+/* as long as the background is dark, these colors will work. */
 .calendar-event-time-past {
-    color: #CC9988;
-    text-decoration: line-through;
+    color: #E7977D; /* light orange */
+    /*text-decoration: line-through; */
+    font-style: italic;
     text-align: left;
     margin: 0 20px 0 0; }
 
 .calendar-event-button .calendar-event-time-present {
-    color: #69CE20;   /* can't be black */
+    color: #FFFF00; /* yellow */
     text-align: left;
     margin: 0 20px 0 0; }
 
 .calendar-event-button .calendar-event-time-present:all-day {
-    color: #85A0FC; }
+    color: #85A0FC; }   /* light blue */
 
 .calendar-event-button .calendar-event-time-future {
-    color: #FFFF00;
+    color: #FFFF00; /* yellow */
     text-align: left;
     margin: 0 20px 0 0; }
 
 .calendar-event-button .calendar-event-summary {
     color: #FFFFFF;
     text-align: left;
-    width: 200px;
+    width: 170px;
     padding-bottom: 2px; }
 
 .calendar-event-button .calendar-event-countdown {
     text-align: right;
-    margin-bottom: .6em;
-    color: rgba(255, 255, 255, 0.87); }
+    margin-bottom: .4em;
+    color: #FAFAFA; }
 
 .calendar-event-button .calendar-event-countdown:soon {
     font-weight: bold;
-    color: #45A600;}  /* dark green */
+    color: #3D80FF; }  /* blue */
 
 .calendar-event-button .calendar-event-countdown:imminent {
     font-weight: bold;
-    color: #98FA52; }  /* bright green */
+    color: #FFA500; }  /* orange   < 9 minutes*/
 
 .calendar-event-button .calendar-event-countdown:current {
     font-weight: bold;
-    color: #CE3C20; }  /* red */
+    color: #98FA52; }  /* green */
 
 .calendar-event-button:hover {
     background-color: #6B0000; }
