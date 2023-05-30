@@ -326,7 +326,7 @@ button {
 button:active:hover,
 button:checked:hover {
     color: #FFFFFF;
-    background-color: #F15753; }
+    background-color: #DE5854; }
 
   button.sidebar-button, button.flat:disabled {
     border-color: transparent;
