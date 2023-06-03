@@ -77,12 +77,12 @@ StScrollBar StButton#vhandle:active {
     border: 2px solid #D40000;
     border-radius: 14px 14px 0 0;
     border-bottom: 0px;
-    background: url("images/bg-felt-texture.jpg");
+    background: url("images/background.jpg");
     background-repeat: repeat;
     color: #FFFFFF;
-    font-weight: normal;
-    min-width: 250px;
     font-size: 18pt;
+    font-weight: normal;
+    min-width: 200px;
     padding: 5px 5px; }
 
 .popup-submenu-menu-item:open {   /* title line "troubleshooting"  once opened */
@@ -194,8 +194,8 @@ StScrollBar StButton#vhandle:active {
 	spacing: .5em; }
 
 /* ===================================================================
-  Panel (panel.js)
-  ===================================================================*/
+* Panel (panel.js)
+* ===================================================================*/
 
 #panel {
 	background-color: #180000;
@@ -451,15 +451,19 @@ StScrollBar StButton#vhandle:active {
     color: #FFFFFF;
     font-size: 18pt; }
 
-.desklet-with-borders,
-.desklet-with-borders-and-header {
+.desklet-with-borders {
 	border-radius: 20px;
 	color: #FFFFFF;
 	border: 1px solid #DD0000;
-    background-color: #000;
+    background-color: #000000;
     border-right: 10px;
     border-bottom: 10px; }
 
+.desklet-with-borders-and-header {
+	border-bottom: 4px;
+	border-radius: 12px 12px 12px 12px;
+	border:0px solid #DD0000;
+	color: #FFFFFF; }
 
 .desklet-header {
     padding: 6px;
@@ -511,9 +515,6 @@ StScrollBar StButton#vhandle:active {
     margin: 6px 0 6px 0;
     padding: 6px; }
 
-/*.calendar-events-no-events-button:hover:active {
-    border-image: url("images/button-pressed.png") 4; } */
-
 .calendar-events-no-events-button:hover {
     background-color: #994433; }
 
@@ -561,7 +562,7 @@ StScrollBar StButton#vhandle:active {
 .calendar-event-button .calendar-event-summary {
     color: #FFFFFF;
     text-align: left;
-    width: 170px;
+    width: 200px;
     padding-bottom: 2px; }
 
 .calendar-event-button .calendar-event-countdown {
@@ -870,17 +871,14 @@ height of the table to be ICON_SIZE + IMAGE_SIZE + spacing-rows = 24 + 125 + 10 
 	color: #FFFFFF;
 	background-color: #300000;
 	border: 2px solid #AA0000;
-	padding-right: 22px;
-	padding-left: 22px;
-	padding-bottom: 10px;
-	padding-top: 10px; }
+	padding: 10px 22px; }
 
 .modal-dialog-button-box {
 	spacing: 21px;
-	padding-top: 10px;
+	padding-top: 50px;
 	background-color: #300000; }
 
-.modal-dialog-button {		/* this is a box under about info for applets */
+.modal-dialog-button {		/* this is a box under F2-restart or under about info for applets */
 	border-radius: 10px;
 	margin-left: 10px;
 	margin-right: 10px;
@@ -918,11 +916,27 @@ height of the table to be ICON_SIZE + IMAGE_SIZE + spacing-rows = 24 + 125 + 10 
 .modal-dialog .run-dialog-entry {
     width: 20em; }
 
+.run-dialog { }
+
+.run-dialog > * {
+    padding: 0; }
+
 .run-dialog-label {
-    font-size: 18pt;
+    font-size: 20pt;
     font-weight: normal;
     color: #FFFFFF;
-    padding-bottom: .8em; }
+    padding: 12px 0;
+    text-align: center; }
+
+.run-dialog-description {
+    color: #F2B527;  /* press Esc to close */
+    margin-top: 0px;
+    padding-bottom: 5px;
+    padding-top: 15px;
+    text-align: center; }
+
+.run-dialog-description.error {
+      color: #33FF33; }
 
 .run-dialog-error-label {
     font-size: 11pt; }
@@ -936,13 +950,19 @@ height of the table to be ICON_SIZE + IMAGE_SIZE + spacing-rows = 24 + 125 + 10 
     transition-duration: 300;
     padding-top: 1px;
     padding-bottom: 1px;
-    background-color: #FFFFFF;
+    selection-background-color: #FF8888;
+    background-color: #F0F0F0;
     color: #000000; }
 
-.run-dialog { }
+.run-dialog-entry:focus {
+      color: #000000;
+      background-color: #FFFFFF; }
 
-.run-dialog > .modal-dialog-button-box {
-	padding-top: 15px; }
+.run-dialog .modal-dialog-button-box {
+    border: none;
+    width: 300px;
+    box-shadow: none;
+    background: none; }
 
 .lightbox { background: rgba(0, 0, 0, 0.4); }
 
@@ -1297,6 +1317,15 @@ height of the table to be ICON_SIZE + IMAGE_SIZE + spacing-rows = 24 + 125 + 10 
 	color: #66FF66;
 	background: #400000; }
 
+.window-list-preview {
+  spacing: 6px;
+  color: #F0F0F0;
+  border: 1px solid #FF0000;
+  background-color: #000000;
+  border-radius: 3px;
+  padding: 6px 12px 12px 12px;
+  font-size: .8em; }
+
 
 /* ===================================================================
 * Sound Applet (status/volume.js)
@@ -1408,17 +1437,11 @@ height of the table to be ICON_SIZE + IMAGE_SIZE + spacing-rows = 24 + 125 + 10 
 
 /* margin between each pinned app in the pinned apps group. */
 .panel-launchers .launcher {
-    padding-right: 10px;
+    padding: 0 5px;     /* this centers it so it looks right with hover background. */
     transition-duration: 200; }
 
 .panel-launchers .launcher:hover {
     background-color: #801411; }
-
-/* spacing betwen apps pinned to panel */
-/*.panel-launchers {
-	margin: 0px;
-	padding: 0px 7px 0px 7px;
-	transition-duration: 100; }*/
 
 .panel-launchers:hover {
 	color: #FFFFFF; }
@@ -1471,7 +1494,7 @@ height of the table to be ICON_SIZE + IMAGE_SIZE + spacing-rows = 24 + 125 + 10 
 
 .applet-label {		/* size of clock and menu buttons in the panel */
 	text-align: center;
-	font-size: 18pt; }
+	font-size: 21pt; }
 
 .applet-icon { 		/* things like camera, batter, sound, sticky notes */
 	color: #FFFFFF;
