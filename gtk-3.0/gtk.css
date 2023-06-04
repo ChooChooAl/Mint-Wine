@@ -3894,7 +3894,7 @@ NautilusListView .view, NautilusListView iconview {
       -GtkTreeView-vertical-separator: -4px;  /* closes up the spacing on the sidebar in Nemo */  }
 
       .nemo-window .sidebar .view.cell:selected, .nemo-window .sidebar iconview.cell:selected, .nemo-window .sidebar row.cell:selected {
-        background-color: #910029; /*@selected_bg_color; */
+        background-color: #911A29;
         color: #FFFFFF; }
 
       .nemo-window .sidebar .view.expander, .nemo-window .sidebar iconview.expander, .nemo-window .sidebar row.expander {
