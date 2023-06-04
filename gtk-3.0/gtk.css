@@ -3092,13 +3092,13 @@ placessidebar row {
     color: @selected_bg_color; }
 
   placessidebar row:drop(active):not(:disabled) {
-    box-shadow: inset 0 1px #F08437, inset 0 -1px #F08437; }
+    box-shadow: inset 0 1px @disable_fg, inset 0 -1px @disable_fg; }
 
     placessidebar row:drop(active):not(:disabled), placessidebar row:drop(active):not(:disabled) label, placessidebar row:drop(active):not(:disabled) image {
-      color: #F08437; }
+      color: @disable_fg; }
 
     placessidebar row:drop(active):not(:disabled):selected {
-      background-color: #F08437; }
+      background-color: @disable_fg; }
 
       placessidebar row:drop(active):not(:disabled):selected, placessidebar row:drop(active):not(:disabled):selected label, placessidebar row:drop(active):not(:disabled):selected image {
         color: #FFFFFF; }
@@ -4731,7 +4731,7 @@ window.background.lightdm .lightdm-combo {
 @define-color theme_bg_color #D1BCBC;
 /*  This is not used in this file but it effects gnome-mines & other backgrounds.
     So watch out changing this color.
-    All, if not all, themes make gnome-mines buttons #BABDB6 so this color has to contrast or else. */
+    All, if not all, themes make gnome-mines buttons  BABDB6 so this color has to contrast or else. */
 
 @define-color theme_selected_bg_color #D1243B;
 @define-color menubar_bg_color #801424;
