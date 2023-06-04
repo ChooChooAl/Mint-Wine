@@ -162,7 +162,7 @@ entry {
   entry.flat, entry.flat:focus {
     padding: 2px;
     color: #000000;
-    border-color: #913b45;
+    border-color: #913B45;
     background-color: #FFFFFF;
     border: none;
     border-radius: 0; }
@@ -1734,7 +1734,7 @@ menu,
   menu separator, .csd menu separator,
   .menu separator, .csd .menu separator {
     margin: 2px 0;
-    background-color: #bd2d3d;
+    background-color: #BD2D3D;
     color: #FFFFFF; }
 
   menu .separator:not(label),
