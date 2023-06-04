@@ -3894,7 +3894,7 @@ NautilusListView .view, NautilusListView iconview {
       -GtkTreeView-vertical-separator: -4px;  /* closes up the spacing on the sidebar in Nemo */  }
 
       .nemo-window .sidebar .view.cell:selected, .nemo-window .sidebar iconview.cell:selected, .nemo-window .sidebar row.cell:selected {
-        background-color: #901616; /*@selected_bg_color; */
+        background-color: #910029; /*@selected_bg_color; */
         color: #FFFFFF; }
 
       .nemo-window .sidebar .view.expander, .nemo-window .sidebar iconview.expander, .nemo-window .sidebar row.expander {
@@ -4729,9 +4729,9 @@ window.background.lightdm .lightdm-combo {
     So watch out changing this color.
     All, if not all, themes make gnome-mines buttons #BABDB6 so this color has to contrast or else. */
 
-@define-color theme_selected_bg_color #CC0000;
-@define-color menubar_bg_color #800000;
-@define-color selected_bg_color #C80000;
+@define-color theme_selected_bg_color #D1003B;
+@define-color menubar_bg_color #800024;
+@define-color selected_bg_color #BD0036;
 @define-color theme_fg_color #202020;
 @define-color theme_fg_hover #000000;
 @define-color button_border_blk #000000;

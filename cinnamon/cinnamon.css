@@ -454,7 +454,7 @@ StScrollBar StButton#vhandle:active {
 .desklet-with-borders {
 	border-radius: 20px;
 	color: #FFFFFF;
-	border: 1px solid #DD0000;
+	border: 1px solid #DE1220;
     background-color: #000000;
     border-right: 10px;
     border-bottom: 10px; }
@@ -462,7 +462,7 @@ StScrollBar StButton#vhandle:active {
 .desklet-with-borders-and-header {
 	border-bottom: 4px;
 	border-radius: 12px 12px 12px 12px;
-	border:0px solid #DD0000;
+	border:0px solid #DE1220;
 	color: #FFFFFF; }
 
 .desklet-header {
@@ -470,7 +470,7 @@ StScrollBar StButton#vhandle:active {
 	border-bottom: 3px; }
 
 .desklet-drag-placeholder {
-	border: 0px solid #DD0000;
+	border: 0px solid #DE1220;
 	border-radius: 12px 12px 12px 12px; }
 
 .xkcd-box {
@@ -484,7 +484,7 @@ StScrollBar StButton#vhandle:active {
 	padding: 2px;
 	border:1px solid #FF0000;
 	border-radius: 0px 0px 0px 0px;
-	background-gradient-end: #800000;
+	background-gradient-end: #800024;
 	background-gradient-start: #AA0000;
 	background-gradient-direction: horizontal; }
 
@@ -657,7 +657,7 @@ StScrollBar StButton#vhandle:active {
 
 .calendar-change-month-forward:active,
 .calendar-change-month-back:active {
-	background-color: #800000; }
+	background-color: #800024; }
 
 .calendar-change-month-forward:focus,
 .calendar-change-month-forward:hover {
@@ -856,7 +856,7 @@ height of the table to be ICON_SIZE + IMAGE_SIZE + spacing-rows = 24 + 125 + 10 
 
 .switcher-arrow {
 	border-color: #000000;
-	color: #800000; }
+	color: #800024; }
 
 .switcher-arrow:highlighted {
 	border-color: #000000;
@@ -946,7 +946,7 @@ height of the table to be ICON_SIZE + IMAGE_SIZE + spacing-rows = 24 + 125 + 10 
 	spacing: 15px; }
 
 .run-dialog-entry {
-    border: 2px solid #800000;
+    border: 2px solid #800024;
     transition-duration: 300;
     padding-top: 1px;
     padding-bottom: 1px;
@@ -1047,7 +1047,7 @@ height of the table to be ICON_SIZE + IMAGE_SIZE + spacing-rows = 24 + 125 + 10 
 * ===================================================================*/
 
 .magnifier-zoom-region {
-	border: 2px solid #800000; }
+	border: 2px solid #800024; }
 
 .magnifier-zoom-region.full-screen {
 	border-width: 0px; }
@@ -1598,7 +1598,7 @@ height of the table to be ICON_SIZE + IMAGE_SIZE + spacing-rows = 24 + 125 + 10 
 	border:3px solid #FF0000;
 	border-radius: 0px 15px 0px 15px;
 	box-shadow: inset 0px 3px 5px 0px rgba(0, 0, 0, 0.6);
-	background-gradient-end: #800000;
+	background-gradient-end: #800024;
 	background-gradient-start: #180000;
 	background-gradient-direction: horizontal;
 	text-shadow: 1px 1px 2px #000; }
