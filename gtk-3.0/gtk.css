@@ -596,7 +596,7 @@ button:checked:hover {
   color: @theme_fg_color;
   outline-color: rgba(32, 32, 32, 0.3);
   border-color: @button_border_blk;
-  background-color: whitesmoke; }
+  background-color: #F5F5F5; }
 
   .inline-toolbar toolbutton > button:hover {
     color: @theme_fg_hover;
@@ -2488,7 +2488,7 @@ scale {
 
   scale slider {
     background-clip: border-box;
-    background-color: whitesmoke;
+    background-color: #F5F5F5;
     border: 1px solid rgba(125, 125, 125, 0.5);
     border-radius: 50%;
     box-shadow: none; }
@@ -3010,7 +3010,7 @@ filechooserbutton:drop(active) {
 
 .sidebar {
   border-style: none;
-  background-color: whitesmoke; }
+  background-color: #F5F5F5; }
 
   stacksidebar.sidebar:dir(ltr) list,
   stacksidebar.sidebar.left list,
@@ -3311,7 +3311,7 @@ colorswatch#add-color-button {
   color: @theme_fg_color;
   outline-color: rgba(32, 32, 32, 0.3);
   border-color: @button_border_blk;
-  background-color: whitesmoke; }
+  background-color: #F5F5F5; }
 
   colorswatch#add-color-button:hover {
     color: @theme_fg_hover;
@@ -3686,7 +3686,7 @@ TerminalWindow .notebook tab .button {
   TerminalWindow .notebook tab .button:hover {
     color: @theme_fg_hover;
     border-color: @button_border_blk;
-    background-color: whitesmoke; }
+    background-color: #F5F5F5; }
 
 TerminalWindow .notebook .active-page .button:hover, TerminalWindow .notebook .prelight-page .button:hover {
   color: #FF4D4D; }
@@ -4036,7 +4036,7 @@ NautilusListView .view, NautilusListView iconview {
     border-right-width: 1px; }
 
 .gedit-search-slider, .xed-window .xed-goto-line-box {
-  background-color: whitesmoke;
+  background-color: #F5F5F5;
   padding: 6px;
   border-color: @button_border_blk;
   border-radius: 0 0 2px 2px;
@@ -4561,7 +4561,7 @@ filechooser placessidebar.sidebar list scrollbar, .nemo-window .sidebar scrollba
   color: @theme_fg_color;
   outline-color: rgba(32, 32, 32, 0.3);
   border-color: @button_border_blk;
-  background-color: whitesmoke; }
+  background-color: #F5F5F5; }
 
   #content_frame button:hover {
     color: @theme_fg_hover;
