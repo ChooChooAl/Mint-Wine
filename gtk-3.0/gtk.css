@@ -1650,7 +1650,7 @@ treeview.view {
     border-color: @button_border_blk; }
 
     treeview.view header button:active, treeview.view header button:hover {
-      background-color: whitesmoke; }
+      background-color: #F1E3E4; }
 
     treeview.view header button:active:hover {
       color: @theme_fg_hover; }
