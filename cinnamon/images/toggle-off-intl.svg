@@ -73,14 +73,14 @@
        style="display:inline">
       <rect
          transform="scale(-1,1)"
-         ry="3.7999732"
-         rx="4.0031667"
-         y="74.975067"
-         x="-860.02496"
-         height="18.049873"
-         width="63.049877"
+         ry="4.2002792"
+         rx="3.9969096"
+         y="74.024338"
+         x="-859.97571"
+         height="19.951326"
+         width="62.951328"
          id="rect17456"
-         style="color:#000000;display:inline;overflow:visible;visibility:visible;fill:#000000;fill-opacity:1;stroke:#ec1b22;stroke-width:1.95013;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker:none;enable-background:accumulate" />
+         style="color:#000000;display:inline;overflow:visible;visibility:visible;fill:#000000;fill-opacity:1;stroke:#ec1b22;stroke-width:2.04867;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker:none;enable-background:accumulate" />
       <rect
          transform="scale(-1,1)"
          ry="4"
@@ -111,16 +111,13 @@
            id="path17466"
            inkscape:connector-curvature="0" />
       </g>
-      <path
-         sodipodi:type="arc"
-         style="color:#000000;fill:none;stroke:#eeeeee;stroke-width:1.96875012;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+      <ellipse
+         style="color:#000000;display:inline;overflow:visible;visibility:visible;fill:none;stroke:#eeeeee;stroke-width:2.47386;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker:none;enable-background:accumulate"
          id="path18722"
-         sodipodi:cx="47.6875"
-         sodipodi:cy="11.5625"
-         sodipodi:rx="3.9375"
-         sodipodi:ry="3.9375"
-         d="M 51.625,11.5625 A 3.9375,3.9375 0 0 1 47.6875,15.5 3.9375,3.9375 0 0 1 43.75,11.5625 3.9375,3.9375 0 0 1 47.6875,7.625 3.9375,3.9375 0 0 1 51.625,11.5625 Z"
-         transform="matrix(1.0158729,0,0,1.0158729,795.55556,72.25399)" />
+         cx="844.75043"
+         cy="84.114998"
+         rx="5.798481"
+         ry="6.2630692" />
     </g>
   </g>
 </svg>
