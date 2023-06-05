@@ -3491,7 +3491,7 @@ headerbar button.titlebutton.close:hover,
 
 headerbar button.titlebutton.close:active,
 .titlebar button.titlebutton.close:active {
-    background-color: #8A8A8A; }
+    background-color: #009000; }
 
 headerbar button.titlebutton.close:backdrop,
 .titlebar button.titlebutton.close:backdrop {
