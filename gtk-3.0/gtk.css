@@ -22,11 +22,11 @@
   -gtk-icon-effect: dim; }
 
 .gtkstyle-fallback {
-  background-color: #F0F0F0;
+  background-color: #FFFFFF;
   color: @theme_fg_color; }
 
   .gtkstyle-fallback:hover {
-    background-color: white;
+    background-color: @theme_bg_color;
     color: @theme_fg_hover; }
 
   .gtkstyle-fallback:active {
@@ -288,7 +288,7 @@ button {
   color: @theme_fg_color;
   outline-color: rgba(32, 32, 32, 0.3);
   border-color: @button_border_blk;
-  background-color: #F0F0F0; } /* default bg of buttons, if active they are set to white */
+  background-color: #FFFFFF; } /* default bg of buttons, if active they are set to white */
 
   button separator {
     margin: 4px 1px; }
