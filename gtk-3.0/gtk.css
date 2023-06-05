@@ -326,7 +326,7 @@ button {
 button:active:hover,
 button:checked:hover {
     color: #FFFFFF;
-    background-color: #DE5854; }
+    background-color: #DD3C51; }
 
   button.sidebar-button, button.flat:disabled {
     border-color: transparent;
@@ -1581,7 +1581,7 @@ treeview.view {
     color: rgba(32, 32, 32, 0.55); }
 
     treeview.view:disabled:selected {
-      color: #DA9D9B; }
+      color: #D3929A; }
 
   treeview.view.separator {
     min-height: 2px;
@@ -2533,8 +2533,8 @@ scale slider:active {
       menuitem:hover scale slider:disabled,
       row:selected scale slider:disabled,
       infobar scale slider:disabled {
-        background-color: #E3B5B4;
-        border-color: #E3B5B4; }
+        background-color: #E3B0B4;
+        border-color: #E3B0B4; }
 
   scale trough {
     outline-offset: 2px;
@@ -2562,7 +2562,7 @@ scale slider:active {
 
         menuitem:hover scale trough row:selected scale trough highlight:disabled,
         infobar scale trough highlight:disabled {
-          background-color: #E3B5B4; }
+          background-color: #E3B0B4; }
 
       menuitem:hover scale trough row:selected scale trough:disabled,
       infobar scale trough:disabled {
@@ -4223,7 +4223,7 @@ button.documents-load-more {
 
 .documents-favorite.button:active,
 .documents-favorite.button:active:hover {
-  color: #DDA4A2; }
+  color: #EC939F; }
 
 .documents-entry-tag, .photos-entry-tag {
   background-color: @selected_bg_color;
@@ -4235,7 +4235,7 @@ button.documents-load-more {
 
   .documents-entry-tag:hover, .photos-entry-tag:hover {
     color: #FFFFFF;
-    background-color: #C76A67; }
+    background-color: #D9263E; }
 
   .documents-entry-tag:active, .photos-entry-tag:active {
     color: #FFFFFF;
@@ -4728,7 +4728,7 @@ window.background.lightdm .lightdm-combo {
 @define-color yellow_text #FFFF00;
 @define-color white_text #FFFFFF;
 @define-color theme_bg_color_dark #D0D0D0;
-@define-color theme_bg_color #D1BCBC;
+@define-color theme_bg_color #F0DBDD;
 /*  This is not used in this file but it effects gnome-mines & other backgrounds.
     So watch out changing this color.
     All, if not all, themes make gnome-mines buttons  BABDB6 so this color has to contrast or else. */
