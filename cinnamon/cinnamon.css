@@ -541,7 +541,7 @@ StScrollBar StButton#vhandle:active {
 /* as long as the background is dark, these colors will work. */
 .calendar-event-time-past {
     color: #E7977D; /* light orange */
-    /*text-decoration: line-through; */
+    text-decoration: line-through;
     font-style: italic;
     text-align: left;
     margin: 0 20px 0 0; }
