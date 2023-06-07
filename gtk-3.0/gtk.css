@@ -1151,7 +1151,7 @@ window.csd > .titlebar:not(headerbar):backdrop {
   .primary-toolbar toolbar entry:focus, .primary-toolbar .inline-toolbar entry:focus,
   .primary-toolbar entry:focus, headerbar entry:focus {
     color: @white_text;
-    border-color: #FFFF00; /*@selected_bg_color;    This is nemo directory display as text not buttons */
+    border-color: @selected_bg_color;   /* This is nemo directory display as text not buttons */
     background-color: rgba(103, 103, 103, 0.4);
     background-clip: padding-box; }
 
