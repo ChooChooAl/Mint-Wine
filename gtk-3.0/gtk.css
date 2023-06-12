@@ -8,8 +8,8 @@
   -GtkWidget-text-handle-height: 20;
   -GtkDialog-button-spacing: 4;
   -GtkDialog-action-area-border: 6;
-  outline-color: rgba(32, 32, 32, 0.3);
-  outline-style: none;
+  outline-color: rgba(80, 80, 80, 0.6);
+  outline-style: dashed;
   outline-offset: -3px;
   outline-width: 1px;
   -gtk-outline-radius: 2px; }
@@ -313,6 +313,7 @@ button {
 
   button:active, button:checked {
     color: #000000;
+    outline-color: rgba(32, 32, 32, 0.3);
     border-color: @selected_bg_color;
     background-color: #F98A87;
     background-clip: border-box; }
