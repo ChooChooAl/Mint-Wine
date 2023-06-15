@@ -136,7 +136,7 @@ spinner {
       opacity: 0.5; }
 
 entry {
-  border: 1px solid #FF6666;
+  border: 1px solid #FF6680;
   padding: 5px 8px;
   caret-color: currentColor;
   border-radius: 3px;
@@ -169,7 +169,7 @@ entry {
   entry:focus { /* entry when you focus on it.  Like in the FIND box in pluma, or Nemo search box */
     background-clip: border-box;
     color: #000000;
-    border-color: #FF6666;
+    border-color: #FF6680;
     background-color: #F4FFFF; }
 
   entry:disabled {
@@ -468,29 +468,29 @@ button:checked:hover {
     background-clip: border-box;
     color: #FFFFFF;
     outline-color: rgba(255, 255, 255, 0.3);
-    background-color: #6DB442; /* green */
-    border-color: #6DB442; /* green */ }
+    background-color: #BD2237;  /* theme tint */
+    border-color: #BD2237; }
 
     button.suggested-action.flat {
       border-color: transparent;
       background-color: transparent;
       background-image: none;
-      color: #6DB442; /* green */
+      color: #BD2237;
       outline-color: rgba(109, 180, 66, 0.3); }
 
     button.suggested-action:hover {
       background-clip: border-box;
       color: #FFFFFF;
       outline-color: rgba(255, 255, 255, 0.3);
-      background-color: #88C663;
-      border-color: #88C663; }
+      background-color: #D9263E;    /* theme tint brighter */
+      border-color: #D9263E; }
 
     button.suggested-action:active, button.suggested-action:checked {
       background-clip: border-box;
       color: #FFFFFF;
       outline-color: rgba(255, 255, 255, 0.3);
-      background-color: #568F34;
-      border-color: #568F34; }
+      background-color: #911A29;    /* theme tint darker */
+      border-color: #911A29; }
 
     button.suggested-action.flat:disabled {
       border-color: transparent;
@@ -1178,7 +1178,7 @@ window.csd > .titlebar:not(headerbar):backdrop {
   .primary-toolbar toolbar entry.warning, .primary-toolbar .inline-toolbar entry.warning, .primary-toolbar entry.warning, headerbar entry.warning {
     color: @white_text;
     border-color: rgba(16, 16, 16, 0.4);
-    background-color: #A45B33; }
+    background-color: #A43346; }
 
     .primary-toolbar toolbar entry.warning:focus, .primary-toolbar .inline-toolbar entry.warning:focus, .primary-toolbar entry.warning:focus, headerbar entry.warning:focus {
       color: @white_text;
@@ -1235,7 +1235,7 @@ headerbar button:checked {
     background-clip: padding-box; }
 
   .primary-toolbar toolbar button:disabled, .primary-toolbar .inline-toolbar button:disabled, .primary-toolbar button:disabled, headerbar button:disabled {
-    color: #C3BCBC; /* lighten disabled button text */
+    color: #C3BCBD; /* lighten disabled button text */
     background-color: rgba(47, 47, 47, 0);
     border-color: rgba(47, 47, 47, 0); }
 
@@ -1362,7 +1362,7 @@ headerbar .linked:not(.vertical).path-bar > button {    /* buttons in things lik
   color: #FFFFFF;
   outline-color: rgba(255, 255, 255, 0.3);
   background-color: #6DB442; /* green */
-  border-color: #6DB442; /* green */ }
+  border-color: #6DB442; }
 
   .primary-toolbar toolbar button.suggested-action.flat, .primary-toolbar .inline-toolbar button.suggested-action.flat, .primary-toolbar button.suggested-action.flat, headerbar button.suggested-action.flat {
     border-color: transparent;
@@ -1642,14 +1642,14 @@ treeview.view {
     padding: 3px 16px;
     font-weight: normal;
     color: #000000;
-    background-color: #EDEDED;
+    background-color: #F3DDE3;
     background-image: none;
     border-style: none solid solid none;
     border-radius: 0;
     border-color: @button_border_blk; }
 
     treeview.view header button:active, treeview.view header button:hover {
-      background-color: #F1E3E4; }
+      background-color: #FFFFFF; }
 
     treeview.view header button:active:hover {
       color: @theme_fg_hover; }
@@ -2056,7 +2056,7 @@ notebook {
         color: dimgray; }
 
         notebook > header > tabs > tab button.flat:hover {
-          color: #FF4D4D; }
+          color: #FF4D6B; }
 
         notebook > header > tabs > tab button.flat:active, notebook > header > tabs > tab button.flat:active:hover {
           color: @selected_bg_color; }
@@ -2508,8 +2508,8 @@ scale slider:active {
         background-color: @selected_bg_color; }
 
       .osd scale slider:active {
-        background-color: #A8418E;
-        border-color: #A8418E; }
+        background-color: #A84152;
+        border-color: #A84152; }
 
     menuitem:hover scale slider,
     row:selected scale slider,
@@ -3087,8 +3087,8 @@ placessidebar row {
     background-image: linear-gradient(to bottom, @selected_bg_color, @selected_bg_color);
     background-clip: content-box; }
 
-  placessidebar row.sidebar-new-bookmark-row {
-    color: @selected_bg_color; }
+placessidebar row.sidebar-new-bookmark-row {
+    color: @selected_fg_color; }
 
   placessidebar row:drop(active):not(:disabled) {
     box-shadow: inset 0 1px @disable_fg, inset 0 -1px @disable_fg; }
@@ -3181,7 +3181,7 @@ infobar {
     background-color: #F04A50; }
 
   infobar.question {
-    background-color: #55C1EC; }
+    background-color: #EC5564; }
 
 .primary-toolbar toolbar.selection-mode button:hover, .primary-toolbar .selection-mode.inline-toolbar button:hover, .selection-mode.primary-toolbar button:hover, headerbar.selection-mode button:hover, row:selected button, infobar.info button, infobar.question button, infobar.warning button, infobar.error button {
   color: #FFFFFF;
@@ -3482,15 +3482,15 @@ headerbar button.titlebutton.close:backdrop, headerbar button.titlebutton.maximi
 headerbar button.titlebutton.close,
 .titlebar button.titlebutton.close {
     color: #FFFFFF;
-    background-color: #EE0000; }
+    background-color: #EE0001; }
 
 headerbar button.titlebutton.close:hover,
 .titlebar button.titlebutton.close:hover {
-    background-color: #FF0000; }
+    background-color: #FF0001; }
 
 headerbar button.titlebutton.close:active,
 .titlebar button.titlebutton.close:active {
-    background-color: #009000; }
+    background-color: #DD0001; }
 
 headerbar button.titlebutton.close:backdrop,
 .titlebar button.titlebutton.close:backdrop {
@@ -3688,7 +3688,7 @@ TerminalWindow .notebook tab .button {
     background-color: #F5F5F5; }
 
 TerminalWindow .notebook .active-page .button:hover, TerminalWindow .notebook .prelight-page .button:hover {
-  color: #FF4D4D; }
+  color: #FF4D6B; }
 
 TerminalWindow .notebook .active-page .button:active, TerminalWindow .notebook .prelight-page .button:active {
   color: @selected_bg_color; }
@@ -3999,13 +3999,13 @@ NautilusListView .view, NautilusListView iconview {
     color: dimgray; }
 
     .gedit-document-panel row:hover:not(:selected) button:hover {
-      color: #FF4D4D; }
+      color: #FF4D6B; }
 
     .gedit-document-panel row:hover:not(:selected) button:active {
      color: @theme_fg_hover; }
 
   .gedit-document-panel row:hover:selected button:hover {
-    color: #FF6666;
+    color: #FF6680;
     background: none;
     border: none;
     box-shadow: none; }
@@ -4450,7 +4450,7 @@ MarlinViewWindow FMListView, MarlinViewWindow FMColumnView {
   background-color: white; }
 
   .gala-notification .title, .gala-notification .label {
-    color: #5C616C; }
+    color: #911A29; }
 
 PantheonTerminalPantheonTerminalWindow.background {
   background-color: transparent; }
@@ -4656,22 +4656,22 @@ filechooser placessidebar.sidebar list scrollbar, .nemo-window .sidebar scrollba
   background-clip: border-box;
   color: #FFFFFF;
   outline-color: rgba(255, 255, 255, 0.3);
-  background-color: #6DB442; /* green */
-  border-color: #6DB442; /* green */ }
+  background-color: #911A29;
+  border-color: #911A29; }
 
   #restart_button.button:hover {
     background-clip: border-box;
     color: #FFFFFF;
     outline-color: rgba(255, 255, 255, 0.3);
-    background-color: #88C663;
-    border-color: #88C663; }
+    background-color: #BD2237;
+    border-color: #BD2237; }
 
   #restart_button.button:active, #restart_button.button:checked {
     background-clip: border-box;
     color: #FFFFFF;
     outline-color: rgba(255, 255, 255, 0.3);
-    background-color: #568F34;
-    border-color: #568F34; }
+    background-color: #801424;
+    border-color: #801424; }
 
 #greeter_infobar {
   border-bottom-width: 0;
@@ -4738,11 +4738,11 @@ window.background.lightdm .lightdm-combo {
 @define-color theme_fg_color #202020;
 @define-color theme_fg_hover #000000;
 @define-color button_border_blk #000000;
-@define-color warning_color #FF0101;
-@define-color success_color #01FF01;
+@define-color warning_color #FF8801;  /* orange */
+@define-color success_color #01FF01;    /* green */
 @define-color attention #F04A50;
 @define-color error_fg #FC4138;
-@define-color disable_fg #F08437;
+@define-color disable_fg #F03755;
 @define-color warning_fg #F27835;
 
 
