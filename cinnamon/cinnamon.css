@@ -168,7 +168,7 @@ StScrollBar StButton#vhandle:active {
 	font-weight: bold; }
 
 .popup-menu-icon {
-	icon-size: .7em; }
+	icon-size: 1.1em; color: #FF213F; }
 
 /* Switches (to be used in menus) */
 .toggle-switch {
