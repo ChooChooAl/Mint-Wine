@@ -1260,7 +1260,46 @@ height of the table to be ICON_SIZE + IMAGE_SIZE + spacing-rows = 24 + 125 + 10 
 	color: #990000;
 	padding-top: 2px; }
 
+.info-osd {
+  text-align: center;
+  font-weight: normal;
+  spacing: 1em;
+  padding: 16px;
+  color: #F0F0F0;
+  border: 1px solid #202020;
+  border-radius: 5px;
+  background-color: #2F2F2F; }
 
+.restart-osd {
+  background-color: #801411;
+  color: #FFFFFF;
+  font-size: 1.4em;
+  font-weight: normal;
+  border-radius: 15px;
+  width: 400px; }
+
+.osd-window {
+  text-align: center;
+  font-weight: bold;
+  spacing: 1em;
+  padding: 20px;
+  color: #F0F0F0;
+  background-color: #2F2F2F; /* OSD display of volume (sound) icon & % */
+  border: 1px solid #202020;
+  border-radius: 5px; }
+
+.osd-window .osd-monitor-label {
+    font-size: 3em; }
+
+.osd-window .level {
+    padding: 0;
+    height: 0.7em;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 2px; }
+
+.osd-window .level-bar {
+    border-radius: 2px;
+    background-color: #F2003D; } /* volume percent for sound icon */
 
 
 /* ===================================================================
