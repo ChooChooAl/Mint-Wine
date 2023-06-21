@@ -1,8 +1,6 @@
 /*WINE THEME - 21.1 */
 stage {
-	font-family: Freesans, Ubuntu, Arial ;
-	font-size: 18pt;  /* effects calendar titles   Weather Words  Applets in general */
-	color: #FFFFFF; }
+    color: #FFFFFF; }
 
 .cinnamon-link {
 	color: #0000FF;
