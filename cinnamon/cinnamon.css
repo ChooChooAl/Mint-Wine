@@ -1344,65 +1344,151 @@ height of the table to be ICON_SIZE + IMAGE_SIZE + spacing-rows = 24 + 125 + 10 
 .button:hover {
     	border: 1px solid #FFB24D; } /*border is light red */
 
-.sound-button-container {
-	padding-right: 3px;
-	padding-left: 3px; }
+/* ===================================================================
+* Sound Applet (status/volume.js)
+* ===================================================================*/
 
 .sound-button {
-	padding: 8px;
-	border: 1px solid #8B8B8B;
-	border-radius: 4px;
-	background-gradient-direction: vertical;
-	background-gradient-start: rgba(255, 255, 255, 0.2);
-	background-gradient-end: #FFFFFF; }
+  width: 22px;
+  height: 13px;
+  padding: 8px; }
+
+.sound-button-container {
+    padding-right: 3px;
+    padding-left: 3px; }
 
 .sound-button:hover {
-	background-gradient-start: rgba(255, 255, 255, 0.3);
-	background-gradient-end: rgba(255, 255, 255, 0.1); }
+    background-gradient-start: rgba(255,255,255,0.3);
+    background-gradient-end: rgba(255,255,255,0.1); }
 
 .sound-button:active,
 .sound-button:pressed {
     background-gradient-start: #FFFFFF;
-    background-gradient-end: rgba(255, 255, 255, 0.2); }
+    background-gradient-end: rgba(255,255,255,0.2); }
 
 .sound-button StIcon {
-	icon-size: 1.09em; }
+    icon-size: 1.09em; }
 
 .sound-track-infos {
-	padding-left: 5px;
-	padding-right: 5px;
-	padding-top: 5px;
-	padding-bottom: 5px; }
+    padding: 2px; }
 
 .sound-track-info {
-	padding-top: 2px;
-	padding-bottom: 2px; }
+    padding-top: 2px;
+    padding-bottom: 2px; }
 
 .sound-track-info StIcon {
-	icon-size: 1em; }
+    icon-size: 10px; }
 
 .sound-track-info StLabel {
-	padding-left: 5px;
-	padding-right: 5px; }
+    padding-left: 5px;
+    padding-right: 5px; }
 
 .sound-track-box {
-	padding-left: 30px;
-	padding-right: 30px;
-	max-width: 220px; }
+    padding-left: 15px;
+    padding-right: 15px;
+    max-width: 220px; }
+
+.sound-seek-box {
+    padding-left: 15px; }
+
+.sound-seek-box StLabel {
+    padding-top: 2px; }
+
+.sound-seek-box StIcon {
+    icon-size: 16px; }
+
+.sound-seek-slider {
+    width: 140px; }
 
 .sound-volume-menu-item {
-	padding: .4em 1.75em; }
+    padding: .4em 1.75em; }
 
 .sound-volume-menu-item StIcon {
-	icon-size: 1.09em;
-	padding-left: 8px;
-	padding-right: 8px; }
+    icon-size: 1.09em;
+    padding-left: 8px;
+    padding-right: 8px; }
 
 .sound-playback-control {
-	padding-top: 5px;
-	padding-bottom: 10px;
-	padding-left: 10px;
-	padding-right: 10px; }
+    padding: 5px 10px 10px 10px; }
+
+.sound-player > StBoxLayout:first-child {
+    padding: 5px 10px 12px 10px;
+    spacing: 0.5em; }
+
+.sound-player > StBoxLayout:first-child StButton:small {
+    width: 24px;
+    height: 24px;
+    border: 2px solid #FF213F; }
+
+.sound-player > StBoxLayout:first-child StButton:small StIcon {
+      icon-size: 18px; }
+
+.sound-player > StBoxLayout:first-child StButton:small:hover {
+      color: #F0F0F0;
+      background-color: #525252;
+      border: 2px solid #FFFFFF;
+      box-shadow: inset 0 2px 4px rgba(82, 82, 82, 0.05); }
+
+.sound-player > StBoxLayout:first-child StButton:small:active {
+      color: #FFFFFF;
+      background-color: #FF213F;
+      border: 1px solid #FF213F;
+      box-shadow: inset 0 2px 4px #FF213F; }
+
+.sound-player-generic-coverart {
+    background: rgba(0, 0, 0, 0.2); }
+
+.sound-player-overlay {
+  width: 290px;
+  height: 100px;    /* higher to make next/prev controls show */
+  padding: 5px;
+  spacing: 0.5em;
+  background: rgba(47, 47, 47, 0.9);
+  border-top: 1px solid #202020;
+  font-size: 14pt;
+  color: #F0F0F0; }
+
+.sound-player-overlay StButton {  /* forward / back etc */
+    width: 25px;
+    height: 22px;
+    padding: 2px;
+    margin: 0 8px 0 8px;
+    color: #F0F0F0;
+    border-radius: 2px;
+    border: 2px solid #FF213F; }
+
+.sound-player-overlay StButton StIcon {
+      icon-size: 16px; }   /* icons play,pause,stop */
+
+.sound-player-overlay StButton:hover {
+      color: #F0F0F0;
+      background-color: #525252;
+      border: 2px solid #FFFFFF;
+      box-shadow: inset 0 2px 4px rgba(82, 82, 82, 0.05); }
+
+.sound-player-overlay StButton:active {
+      color: #FFFFFF;
+      background-color: #FF213F;
+      border: 1px solid #FF213F;
+      box-shadow: inset 0 2px 4px #FF213F; }
+
+.sound-player-overlay StBoxLayout {
+    padding-top: 2px; }
+
+.sound-player-overlay > StBoxLayout {
+    spacing: 5px; }
+
+.sound-player .slider {
+  height: 8px;
+  padding: 10px 30px 0px 30px;
+  border: none;
+  -slider-height: 0.5em;
+  -slider-background-color: #222222;
+  -slider-border-color: rgba(0, 0, 0, 0);
+  -slider-active-background-color: #FF213F;
+  -slider-active-border-color: rgba(0, 0, 0, 0);
+  -slider-border-width: 0px;
+  -slider-handle-radius: 0px; }
 
 /* ===================================================================
 * Workspace Switcher applet (workspaceSwitcher.js)
