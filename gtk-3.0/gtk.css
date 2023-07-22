@@ -3185,7 +3185,7 @@ infobar {
 
 .primary-toolbar toolbar.selection-mode button:hover, .primary-toolbar .selection-mode.inline-toolbar button:hover, .selection-mode.primary-toolbar button:hover, headerbar.selection-mode button:hover, row:selected button, infobar.info button, infobar.question button, infobar.warning button, infobar.error button {
   color: #FFFFFF;
-  background-color: rgba(255, 255, 255, 0);
+  background-color: #000000;
   border-color: rgba(255, 255, 255, 0.5); }
 
 row:selected button.flat, infobar.info button.flat, infobar.question button.flat, infobar.warning button.flat, infobar.error button.flat {
