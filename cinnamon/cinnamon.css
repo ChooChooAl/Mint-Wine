@@ -74,7 +74,7 @@ StScrollBar StButton#vhandle:active {
 .menu {       /* this effects both main menu and panel right-click box */
     border: 1px solid #D40000;
     border-radius: 0px;
-    background: url("images/background.jpg");
+    background-image: url("images/background.jpg");
     background-repeat: repeat;
     color: #FFFFFF;
     font-size: 18pt;
@@ -201,18 +201,18 @@ StScrollBar StButton#vhandle:active {
 	font-size: 18pt; }
 
 #panelLeft .applet-box:first-child {
-    background: url("images/start1.png");
+    background-image: url("images/start1.png");
     border-image: none;
     transition-duration: 300;
     width: 60px; }
 
 #panelLeft .applet-box:first-child:hover {
     transition-duration: 200;
-    background: url("images/start2.png");
+    background-image: url("images/start2.png");
     border-image: none; }
 
 #panelLeft .applet-box:first-child:active {
-    background: url("images/start3.png");
+    background-image: url("images/start3.png");
     border-image: none; }
 
 #panelLeft, #panelCenter, #panelRight {
