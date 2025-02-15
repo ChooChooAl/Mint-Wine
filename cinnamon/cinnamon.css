@@ -683,7 +683,7 @@ StScrollBar StButton#vhandle:active {
     height: 4px; }
 
 .calendar-day-base {
-    font-size: 23pt;
+    font-size: 20pt;
     text-align: center;
     width: 2.1em;
     height: 2.1em; }
@@ -696,7 +696,7 @@ StScrollBar StButton#vhandle:active {
 
 .calendar-day-heading {   /* sun mon tue ...etc */
     color: #FFFF00;
-    font-size: 1em;
+    font-size: .75em;
     padding-top: 1em;
     height: 1.7em; }
 

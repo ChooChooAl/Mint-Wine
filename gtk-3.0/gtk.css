@@ -3891,7 +3891,7 @@ NautilusListView .view, NautilusListView iconview {
 
     .nemo-window .sidebar .view, .nemo-window .sidebar iconview, .nemo-window .sidebar row {
       background-color: transparent;
-      font-size: 18pt;
+      font-size: 16pt;
       color: #FFFFFF;
       -GtkTreeView-vertical-separator: -4px;  /* closes up the spacing on the sidebar in Nemo */  }
 
