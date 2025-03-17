@@ -200,23 +200,21 @@ StScrollBar StButton#vhandle:active {
 	height: 40px; 		/* height of overall panel (if not overridden) */
 	font-size: 18pt; }
 
-#panelLeft .applet-box:first-child {
-    background-image: url("images/start1.png");
+/*#panelLeft .applet-box:first-child {
+    background-image: url("images/start.png");
     border-image: none;
-    transition-duration: 300;
     width: 60px; }
 
 #panelLeft .applet-box:first-child:hover {
-    transition-duration: 200;
-    background-image: url("images/start2.png");
+    background-image: url("images/start-hover.png");
     border-image: none; }
 
 #panelLeft .applet-box:first-child:active {
-    background-image: url("images/start3.png");
+    background-image: url("images/start-active.png");
     border-image: none; }
-
+*/
 #panelLeft, #panelCenter, #panelRight {
-	spacing: 4px; }
+	spacing: 0px; }
 
 #panelLeft:ltr {
 	padding-right: 4px; }
