@@ -676,7 +676,7 @@ StScrollBar StButton#vhandle:active {
 
 .calendar-day-event-dot {
     margin: 1px;
-    border-radius: 2px;
+    border-radius: none;
     width: 4px;
     height: 4px; }
 
