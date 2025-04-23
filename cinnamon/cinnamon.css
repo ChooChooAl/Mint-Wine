@@ -69,7 +69,7 @@ StScrollBar StButton#vhandle:active {
 	background-color: #180000;
 	font-weight: normal;
     min-width: 250px;
-	font-size: 18pt; }
+	font-size: 16pt; }
 
 .menu {       /* this effects both main menu and panel right-click box */
     border: 1px solid #D40000;
