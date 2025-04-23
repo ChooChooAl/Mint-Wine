@@ -755,8 +755,8 @@ StScrollBar StButton#vhandle:active {
 	spacing-columns: 8px;
 	margin-from-right-edge-of-screen: 100px;
 	margin-from-top-edge-of-screen: 100px;
-	width: 20em;
-    color: #FFFFFF; }
+	width: 30em;
+     color: #FFFFFF; }
 
 #notification.multi-line-notification {
 	padding-bottom: 20px;
