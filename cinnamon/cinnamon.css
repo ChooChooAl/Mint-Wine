@@ -69,7 +69,7 @@ StScrollBar StButton#vhandle:active {
 	background-color: #180000;
 	font-weight: normal;
     min-width: 250px;
-	font-size: 16pt; }
+	font-size: 14pt; }
 
 .menu {       /* this effects both main menu and panel right-click box */
     border: 1px solid #D40000;
@@ -77,7 +77,7 @@ StScrollBar StButton#vhandle:active {
     background-image: url("images/background.jpg");
     background-repeat: repeat;
     color: #FFFFFF;
-    font-size: 18pt;
+    font-size: 16pt;
     font-weight: normal;
     min-width: 200px;
     padding: 5px 5px; }
@@ -166,7 +166,7 @@ StScrollBar StButton#vhandle:active {
 	font-weight: bold; }
 
 .popup-menu-icon {
-	icon-size: 1.1em; color: #FF213F; }
+	icon-size: 1em; color: #FF213F; }
 
 /* Switches (to be used in menus) */
 .toggle-switch {
@@ -198,7 +198,7 @@ StScrollBar StButton#vhandle:active {
 	background-color: #180000;
 	font-weight: normal;
 	height: 40px; 		/* height of overall panel (if not overridden) */
-	font-size: 18pt; }
+	font-size: 16pt; }
 
 /*#panelLeft .applet-box:first-child {
     background-image: url("images/start.png");
@@ -250,7 +250,7 @@ StScrollBar StButton#vhandle:active {
 	-natural-hpadding: 5px;
 	-minimum-hpadding: 5px;
 	font-weight: bold;
-	font-size: 18pt;
+	font-size: 16pt;
 	color: #FFFFFF;
 	transition-duration: 100; }
 
@@ -1401,7 +1401,7 @@ height of the table to be ICON_SIZE + IMAGE_SIZE + spacing-rows = 24 + 125 + 10 
     background-gradient-end: rgba(255,255,255,0.2); }
 
 .sound-button StIcon {
-    icon-size: 1.09em; }
+    icon-size: 1em; }
 
 .sound-track-infos {
     padding: 2px; }
@@ -1438,7 +1438,7 @@ height of the table to be ICON_SIZE + IMAGE_SIZE + spacing-rows = 24 + 125 + 10 
     padding: .4em 1.75em; }
 
 .sound-volume-menu-item StIcon {
-    icon-size: 1.09em;
+    icon-size: 1em;
     padding-left: 8px;
     padding-right: 8px; }
 
