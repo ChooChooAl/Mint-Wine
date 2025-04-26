@@ -1732,7 +1732,7 @@ menu,
      Watch the background-color: in a dark theme, too light to show nice lines, and the header is too light for the white text */
   menu separator, .csd menu separator,
   .menu separator, .csd .menu separator {
-    margin: 2px 0;
+    margin: 5px 0;
     background-color: #BD2D3D;
     color: #FFFFFF; }
 
