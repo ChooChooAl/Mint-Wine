@@ -1,4 +1,4 @@
-style "gedit-frame" 
+style "gedit-frame"
 {
     engine "pixmap"
     {
@@ -37,4 +37,3 @@ widget_class "*Pluma*.<GtkNotebook>" style "gedit-notebook"
 widget_class "*Gedit*.<GtkNotebook>" style "gedit-notebook"
 
 widget "*swt-toolbar-flat" style "eclipse-toolbar-fix"
-
