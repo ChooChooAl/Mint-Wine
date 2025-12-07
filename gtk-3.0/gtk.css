@@ -3525,7 +3525,6 @@ headerbar button.titlebutton.minimize:backdrop,
 .titlebar button.titlebutton.minimize:backdrop {
     color: #000000; }
 
-
 .view:selected, .view:selected:focus,
 .view text:selected, .view text selection:focus, .view text selection,
 iconview:selected, iconview text:selected,
