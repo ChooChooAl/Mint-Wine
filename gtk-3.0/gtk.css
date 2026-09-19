@@ -46,7 +46,9 @@
 iconview text,
 textview text {
   color: #000000;                       /* the text color in Tetravex high scores.   Need more contrast */
-  background-color: #E1E0E0; }      /* this is the list of saved colors in gcolor3?  also BG in settings and context menu*/
+  background-color: #e1E0E0; }      /* this is the list of saved colors in gcolor3?
+                                    also BG in settings and context menu
+                                    and the background in rainlendar2 options. */
 
   .view:selected, iconview:selected, .view:selected:focus, iconview:selected:focus,
   .view text:selected,
